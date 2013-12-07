@@ -1,0 +1,3 @@
+meta_league_fantasy_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: MetaLeagueFantasyBundle:Default:index }

@@ -1,0 +1,8 @@
+meta_league_fantasy:
+    resource: "@MetaLeagueFantasyBundle/Resources/config/routing.yml"
+    prefix:   /
+
+meta_league_site:
+    resource: "@MetaLeagueSiteBundle/Resources/config/routing.yml"
+    prefix:   /
+

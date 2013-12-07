@@ -1,0 +1,7 @@
+parameters:
+#    meta_league_fantasy.example.class: MetaLeague\FantasyBundle\Example
+
+services:
+#    meta_league_fantasy.example:
+#        class: %meta_league_fantasy.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

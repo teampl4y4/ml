@@ -1,0 +1,3 @@
+meta_league_site_homepage:
+    pattern:  /
+    defaults: { _controller: MetaLeagueSiteBundle:Default:index }
