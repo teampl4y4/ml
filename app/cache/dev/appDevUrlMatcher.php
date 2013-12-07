@@ -135,11 +135,6 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        // meta_league_fantasy_homepage
-        if (0 === strpos($pathinfo, '/hello') && preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'meta_league_fantasy_homepage')), array (  '_controller' => 'MetaLeague\\FantasyBundle\\Controller\\DefaultController::indexAction',));
-        }
-
         // meta_league_site_homepage
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {

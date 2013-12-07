@@ -10,7 +10,7 @@ class DefaultController extends Controller
 {
     /**
      * @return \Symfony\Component\HttpFoundation\Response
-     * @Template ("MetaLeagueSiteBundle:Default:index.html.twig")
+     * @Template ()
      */
     public function indexAction()
     {
