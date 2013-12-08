@@ -29,9 +29,17 @@ class __TwigTemplate_8e6e42d2213cc0661697369d7b2c3ca60032c78b31f1cb2eff7673f9947
     public function block_scripts($context, array $blocks = array())
     {
         // line 4
-        echo "    <script src=\"js/jquery.flexslider-min.js\"></script> <!-- Flex slider -->
-    <script src=\"js/jquery.carouFredSel-6.1.0-packed.js\"></script> <!-- Carousel for recent posts -->
-    <script src=\"js/jquery.refineslide.min.js\"></script> <!-- Refind slider -->
+        echo "    <script src=\"";
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/jquery.flexslider-min.js"), "html", null, true);
+        echo "\"></script> <!-- Flex slider -->
+    <script src=\"";
+        // line 5
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/jquery.carouFredSel-6.1.0-packed.js"), "html", null, true);
+        echo "\"></script> <!-- Carousel for recent posts -->
+    <script src=\"";
+        // line 6
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/jquery.refineslide.min.js"), "html", null, true);
+        echo "\"></script> <!-- Refind slider -->
 ";
     }
 
@@ -68,7 +76,7 @@ class __TwigTemplate_8e6e42d2213cc0661697369d7b2c3ca60032c78b31f1cb2eff7673f9947
                         <div class=\"rp-item\">
                             <!-- Image. -->
                             <div class=\"rp-image\">
-                                <a href=\"#\"><img src=\"";
+                                <a href=\"#\"><img src=\"/";
                 // line 31
                 echo twig_escape_filter($this->env, $this->getAttribute((isset($context["game"]) ? $context["game"] : $this->getContext($context, "game")), "teaserImage"), "html", null, true);
                 echo "\" alt=\"";
@@ -372,6 +380,6 @@ class __TwigTemplate_8e6e42d2213cc0661697369d7b2c3ca60032c78b31f1cb2eff7673f9947
 
     public function getDebugInfo()
     {
-        return array (  104 => 49,  93 => 40,  82 => 35,  73 => 31,  67 => 27,  63 => 26,  49 => 14,  47 => 13,  42 => 10,  39 => 9,  32 => 4,  29 => 3,);
+        return array (  112 => 49,  101 => 40,  90 => 35,  81 => 31,  75 => 27,  71 => 26,  57 => 14,  55 => 13,  50 => 10,  47 => 9,  41 => 6,  37 => 5,  32 => 4,  29 => 3,);
     }
 }

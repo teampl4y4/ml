@@ -1,9 +1,9 @@
 {% extends '::base.html.twig' %}
 
 {% block scripts %}
-    <script src="js/jquery.flexslider-min.js"></script> <!-- Flex slider -->
-    <script src="js/jquery.carouFredSel-6.1.0-packed.js"></script> <!-- Carousel for recent posts -->
-    <script src="js/jquery.refineslide.min.js"></script> <!-- Refind slider -->
+    <script src="{{ asset('js/jquery.flexslider-min.js') }}"></script> <!-- Flex slider -->
+    <script src="{{ asset('js/jquery.carouFredSel-6.1.0-packed.js') }}"></script> <!-- Carousel for recent posts -->
+    <script src="{{ asset('js/jquery.refineslide.min.js') }}"></script> <!-- Refind slider -->
 {% endblock %}
 
 {% block body %}
@@ -28,7 +28,7 @@
                         <div class="rp-item">
                             <!-- Image. -->
                             <div class="rp-image">
-                                <a href="#"><img src="{{ game.teaserImage }}" alt="{{ game.name }} fantasy leagues"/></a>
+                                <a href="#"><img src="/{{ game.teaserImage }}" alt="{{ game.name }} fantasy leagues"/></a>
                             </div>
                             <div class="rp-details clear-fix">
                                 <!-- Title and para -->
