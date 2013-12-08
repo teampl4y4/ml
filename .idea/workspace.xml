@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c853d74-f482-4f9e-b2d6-0491bbf4cd63" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/aa3b17a06c54069051111edd177f4b93a6b0ac40#panelAction.cache.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/aa3b17a06c54069051111edd177f4b93a6b0ac40#searchBarAction.cache.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/05/ea/05ea05" afterPath="" />
@@ -151,41 +150,14 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev_old/classes.php.meta" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev_old/profiler/58/93/c09358" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev_old/profiler/index.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/appProdUrlGenerator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/assetic/config/4/43a80f0e087752a2d4724591f85aa0e1.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/templates.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/18/40/8a75db1f32b40c80cdf9a800a6f0daf02135f6fc8c932c2ddce2e956b71c.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/24/35/9c413e39618a060f4c9c9079e2dd7828350111c3e8cc3fe1718ad1199b0a.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/27/8b/888f50b1fd855905e5f20352b92ca1dd0210f24cf1068e56499178eb98b1.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/2b/39/99f0cc0d9b2589e24ed61db81ac19fdaf1e5182df105f80963497fe4c286.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/48/5e/b5bba0c71a7400f6ed8b8766cd35b514f5a80cff3db248e34e176cc43219.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/49/ae/5ae1561eb1a7acb1beb42bf7ab0949cda448c84014e9f4958b86717c3d04.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/4c/d0/a377452e5ca602a2a8cff6ebc84055db0136633c805e3408511f5a1b3aac.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/4c/f6/1bab78641f13ac117d02bd4da279d767feb1f8637c755881e70c4b24d3c9.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/62/f7/4fa1bcbcab8d84510ec53f1717b7678643f1f9d04502cb43df886accfacf.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/67/b4/72cb6bdec87f349d4ce132565b0f0191c0cacbd874b0efbf882e22827259.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/74/4d/ad76d8b98b653da75f830ef5d3582aa35fecc970f98b04de49510e5d3c0f.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/7f/c5/33efce1aa40608f86c9e7f421035406390604d80397eb7d71da28355d96e.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/8c/21/d675c615f86068806d9bead56de381e655ff1bc235750e7181174db53d18.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/8e/7f/bc514b7e4c4e72d318eb41f6f123ca07779fa85596971f7af41ffdd290b7.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/8f/b7/817ab43c277bd5d9053ed82cdbb83e0929f3a7ce18b40e633bcb58e5733a.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/a1/89/e5940685f75ad77a7a56101ad8f27a23c7998ef85fdf69641af807043bae.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/a7/d1/54aff7dca550f809890ebe49ec59b421af11520dc896fa26b9ce72539bef.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/aa/92/43f02ea5f07e850393b68b4c718633b84fc8691603bdb92cdded4ce4c9d6.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/b0/97/392277f11397ae844043cbccc50e498b4531d4d0ffe153edd93f7fbe7523.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/b3/24/b3c173e49c586522b62441a1a1f480aa358d14dfe2de6334535d746579a2.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/b6/af/1e12ee1aea29e52413012977aea09b828b5693bdf2f219ece26d79e09452.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/b8/b3/e25b910c3425a2a02628903d2b7cecd37a13d57673a6183725d25d4dc569.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/c9/b0/99795bc58a27face09c6cac89d0873fc0fa5ced45b8dad0a4a096849b4f6.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/d1/f5/358d98988ef8d2137c2de5b1488f1bdc40532a3baa1619aa503dbf3f09a7.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/e8/e8/a285e79e876446d80397cc210e945b18cd83c948ce93e0c249d66767d809.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/ee/6f/b4c5c606cad6468074b1a982ffd8dedde019a9cbf287b3dfa6106111cb70.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/f8/aa/907b17376a19425183c4d9c4a69e586e5d62c556a190f57b0719a56a49f2.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/f9/7c/a05fe9599ea7b598d5e8dd772e9eaf9f0cd9ba5bffcf6ff36e2d3aa7e6b1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/597877fc1359850fa8786ead82dcc8f6f491d628#showAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/597877fc1359850fa8786ead82dcc8f6f491d628.cache.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/15/14/cb2ffafb72d0ed11a00c0b94b0f3063d42bcb9a83f1bccffde5c35acbad0.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/15/14/cb2ffafb72d0ed11a00c0b94b0f3063d42bcb9a83f1bccffde5c35acbad0.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/prod/classes.php" afterPath="$PROJECT_DIR$/app/cache/prod/classes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/dev.log" afterPath="$PROJECT_DIR$/app/logs/dev.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig" />
     </list>
     <ignored path="metaleague.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -225,7 +197,7 @@
       <file leaf-file-name="login.html.twig" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="10" selection-start="519" selection-end="519" vertical-scroll-proportion="0.30612245" vertical-offset="0" max-vertical-offset="1410">
+            <state line="84" column="125" selection-start="4509" selection-end="4509" vertical-scroll-proportion="0.9183673" vertical-offset="495" max-vertical-offset="1500">
               <folding />
             </state>
           </provider>
@@ -252,7 +224,7 @@
       <file leaf-file-name="navigation.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MetaLeague/SiteBundle/Resources/views/Default/navigation.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="16" selection-start="1231" selection-end="1281" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="585">
+            <state line="28" column="77" selection-start="1602" selection-end="1646" vertical-scroll-proportion="-17.5" vertical-offset="0" max-vertical-offset="585">
               <folding />
             </state>
           </provider>
@@ -1030,16 +1002,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MetaLeague/SiteBundle/Resources/views/Default/navigation.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="16" selection-start="1231" selection-end="1281" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="585">
+        <state line="53" column="24" selection-start="1765" selection-end="1765" vertical-scroll-proportion="-13.125" vertical-offset="480" max-vertical-offset="2445">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/MetaLeague/SiteBundle/Resources/views/Default/navigation.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="24" selection-start="1765" selection-end="1765" vertical-scroll-proportion="-13.125" vertical-offset="480" max-vertical-offset="2445">
+        <state line="28" column="77" selection-start="1602" selection-end="1646" vertical-scroll-proportion="-17.5" vertical-offset="0" max-vertical-offset="585">
           <folding />
         </state>
       </provider>
@@ -1053,7 +1025,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="10" selection-start="519" selection-end="519" vertical-scroll-proportion="0.30612245" vertical-offset="0" max-vertical-offset="1410">
+        <state line="84" column="125" selection-start="4509" selection-end="4509" vertical-scroll-proportion="0.9183673" vertical-offset="495" max-vertical-offset="1500">
           <folding />
         </state>
       </provider>

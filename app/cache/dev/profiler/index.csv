@@ -683,3 +683,13 @@ a70c43,127.0.0.1,GET,http://metaleague.dev/app_dev.php/js/jquery.flexslider-min.
 6d864d,127.0.0.1,GET,http://metaleague.dev/app_dev.php/img/clients/google_b.png,1386483424,
 cd17db,127.0.0.1,GET,http://metaleague.dev/app_dev.php/js/jquery.refineslide.min.js,1386483424,57210b
 57210b,127.0.0.1,GET,http://metaleague.dev/app_dev.php/js/jquery.refineslide.min.js,1386483424,
+329339,127.0.0.1,GET,http://metaleague.dev/app_dev.php/register/,1386483473,
+3f2411,127.0.0.1,POST,http://metaleague.dev/app_dev.php/register/,1386483484,
+474974,127.0.0.1,POST,http://metaleague.dev/app_dev.php/register/,1386483487,
+12802f,127.0.0.1,GET,http://metaleague.dev/app_dev.php/register/confirmed,1386483487,
+bf3dd9,127.0.0.1,GET,http://metaleague.dev/app_dev.php/login,1386483601,
+35922f,127.0.0.1,GET,http://metaleague.dev/app_dev.php/register/,1386483611,
+701da2,127.0.0.1,GET,http://metaleague.dev/app_dev.php/login,1386483620,
+11d6c0,127.0.0.1,GET,http://metaleague.dev/app_dev.php/login,1386483630,
+bd46b1,127.0.0.1,GET,http://metaleague.dev/app_dev.php/login,1386483634,
+c6b552,127.0.0.1,GET,http://metaleague.dev/app_dev.php/login,1386483643,

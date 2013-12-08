@@ -133,6 +133,15 @@ class __TwigTemplate_1514cb2ffafb72d0ed11a00c0b94b0f3063d42bcb9a83f1bccffde5c35a
                                     </div>
                                 </div>
                             </form>
+
+                            <hr>
+                            <h5>New Account</h5>
+                            <!-- Register link -->
+                            Don't have an Account? <b><a href=\"";
+        // line 85
+        echo $this->env->getExtension('routing')->getPath("fos_user_registration_register");
+        echo "\">Register</a></b>
+
                         </div>
                     </div>
                 </div>
@@ -155,6 +164,6 @@ class __TwigTemplate_1514cb2ffafb72d0ed11a00c0b94b0f3063d42bcb9a83f1bccffde5c35a
 
     public function getDebugInfo()
     {
-        return array (  129 => 77,  118 => 69,  105 => 59,  97 => 54,  92 => 52,  86 => 49,  82 => 48,  47 => 15,  41 => 13,  39 => 12,  31 => 6,  28 => 5,);
+        return array (  142 => 85,  129 => 77,  118 => 69,  105 => 59,  97 => 54,  92 => 52,  86 => 49,  82 => 48,  47 => 15,  41 => 13,  39 => 12,  31 => 6,  28 => 5,);
     }
 }
