@@ -77,10 +77,7 @@ class __TwigTemplate_1514cb2ffafb72d0ed11a00c0b94b0f3063d42bcb9a83f1bccffde5c35a
         echo "\" />
 
                                 <div class=\"form-group\">
-                                    <label for=\"username\" class=\"col-lg-2 control-label\">";
-        // line 39
-        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("security.login.username", array(), "FOSUserBundle"), "html", null, true);
-        echo "</label>
+                                    <label for=\"username\" class=\"col-lg-2 control-label\">E-Mail:</label>
                                     <div class=\"col-lg-10\">
                                         <input type=\"text\" id=\"username\" name=\"_username\" value=\"";
         // line 41
@@ -163,6 +160,6 @@ class __TwigTemplate_1514cb2ffafb72d0ed11a00c0b94b0f3063d42bcb9a83f1bccffde5c35a
 
     public function getDebugInfo()
     {
-        return array (  141 => 78,  132 => 72,  119 => 64,  108 => 56,  95 => 46,  87 => 41,  82 => 39,  76 => 36,  72 => 35,  59 => 25,  47 => 15,  41 => 13,  39 => 12,  31 => 6,  28 => 5,);
+        return array (  138 => 78,  129 => 72,  116 => 64,  105 => 56,  92 => 46,  84 => 41,  76 => 36,  72 => 35,  59 => 25,  47 => 15,  41 => 13,  39 => 12,  31 => 6,  28 => 5,);
     }
 }

@@ -73,3 +73,6 @@ fos_user:
     db_driver: orm
     firewall_name: main
     user_class: MetaLeague\FantasyBundle\Entity\User
+    registration:
+        form:
+            type: meta_league_registration
