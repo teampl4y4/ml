@@ -2,32 +2,26 @@
 
 namespace MetaLeague\SiteBundle\Controller;
 
+use Doctrine\ORM\EntityManager;
 use MetaLeague\FantasyBundle\Entity\Game;
+use MetaLeague\FantasyBundle\Entity\GameRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
 class DefaultController extends Controller
 {
     /**
      * @return \Symfony\Component\HttpFoundation\Response
      * @Template ()
+     * @Route ("/")
      */
     public function indexAction()
     {
-
-        $lol = new Game();
-        $lol->setName('League of Legends');
-        $lol->setTeaserImage('img/games/lol-teaser.png');
-
-        $cs = new Game();
-        $cs->setName('Counter-Strike');
-        $cs->setTeaserImage('img/games/cs-teaser.png');
-
-        $dota = new Game();
-        $dota->setName('Dota 2');
-        $dota->setTeaserImage('img/games/dota-teaser.png');
-
-        $games = array($lol, $cs, $dota, $lol);
+        /** @var $em EntityManager*/
+        $em      = $this->get('doctrine.orm.entity_manager');
+        $games   = $em->getRepository('MetaLeague\FantasyBundle\Entity\Game')
+                       ->findAll();
 
         return array('games' => $games);
     }

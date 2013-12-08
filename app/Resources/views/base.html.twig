@@ -3,8 +3,9 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <!-- Title and other stuffs -->
-    <title>MetaLeague - Fantasy eSports</title>
+
+    <title>{% block title %}MetaLeague | Fantasy eSports{% endblock %}</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -13,29 +14,23 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 
     <!-- Stylesheets -->
-    <link href="style/bootstrap.css" rel="stylesheet">
-    <!-- Pretty Photo -->
-    <link href="style/prettyPhoto.css" rel="stylesheet">
-    <!-- Flex slider -->
-    <link href="style/flexslider.css" rel="stylesheet">
-    <!-- Font awesome icon -->
-    <link rel="stylesheet" href="style/font-awesome.css">
-    <!-- Parallax slider -->
-    <link rel="stylesheet" href="style/slider.css">
-    <!-- Refind slider -->
-    <link rel="stylesheet" href="style/refineslide.css">
+    <link href="{{ asset('style/bootstrap.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{  asset('style/font-awesome.css') }}">
+
     <!-- Main stylesheet -->
-    <link href="style/style.css" rel="stylesheet">
-    <!-- Stylesheet for Color -->
-    <link href="style/blue.css" rel="stylesheet">
+    <link href="{{ asset('style/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('style/blue.css') }}" rel="stylesheet">
+
+    {% block stylesheets %}{% endblock %}
 
     <!-- HTML5 Support for IE -->
     <!--[if lt IE 9]>
-    <script src="js/html5shim.js"></script>
+    <script src="{{ asset('js/html5shim.js') }}"></script>
     <![endif]-->
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon/favicon.png">
+    <link rel="shortcut icon" href="{{ asset('img/favicon/favicon.png') }}">
+
 </head>
 
 <body>
@@ -56,7 +51,6 @@
             <div class="col-md-8 col-sm-9">
 
                 <!-- Navigation -->
-
                 <div class="navbar bs-docs-nav" role="banner">
                     <div class="container">
                         <div class="navbar-header">
@@ -70,7 +64,7 @@
 
                         <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
                             <ul class="nav navbar-nav">
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="/">Home</a></li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Leagues <b class="caret"></b></a>
                                     <ul class="dropdown-menu">
@@ -80,7 +74,8 @@
                                         <li><a href="faq.html">Counter-Strike Survivor Pool</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="contactus1.html" class="color"><span class="color">Login</span></a></li>
+                                <li><a href="{{ path('fos_user_security_login') }}" class="color"><span class="color">Login</span></a></li>
+                                <li><a href="{{ path('fos_user_registration_register') }}" class="color"><span class="color">Register</span></a></li>
                             </ul>
                         </nav>
                     </div>
@@ -183,19 +178,11 @@
 <span class="totop"><a href="#"><i class="icon-chevron-up"></i></a></span>
 
 <!-- JS -->
-<script src="js/jquery.js"></script> <!-- jQuery -->
-<script src="js/bootstrap.js"></script> <!-- Bootstrap -->
-<script src="js/jquery.isotope.js"></script> <!-- Isotope -->
-<script src="js/jquery.prettyPhoto.js"></script> <!-- Pretty Photo -->
-<script src="js/filter.js"></script> <!-- Filter for support page -->
+<script src="{{ asset('js/jquery.js') }}"></script> <!-- jQuery -->
+<script src="{{ asset('js/bootstrap.js') }}"></script> <!-- Bootstrap -->
+<script src="{{ asset('js/custom.js') }}"></script> <!-- Custom codes -->
 
-<script src="js/jquery.flexslider-min.js"></script> <!-- Flex slider -->
-<script src="js/jquery.cslider.js"></script> <!-- Parallax Slider -->
-<script src="js/modernizr.custom.28468.js"></script> <!-- Parallax slider extra -->
-
-<script src="js/jquery.carouFredSel-6.1.0-packed.js"></script> <!-- Carousel for recent posts -->
-<script src="js/jquery.refineslide.min.js"></script> <!-- Refind slider -->
-<script src="js/custom.js"></script> <!-- Custom codes -->
+{% block scripts %}{% endblock %}
 
 </body>
 </html>

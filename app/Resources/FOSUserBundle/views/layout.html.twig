@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+    <title>{% block title %}MetaLeague | Fantasy eSports | Login{% endblock %}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+    <!-- Stylesheets -->
+    <link href="{{ asset('style/bootstrap.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{  asset('style/font-awesome.css') }}">
+
+    <!-- Main stylesheet -->
+    <link href="{{ asset('style/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('style/blue.css') }}" rel="stylesheet">
+
+    {% block stylesheets %}{% endblock %}
+
+    <!-- HTML5 Support for IE -->
+    <!--[if lt IE 9]>
+    <script src="{{ asset('js/html5shim.js') }}"></script>
+    <![endif]-->
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ asset('img/favicon/favicon.png') }}">
+
+</head>
+
+<body>
+<h1>Test</h1>
+<div>
+    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+        {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
+        <a href="{{ path('fos_user_security_logout') }}">
+            {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+        </a>
+    {% else %}
+        <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
+    {% endif %}
+</div>
+
+{% for type, messages in app.session.flashbag.all() %}
+    {% for key, message in messages %}
+        <div class="flash-{{ type }}">
+            {{ message|trans({}, 'FOSUserBundle') }}
+        </div>
+    {% endfor %}
+{% endfor %}
+
+<div>
+    {% block fos_user_content %}
+    {% endblock fos_user_content %}
+</div>
+</body>
+</html>

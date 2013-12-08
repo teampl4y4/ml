@@ -10,7 +10,10 @@ class __TwigTemplate_50b0e117d73b3711ecbd10f0e9aebbdbeb7c0e1e021353d9cac80417f80
         $this->parent = false;
 
         $this->blocks = array(
+            'title' => array($this, 'block_title'),
+            'stylesheets' => array($this, 'block_stylesheets'),
             'body' => array($this, 'block_body'),
+            'scripts' => array($this, 'block_scripts'),
         );
     }
 
@@ -22,8 +25,12 @@ class __TwigTemplate_50b0e117d73b3711ecbd10f0e9aebbdbeb7c0e1e021353d9cac80417f80
 <head>
     <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">
     <meta charset=\"utf-8\">
-    <!-- Title and other stuffs -->
-    <title>MetaLeague - Fantasy eSports</title>
+
+    <title>";
+        // line 7
+        $this->displayBlock('title', $context, $blocks);
+        echo "</title>
+
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
     <meta name=\"description\" content=\"\">
     <meta name=\"keywords\" content=\"\">
@@ -32,29 +39,44 @@ class __TwigTemplate_50b0e117d73b3711ecbd10f0e9aebbdbeb7c0e1e021353d9cac80417f80
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 
     <!-- Stylesheets -->
-    <link href=\"style/bootstrap.css\" rel=\"stylesheet\">
-    <!-- Pretty Photo -->
-    <link href=\"style/prettyPhoto.css\" rel=\"stylesheet\">
-    <!-- Flex slider -->
-    <link href=\"style/flexslider.css\" rel=\"stylesheet\">
-    <!-- Font awesome icon -->
-    <link rel=\"stylesheet\" href=\"style/font-awesome.css\">
-    <!-- Parallax slider -->
-    <link rel=\"stylesheet\" href=\"style/slider.css\">
-    <!-- Refind slider -->
-    <link rel=\"stylesheet\" href=\"style/refineslide.css\">
-    <!-- Main stylesheet -->
-    <link href=\"style/style.css\" rel=\"stylesheet\">
-    <!-- Stylesheet for Color -->
-    <link href=\"style/blue.css\" rel=\"stylesheet\">
+    <link href=\"";
+        // line 17
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("style/bootstrap.css"), "html", null, true);
+        echo "\" rel=\"stylesheet\">
+    <link rel=\"stylesheet\" href=\"";
+        // line 18
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("style/font-awesome.css"), "html", null, true);
+        echo "\">
 
+    <!-- Main stylesheet -->
+    <link href=\"";
+        // line 21
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("style/style.css"), "html", null, true);
+        echo "\" rel=\"stylesheet\">
+    <link href=\"";
+        // line 22
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("style/blue.css"), "html", null, true);
+        echo "\" rel=\"stylesheet\">
+
+    ";
+        // line 24
+        $this->displayBlock('stylesheets', $context, $blocks);
+        // line 25
+        echo "
     <!-- HTML5 Support for IE -->
     <!--[if lt IE 9]>
-    <script src=\"js/html5shim.js\"></script>
+    <script src=\"";
+        // line 28
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/html5shim.js"), "html", null, true);
+        echo "\"></script>
     <![endif]-->
 
     <!-- Favicon -->
-    <link rel=\"shortcut icon\" href=\"img/favicon/favicon.png\">
+    <link rel=\"shortcut icon\" href=\"";
+        // line 32
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("img/favicon/favicon.png"), "html", null, true);
+        echo "\">
+
 </head>
 
 <body>
@@ -75,36 +97,10 @@ class __TwigTemplate_50b0e117d73b3711ecbd10f0e9aebbdbeb7c0e1e021353d9cac80417f80
             <div class=\"col-md-8 col-sm-9\">
 
                 <!-- Navigation -->
-
-                <div class=\"navbar bs-docs-nav\" role=\"banner\">
-                    <div class=\"container\">
-                        <div class=\"navbar-header\">
-                            <button class=\"navbar-toggle\" type=\"button\" data-toggle=\"collapse\" data-target=\".bs-navbar-collapse\">
-                                <span class=\"sr-only\">Toggle navigation</span>
-                                <span class=\"icon-bar\"></span>
-                                <span class=\"icon-bar\"></span>
-                                <span class=\"icon-bar\"></span>
-                            </button>
-                        </div>
-
-                        <nav class=\"collapse navbar-collapse bs-navbar-collapse\" role=\"navigation\">
-                            <ul class=\"nav navbar-nav\">
-                                <li><a href=\"index.html\">Home</a></li>
-                                <li class=\"dropdown\">
-                                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Leagues <b class=\"caret\"></b></a>
-                                    <ul class=\"dropdown-menu\">
-                                        <li><a href=\"404-1.html\">League of Legends 5v5</a></li>
-                                        <li><a href=\"about1.html\">League of Legends Survivor Pool</a></li>
-                                        <li><a href=\"faq.html\">Counter-Strike 5v5</a></li>
-                                        <li><a href=\"faq.html\">Counter-Strike Survivor Pool</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href=\"contactus1.html\" class=\"color\"><span class=\"color\">Login</span></a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-
+                ";
+        // line 54
+        echo twig_include($this->env, $context, "::navigation.html.twig");
+        echo "
 
             </div>
 
@@ -117,9 +113,9 @@ class __TwigTemplate_50b0e117d73b3711ecbd10f0e9aebbdbeb7c0e1e021353d9cac80417f80
 <div class=\"sep\"></div>
 
 ";
-        // line 100
+        // line 66
         $this->displayBlock('body', $context, $blocks);
-        // line 101
+        // line 67
         echo "
 <!-- Footer starts -->
 <footer>
@@ -205,26 +201,46 @@ class __TwigTemplate_50b0e117d73b3711ecbd10f0e9aebbdbeb7c0e1e021353d9cac80417f80
 <span class=\"totop\"><a href=\"#\"><i class=\"icon-chevron-up\"></i></a></span>
 
 <!-- JS -->
-<script src=\"js/jquery.js\"></script> <!-- jQuery -->
-<script src=\"js/bootstrap.js\"></script> <!-- Bootstrap -->
-<script src=\"js/jquery.isotope.js\"></script> <!-- Isotope -->
-<script src=\"js/jquery.prettyPhoto.js\"></script> <!-- Pretty Photo -->
-<script src=\"js/filter.js\"></script> <!-- Filter for support page -->
+<script src=\"";
+        // line 152
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/jquery.js"), "html", null, true);
+        echo "\"></script> <!-- jQuery -->
+<script src=\"";
+        // line 153
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/bootstrap.js"), "html", null, true);
+        echo "\"></script> <!-- Bootstrap -->
+<script src=\"";
+        // line 154
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/custom.js"), "html", null, true);
+        echo "\"></script> <!-- Custom codes -->
 
-<script src=\"js/jquery.flexslider-min.js\"></script> <!-- Flex slider -->
-<script src=\"js/jquery.cslider.js\"></script> <!-- Parallax Slider -->
-<script src=\"js/modernizr.custom.28468.js\"></script> <!-- Parallax slider extra -->
-
-<script src=\"js/jquery.carouFredSel-6.1.0-packed.js\"></script> <!-- Carousel for recent posts -->
-<script src=\"js/jquery.refineslide.min.js\"></script> <!-- Refind slider -->
-<script src=\"js/custom.js\"></script> <!-- Custom codes -->
-
+";
+        // line 156
+        $this->displayBlock('scripts', $context, $blocks);
+        // line 157
+        echo "
 </body>
 </html>";
     }
 
-    // line 100
+    // line 7
+    public function block_title($context, array $blocks = array())
+    {
+        echo "MetaLeague | Fantasy eSports";
+    }
+
+    // line 24
+    public function block_stylesheets($context, array $blocks = array())
+    {
+    }
+
+    // line 66
     public function block_body($context, array $blocks = array())
+    {
+    }
+
+    // line 156
+    public function block_scripts($context, array $blocks = array())
     {
     }
 
@@ -233,8 +249,13 @@ class __TwigTemplate_50b0e117d73b3711ecbd10f0e9aebbdbeb7c0e1e021353d9cac80417f80
         return "::base.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  20 => 1,  53 => 21,  480 => 162,  474 => 161,  469 => 158,  461 => 155,  457 => 153,  453 => 151,  444 => 149,  440 => 148,  437 => 147,  435 => 146,  430 => 144,  427 => 143,  423 => 142,  413 => 134,  409 => 132,  407 => 131,  402 => 130,  398 => 129,  393 => 126,  387 => 122,  384 => 121,  381 => 120,  379 => 119,  374 => 116,  368 => 112,  365 => 111,  362 => 110,  360 => 109,  355 => 106,  341 => 105,  337 => 103,  322 => 101,  314 => 99,  312 => 98,  309 => 97,  305 => 95,  298 => 91,  294 => 90,  285 => 89,  283 => 88,  278 => 86,  268 => 85,  264 => 84,  258 => 81,  252 => 80,  247 => 78,  241 => 77,  229 => 73,  220 => 70,  214 => 69,  177 => 65,  169 => 60,  140 => 55,  132 => 51,  128 => 49,  107 => 36,  61 => 13,  273 => 96,  269 => 94,  254 => 92,  243 => 88,  240 => 86,  238 => 85,  235 => 74,  230 => 82,  227 => 100,  224 => 71,  221 => 77,  219 => 76,  217 => 75,  208 => 68,  204 => 72,  179 => 69,  159 => 61,  143 => 56,  135 => 53,  119 => 42,  102 => 32,  71 => 19,  67 => 15,  63 => 15,  59 => 25,  38 => 6,  94 => 28,  89 => 20,  85 => 25,  75 => 17,  68 => 29,  56 => 9,  87 => 25,  21 => 2,  26 => 6,  93 => 28,  88 => 6,  78 => 21,  46 => 7,  27 => 4,  44 => 12,  31 => 4,  28 => 3,  201 => 92,  196 => 90,  183 => 82,  171 => 61,  166 => 71,  163 => 62,  158 => 67,  156 => 66,  151 => 63,  142 => 59,  138 => 54,  136 => 56,  121 => 100,  117 => 44,  105 => 40,  91 => 27,  62 => 23,  49 => 20,  24 => 4,  25 => 3,  19 => 1,  79 => 34,  72 => 16,  69 => 25,  47 => 9,  40 => 8,  37 => 10,  22 => 2,  246 => 90,  157 => 56,  145 => 46,  139 => 45,  131 => 52,  123 => 101,  120 => 40,  115 => 43,  111 => 37,  108 => 36,  101 => 32,  98 => 31,  96 => 31,  83 => 25,  74 => 14,  66 => 15,  55 => 15,  52 => 21,  50 => 10,  43 => 8,  41 => 7,  35 => 5,  32 => 4,  29 => 3,  209 => 82,  203 => 78,  199 => 67,  193 => 73,  189 => 71,  187 => 84,  182 => 66,  176 => 64,  173 => 65,  168 => 72,  164 => 59,  162 => 57,  154 => 58,  149 => 51,  147 => 58,  144 => 49,  141 => 48,  133 => 55,  130 => 41,  125 => 44,  122 => 43,  116 => 41,  112 => 42,  109 => 34,  106 => 36,  103 => 32,  99 => 31,  95 => 28,  92 => 21,  86 => 28,  82 => 22,  80 => 19,  73 => 19,  64 => 17,  60 => 6,  57 => 11,  54 => 10,  51 => 14,  48 => 13,  45 => 17,  42 => 7,  39 => 9,  36 => 5,  33 => 4,  30 => 7,);
+        return array (  243 => 156,  238 => 66,  233 => 24,  227 => 7,  221 => 157,  219 => 156,  214 => 154,  210 => 153,  206 => 152,  119 => 67,  117 => 66,  102 => 54,  77 => 32,  70 => 28,  65 => 25,  63 => 24,  58 => 22,  54 => 21,  48 => 18,  44 => 17,  31 => 7,  23 => 1,);
     }
 }

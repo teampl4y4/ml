@@ -1,8 +1,16 @@
 {% extends '::base.html.twig' %}
 
+{% block scripts %}
+    <script src="js/jquery.flexslider-min.js"></script> <!-- Flex slider -->
+    <script src="js/jquery.carouFredSel-6.1.0-packed.js"></script> <!-- Carousel for recent posts -->
+    <script src="js/jquery.refineslide.min.js"></script> <!-- Refind slider -->
+{% endblock %}
+
 {% block body %}
 <!-- Recent posts carousel starts -->
 
+
+{% if games|length > 0 %}
 <div class="recent-posts">
     <div class="container">
         <div class="row">
@@ -15,8 +23,6 @@
                 </div>
                 <div class="clearfix"></div>
                 <ul class="rps-carousel">
-                    <!-- Recent posts #1 -->
-                    <!-- Each carousel should be enclosed inside "li" tag -->
                     {% for game in games  %}
                     <li>
                         <div class="rp-item">
@@ -38,11 +44,12 @@
     </div>
 </div>
 
+<div class="sep"></div>
+{% endif %}
+
 <!-- Recent Posts ends -->
 
 <!-- Below slider starts -->
-
-<div class="sep"></div>
 <div class="slider-features">
     <div class="container">
         <div class="row">

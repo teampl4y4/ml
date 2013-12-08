@@ -13,7 +13,7 @@ class __TwigTemplate_50b0e117d73b3711ecbd10f0e9aebbdbeb7c0e1e021353d9cac80417f80
             'title' => array($this, 'block_title'),
             'stylesheets' => array($this, 'block_stylesheets'),
             'body' => array($this, 'block_body'),
-            'javascripts' => array($this, 'block_javascripts'),
+            'scripts' => array($this, 'block_scripts'),
         );
     }
 
@@ -21,52 +21,224 @@ class __TwigTemplate_50b0e117d73b3711ecbd10f0e9aebbdbeb7c0e1e021353d9cac80417f80
     {
         // line 1
         echo "<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset=\"UTF-8\" />
-        <title>";
-        // line 5
+<html lang=\"en\">
+<head>
+    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">
+    <meta charset=\"utf-8\">
+
+    <title>";
+        // line 7
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
-        ";
-        // line 6
+
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <meta name=\"description\" content=\"\">
+    <meta name=\"keywords\" content=\"\">
+    <meta name=\"author\" content=\"\">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+    <!-- Stylesheets -->
+    <link href=\"style/bootstrap.css\" rel=\"stylesheet\">
+    <link rel=\"stylesheet\" href=\"style/font-awesome.css\">
+
+    <!-- Main stylesheet -->
+    <link href=\"style/style.css\" rel=\"stylesheet\">
+    <link href=\"style/blue.css\" rel=\"stylesheet\">
+
+    ";
+        // line 24
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 7
-        echo "        <link rel=\"icon\" type=\"image/x-icon\" href=\"";
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("favicon.ico"), "html", null, true);
-        echo "\" />
-    </head>
-    <body>
-        ";
-        // line 10
-        $this->displayBlock('body', $context, $blocks);
-        // line 11
-        echo "        ";
-        $this->displayBlock('javascripts', $context, $blocks);
-        // line 12
-        echo "    </body>
-</html>
+        // line 25
+        echo "
+    <!-- HTML5 Support for IE -->
+    <!--[if lt IE 9]>
+    <script src=\"js/html5shim.js\"></script>
+    <![endif]-->
+
+    <!-- Favicon -->
+    <link rel=\"shortcut icon\" href=\"img/favicon/favicon.png\">
+
+</head>
+
+<body>
+
+<!-- Header starts -->
+<header>
+    <div class=\"container\">
+        <div class=\"row\">
+
+            <div class=\"col-md-4 col-sm-3\">
+                <!-- Logo. Use class \"color\" to add color to the text. -->
+                <div class=\"logo\">
+                    <h1><a href=\"#\">Meta<span class=\"color bold\">League</span></a></h1>
+                    <p class=\"meta\">Fantasy eSports</p>
+                </div>
+            </div>
+
+            <div class=\"col-md-8 col-sm-9\">
+
+                <!-- Navigation -->
+                <div class=\"navbar bs-docs-nav\" role=\"banner\">
+                    <div class=\"container\">
+                        <div class=\"navbar-header\">
+                            <button class=\"navbar-toggle\" type=\"button\" data-toggle=\"collapse\" data-target=\".bs-navbar-collapse\">
+                                <span class=\"sr-only\">Toggle navigation</span>
+                                <span class=\"icon-bar\"></span>
+                                <span class=\"icon-bar\"></span>
+                                <span class=\"icon-bar\"></span>
+                            </button>
+                        </div>
+
+                        <nav class=\"collapse navbar-collapse bs-navbar-collapse\" role=\"navigation\">
+                            <ul class=\"nav navbar-nav\">
+                                <li><a href=\"/\">Home</a></li>
+                                <li class=\"dropdown\">
+                                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Leagues <b class=\"caret\"></b></a>
+                                    <ul class=\"dropdown-menu\">
+                                        <li><a href=\"404-1.html\">League of Legends 5v5</a></li>
+                                        <li><a href=\"about1.html\">League of Legends Survivor Pool</a></li>
+                                        <li><a href=\"faq.html\">Counter-Strike 5v5</a></li>
+                                        <li><a href=\"faq.html\">Counter-Strike Survivor Pool</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href=\"contactus1.html\" class=\"color\"><span class=\"color\">Login</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<!-- Seperator -->
+
+<div class=\"sep\"></div>
+
 ";
+        // line 94
+        $this->displayBlock('body', $context, $blocks);
+        // line 95
+        echo "
+<!-- Footer starts -->
+<footer>
+    <div class=\"container\">
+        <div class=\"row\">
+            <div class=\"col-md-12\">
+
+                <div class=\"row\">
+
+                    <div class=\"col-md-4\">
+                        <div class=\"widget\">
+                            <h5>Contact</h5>
+                            <hr />
+                            <p>Praesent ultricies enim ac ipsum aliquet . Nullam justo nunc, dignissim at convallis posuere, sodales eu orci. </p>
+                            <hr />
+                            <i class=\"icon-home\"></i> &nbsp; 123, Some Area. Los Angeles, CA, 54321.
+                            <hr />
+                            <i class=\"icon-phone\"></i> &nbsp; +239-3823-3434
+                            <hr />
+                            <i class=\"icon-envelope-alt\"></i> &nbsp; <a href=\"mailto:#\">someone@company.com</a>
+                            <hr />
+                            <div class=\"social\">
+                                <a href=\"#\"><i class=\"icon-facebook facebook\"></i></a>
+                                <a href=\"#\"><i class=\"icon-twitter twitter\"></i></a>
+                                <a href=\"#\"><i class=\"icon-linkedin linkedin\"></i></a>
+                                <a href=\"#\"><i class=\"icon-google-plus google-plus\"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=\"col-md-4\">
+                        <div class=\"widget\">
+                            <h5>About Us</h5>
+                            <hr />
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum dolor eget nisi fermentum quis hendrerit magna vestibulum. Curabitur pulvinar ornare vulputate scelerisque scelerisque ut consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum dolor eget nisi fermentum quis hendrerit magna vestibulum..</p>
+                        </div>
+                    </div>
+
+                    <div class=\"col-md-4\">
+                        <div class=\"widget\">
+                            <h5>Links Goes Here</h5>
+                            <hr />
+                            <div class=\"two-col\">
+                                <div class=\"col-left\">
+                                    <ul>
+                                        <li><a href=\"#\">Condimentum</a></li>
+                                        <li><a href=\"#\">Etiam at</a></li>
+                                        <li><a href=\"#\">Fusce vel</a></li>
+                                        <li><a href=\"#\">Vivamus</a></li>
+                                        <li><a href=\"#\">Pellentesque</a></li>
+                                        <li><a href=\"#\">Vivamus</a></li>
+                                    </ul>
+                                </div>
+                                <div class=\"col-right\">
+                                    <ul>
+                                        <li><a href=\"#\">Condimentum</a></li>
+                                        <li><a href=\"#\">Etiam at</a></li>
+                                        <li><a href=\"#\">Fusce vel</a></li>
+                                        <li><a href=\"#\">Vivamus</a></li>
+                                        <li><a href=\"#\">Pellentesque</a></li>
+                                        <li><a href=\"#\">Vivamus</a></li>
+                                    </ul>
+                                </div>
+                                <div class=\"clearfix\"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr />
+                <!-- Copyright info -->
+                <p class=\"copy\">Copyright &copy; 2012 | <a href=\"#\">Your Site</a> - <a href=\"#\">Home</a> | <a href=\"#\">About Us</a> | <a href=\"#\">Service</a> | Designed by <a href=\"http://responsivewebinc.com/bootstrap-themes\">Bootstrap Themes</a></p>
+            </div>
+        </div>
+        <div class=\"clearfix\"></div>
+    </div>
+</footer>
+
+<!-- Footer ends -->
+
+<!-- Scroll to top -->
+<span class=\"totop\"><a href=\"#\"><i class=\"icon-chevron-up\"></i></a></span>
+
+<!-- JS -->
+<script src=\"js/jquery.js\"></script> <!-- jQuery -->
+<script src=\"js/bootstrap.js\"></script> <!-- Bootstrap -->
+<script src=\"js/custom.js\"></script> <!-- Custom codes -->
+
+";
+        // line 184
+        $this->displayBlock('scripts', $context, $blocks);
+        // line 185
+        echo "
+</body>
+</html>";
     }
 
-    // line 5
+    // line 7
     public function block_title($context, array $blocks = array())
     {
-        echo "Welcome!";
+        echo "MetaLeague | Fantasy eSports";
     }
 
-    // line 6
+    // line 24
     public function block_stylesheets($context, array $blocks = array())
     {
     }
 
-    // line 10
+    // line 94
     public function block_body($context, array $blocks = array())
     {
     }
 
-    // line 11
-    public function block_javascripts($context, array $blocks = array())
+    // line 184
+    public function block_scripts($context, array $blocks = array())
     {
     }
 
@@ -75,13 +247,8 @@ class __TwigTemplate_50b0e117d73b3711ecbd10f0e9aebbdbeb7c0e1e021353d9cac80417f80
         return "::base.html.twig";
     }
 
-    public function isTraitable()
-    {
-        return false;
-    }
-
     public function getDebugInfo()
     {
-        return array (  64 => 10,  42 => 10,  23 => 1,  54 => 14,  31 => 7,  549 => 162,  543 => 161,  538 => 158,  530 => 155,  526 => 153,  522 => 151,  512 => 149,  505 => 148,  502 => 147,  497 => 146,  491 => 144,  488 => 143,  483 => 142,  473 => 134,  469 => 132,  466 => 131,  460 => 130,  455 => 129,  450 => 126,  444 => 122,  441 => 121,  437 => 120,  434 => 119,  429 => 116,  423 => 112,  420 => 111,  416 => 110,  413 => 109,  408 => 106,  394 => 105,  390 => 103,  375 => 101,  365 => 99,  362 => 98,  359 => 97,  355 => 95,  348 => 91,  344 => 90,  330 => 89,  327 => 88,  321 => 86,  307 => 85,  302 => 84,  295 => 81,  287 => 80,  279 => 78,  256 => 73,  251 => 71,  239 => 69,  231 => 68,  219 => 67,  201 => 66,  143 => 49,  138 => 44,  134 => 43,  131 => 42,  122 => 37,  117 => 36,  108 => 31,  102 => 28,  92 => 25,  84 => 21,  72 => 15,  69 => 11,  51 => 13,  48 => 7,  35 => 7,  29 => 5,  312 => 96,  308 => 94,  293 => 92,  285 => 90,  281 => 88,  277 => 86,  274 => 85,  271 => 77,  264 => 74,  261 => 81,  257 => 79,  253 => 77,  249 => 76,  247 => 70,  237 => 73,  204 => 69,  198 => 65,  194 => 64,  150 => 54,  147 => 51,  127 => 41,  112 => 32,  96 => 25,  76 => 19,  71 => 17,  55 => 15,  114 => 22,  109 => 31,  106 => 20,  101 => 19,  85 => 22,  77 => 12,  67 => 15,  28 => 4,  39 => 7,  110 => 20,  89 => 16,  65 => 14,  63 => 13,  58 => 10,  34 => 5,  26 => 6,  98 => 40,  88 => 17,  80 => 15,  46 => 12,  44 => 11,  36 => 6,  43 => 7,  57 => 11,  50 => 7,  47 => 12,  38 => 6,  27 => 3,  227 => 92,  224 => 91,  221 => 90,  207 => 70,  197 => 74,  195 => 65,  192 => 72,  189 => 61,  186 => 60,  181 => 67,  178 => 61,  173 => 58,  162 => 58,  158 => 56,  155 => 55,  152 => 55,  142 => 52,  136 => 44,  133 => 43,  130 => 42,  120 => 40,  105 => 31,  100 => 27,  78 => 40,  75 => 24,  60 => 12,  53 => 5,  40 => 6,  32 => 4,  24 => 4,  25 => 3,  22 => 2,  19 => 1,  232 => 72,  226 => 71,  222 => 76,  215 => 73,  211 => 84,  208 => 70,  202 => 68,  196 => 64,  193 => 63,  187 => 62,  183 => 62,  180 => 59,  171 => 54,  166 => 51,  163 => 50,  160 => 49,  157 => 48,  149 => 42,  146 => 41,  140 => 46,  137 => 37,  129 => 36,  124 => 35,  121 => 24,  118 => 36,  115 => 39,  111 => 32,  107 => 28,  104 => 28,  97 => 24,  93 => 18,  90 => 21,  81 => 14,  70 => 23,  66 => 13,  62 => 11,  59 => 6,  56 => 12,  52 => 10,  49 => 9,  45 => 6,  41 => 9,  37 => 5,  33 => 6,  30 => 3,);
+        return array (  241 => 184,  236 => 94,  231 => 24,  225 => 7,  219 => 185,  217 => 184,  126 => 95,  124 => 94,  53 => 25,  51 => 24,  31 => 7,  23 => 1,  102 => 47,  93 => 40,  82 => 35,  73 => 31,  67 => 27,  63 => 26,  49 => 14,  47 => 13,  42 => 10,  39 => 9,  32 => 4,  29 => 3,);
     }
 }

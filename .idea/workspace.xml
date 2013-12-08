@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c853d74-f482-4f9e-b2d6-0491bbf4cd63" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/dev/twig/4c/f1/1029a44aaa9fd0a7eef6be295540335e5f812b24f54ece84afb33210f279.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/dev/twig/8d/a0/341bb6733a534b43abb933bedd78a0b13b93b6181a9d3ea256cc54ee02ed.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/dev/twig/16/78/397687f24044319d3a7d7dad03199219dc58e46b9a03a21215fa83b39d69.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/dev/twig/c3/68/3ad2b4d0f7c6f65fc8ca4eb400d7861229d1cc943667e0cf18d34534839a.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cache/dev/twig/37/a9/5853038c67a44a43cc5ad47e77355e579bcb4f781cf564ec75c76695cd4b.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Controller/GameController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Tests/Controller/GameControllerTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Form/GameType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Resources/views/Game/edit.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Resources/views/Game/index.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Resources/views/Game/new.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Resources/views/Game/show.html.twig" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/a1fb6f75723cb04c618a1b478d411870c330e38a#indexAction.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/a1fb6f75723cb04c618a1b478d411870c330e38a.cache.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Entity/User.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/style/filters.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/navigation.html.twig" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/aa3b17a06c54069051111edd177f4b93a6b0ac40#panelAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/aa3b17a06c54069051111edd177f4b93a6b0ac40#searchBarAction.cache.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/05/ea/05ea05" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/0b/30/9f300b" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/1a/52/d6521a" afterPath="" />
@@ -37,6 +29,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/64/d1/efd164" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/67/12/851267" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/70/b3/5eb370" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/72/b7/b2b772" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/78/1c/bf1c78" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/79/48/124879" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/80/65/fe6580" afterPath="" />
@@ -55,13 +48,68 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/c3/eb/5bebc3" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/c4/ed/c6edc4" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/ca/f2/36f2ca" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/cc/38/a238cc" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/ce/9e/999ece" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/ce/cd/6bcdce" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/d0/92/5c92d0" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/d1/f9/13f9d1" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/dc/e9/5fe9dc" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/de/4d/944dde" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/e9/3c/493ce9" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/ec/03/c003ec" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/f4/99/9799f4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/templates.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/05/81/4455824685972547987de72adfeaa1c7950819ce54ce3abfdb79958ae319.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/0c/db/80d2ec14b75159aba630d10e75bf0b26154fcd791cc46c2d79f66b3a37de.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/0f/e9/46120b97f6e6b172c9aafc7d083b4b50c8ae908f6fb99591c6bb4b6f24df.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/16/65/cdfa18eb51751901324c145461c2f85394d1ccc00a49ef440c62b37eb386.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/16/78/397687f24044319d3a7d7dad03199219dc58e46b9a03a21215fa83b39d69.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/16/bf/0ea388d9aab0f5ccb4db728ec34660e6daf9b73cb2a31f8354c7caf8e7ec.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/18/40/8a75db1f32b40c80cdf9a800a6f0daf02135f6fc8c932c2ddce2e956b71c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/24/35/9c413e39618a060f4c9c9079e2dd7828350111c3e8cc3fe1718ad1199b0a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/2a/a8/c0ac43af23f4ea0c8fc4f99ab2e90551a9ace5897aeda682bf4bce706b23.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/37/a9/5853038c67a44a43cc5ad47e77355e579bcb4f781cf564ec75c76695cd4b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/43/9b/502a8bb4d6a366dcb6ba2099422c867c85a8f6f8302f8f55cd13f7085fa0.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/49/ae/5ae1561eb1a7acb1beb42bf7ab0949cda448c84014e9f4958b86717c3d04.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/4c/f1/1029a44aaa9fd0a7eef6be295540335e5f812b24f54ece84afb33210f279.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/58/b7/9f3ff94228d7682bc34895142c7d54f3c8888247fd48ad3785459b96a82f.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/59/bd/39e23259a4b16384585e1ec376227e0eb2e049e425092fa2db0d44568a88.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/61/98/1e85d0d36b422608854e191e1e7af5486cc7469d215915a03a00789da25d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/62/f7/4fa1bcbcab8d84510ec53f1717b7678643f1f9d04502cb43df886accfacf.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/67/b4/72cb6bdec87f349d4ce132565b0f0191c0cacbd874b0efbf882e22827259.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/7d/55/69d3823703f1bff35999ec98c1053b82fd77bd237af24f147d87dc51c46b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/7e/0f/c31b31baa7e7c80f959833169de8cc0b3c0f328fefe967a8d55fc9544992.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/7f/c5/33efce1aa40608f86c9e7f421035406390604d80397eb7d71da28355d96e.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/80/64/9245b9eac5aebf09336aa4bd74a147807542902c7559575935dc974a9f7e.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/86/a4/30092347a0ce242b92442f1328f479036c76317b08b37f4ef72c0aa0d372.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/86/d8/fec87309315c5099927bd27e442d710796f26641fd735b97a4925a0843c7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/8c/21/d675c615f86068806d9bead56de381e655ff1bc235750e7181174db53d18.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/8d/66/252d8f9dcfae1bedb7bb8d3195b51c6d3a373e60d31a7bd08be8436ababa.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/8d/a0/341bb6733a534b43abb933bedd78a0b13b93b6181a9d3ea256cc54ee02ed.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/8e/7f/bc514b7e4c4e72d318eb41f6f123ca07779fa85596971f7af41ffdd290b7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/99/8d/e6914d7ffe19e34ddae547f3fc9d1b3c10f25b42fea6f1ac39796fd17e14.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/a1/d5/ea02e4a527bbf7a035652cd71f12ff46806aede5eaae3de881d3cdb48676.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/a7/d1/54aff7dca550f809890ebe49ec59b421af11520dc896fa26b9ce72539bef.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/aa/92/43f02ea5f07e850393b68b4c718633b84fc8691603bdb92cdded4ce4c9d6.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/ab/51/293722c66b2a1b106deb77875cb4de0610f491afe19fe6475bede667421a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/b0/97/392277f11397ae844043cbccc50e498b4531d4d0ffe153edd93f7fbe7523.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/b6/af/1e12ee1aea29e52413012977aea09b828b5693bdf2f219ece26d79e09452.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/b8/b3/e25b910c3425a2a02628903d2b7cecd37a13d57673a6183725d25d4dc569.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/bb/ad/4263f44fcdc8c59047c02e6608e39290f81b91ad7e236a63ccdb455780f1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/c2/1c/d9a48ed128f35ff12a4483b2b24e7eb639374f796854c81081cc77754090.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/c3/68/3ad2b4d0f7c6f65fc8ca4eb400d7861229d1cc943667e0cf18d34534839a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/c5/8d/6d437ba82108c110ff5e6b53a019103dbd9b1866f68d71b58100b3924b80.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/c6/68/d4282c488b7e87b5e829027d06465449d1d7854be4fb0d31524a18d18ba9.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/d0/63/9a8f00b46beee34ad5d8ac80d952719cc6de13e81eb6406f41fc140c835c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/d1/f5/358d98988ef8d2137c2de5b1488f1bdc40532a3baa1619aa503dbf3f09a7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/d2/09/b89db4724439bca4e75daaca51a74d6aea4353f489a32003b4320675a2c3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/d7/75/b4b3d5384490ef6e7f7774ea9481ef763ae0361eede1cd9d53da1a8ee8c1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/e2/86/7936bb6895b5d44b521daf4433dc22010ac9fb39158baa28d3b1b0d81a8b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/f6/8a/1349409b54e743c026cbc804f80c607120ac0a35e70fc7ab50b358f87915.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/f7/fa/72ee021ce9bfc873dc3c24b92d614087796c24c389d0cd79d9e99d852f5a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/f8/aa/907b17376a19425183c4d9c4a69e586e5d62c556a190f57b0719a56a49f2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/f9/7c/a05fe9599ea7b598d5e8dd772e9eaf9f0cd9ba5bffcf6ff36e2d3aa7e6b1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/f9/9a/f87923aa41ee5f41db57c363e11acfac12863ab3cdc6c09a525d90593849.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev_old/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#createForm.cache.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev_old/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#createFormBuilder.cache.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev_old/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#createNotFoundException.cache.php" afterPath="" />
@@ -106,77 +154,115 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev_old/classes.php.meta" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev_old/profiler/58/93/c09358" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev_old/profiler/index.csv" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/16/bf/0ea388d9aab0f5ccb4db728ec34660e6daf9b73cb2a31f8354c7caf8e7ec.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/16/bf/0ea388d9aab0f5ccb4db728ec34660e6daf9b73cb2a31f8354c7caf8e7ec.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/f6/8a/1349409b54e743c026cbc804f80c607120ac0a35e70fc7ab50b358f87915.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/f6/8a/1349409b54e743c026cbc804f80c607120ac0a35e70fc7ab50b358f87915.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/appProdUrlGenerator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/assetic/config/4/43a80f0e087752a2d4724591f85aa0e1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/templates.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/18/40/8a75db1f32b40c80cdf9a800a6f0daf02135f6fc8c932c2ddce2e956b71c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/24/35/9c413e39618a060f4c9c9079e2dd7828350111c3e8cc3fe1718ad1199b0a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/27/8b/888f50b1fd855905e5f20352b92ca1dd0210f24cf1068e56499178eb98b1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/2b/39/99f0cc0d9b2589e24ed61db81ac19fdaf1e5182df105f80963497fe4c286.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/48/5e/b5bba0c71a7400f6ed8b8766cd35b514f5a80cff3db248e34e176cc43219.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/49/ae/5ae1561eb1a7acb1beb42bf7ab0949cda448c84014e9f4958b86717c3d04.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/4c/d0/a377452e5ca602a2a8cff6ebc84055db0136633c805e3408511f5a1b3aac.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/4c/f6/1bab78641f13ac117d02bd4da279d767feb1f8637c755881e70c4b24d3c9.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/62/f7/4fa1bcbcab8d84510ec53f1717b7678643f1f9d04502cb43df886accfacf.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/67/b4/72cb6bdec87f349d4ce132565b0f0191c0cacbd874b0efbf882e22827259.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/74/4d/ad76d8b98b653da75f830ef5d3582aa35fecc970f98b04de49510e5d3c0f.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/7f/c5/33efce1aa40608f86c9e7f421035406390604d80397eb7d71da28355d96e.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/8c/21/d675c615f86068806d9bead56de381e655ff1bc235750e7181174db53d18.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/8e/7f/bc514b7e4c4e72d318eb41f6f123ca07779fa85596971f7af41ffdd290b7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/8f/b7/817ab43c277bd5d9053ed82cdbb83e0929f3a7ce18b40e633bcb58e5733a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/a1/89/e5940685f75ad77a7a56101ad8f27a23c7998ef85fdf69641af807043bae.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/a7/d1/54aff7dca550f809890ebe49ec59b421af11520dc896fa26b9ce72539bef.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/aa/92/43f02ea5f07e850393b68b4c718633b84fc8691603bdb92cdded4ce4c9d6.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/b0/97/392277f11397ae844043cbccc50e498b4531d4d0ffe153edd93f7fbe7523.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/b3/24/b3c173e49c586522b62441a1a1f480aa358d14dfe2de6334535d746579a2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/b6/af/1e12ee1aea29e52413012977aea09b828b5693bdf2f219ece26d79e09452.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/b8/b3/e25b910c3425a2a02628903d2b7cecd37a13d57673a6183725d25d4dc569.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/c9/b0/99795bc58a27face09c6cac89d0873fc0fa5ced45b8dad0a4a096849b4f6.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/d1/f5/358d98988ef8d2137c2de5b1488f1bdc40532a3baa1619aa503dbf3f09a7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/e8/e8/a285e79e876446d80397cc210e945b18cd83c948ce93e0c249d66767d809.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/ee/6f/b4c5c606cad6468074b1a982ffd8dedde019a9cbf287b3dfa6106111cb70.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/f8/aa/907b17376a19425183c4d9c4a69e586e5d62c556a190f57b0719a56a49f2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/f9/7c/a05fe9599ea7b598d5e8dd772e9eaf9f0cd9ba5bffcf6ff36e2d3aa7e6b1.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/1a/59/1a971fbefd07cbc2edf32dcf7b63938eaaee3cf2159493f517492b43563e.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/1a/59/1a971fbefd07cbc2edf32dcf7b63938eaaee3cf2159493f517492b43563e.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/4c/f6/1bab78641f13ac117d02bd4da279d767feb1f8637c755881e70c4b24d3c9.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/4c/f6/1bab78641f13ac117d02bd4da279d767feb1f8637c755881e70c4b24d3c9.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/61/98/1e85d0d36b422608854e191e1e7af5486cc7469d215915a03a00789da25d.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/61/98/1e85d0d36b422608854e191e1e7af5486cc7469d215915a03a00789da25d.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/8d/66/252d8f9dcfae1bedb7bb8d3195b51c6d3a373e60d31a7bd08be8436ababa.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/8d/66/252d8f9dcfae1bedb7bb8d3195b51c6d3a373e60d31a7bd08be8436ababa.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/ab/51/293722c66b2a1b106deb77875cb4de0610f491afe19fe6475bede667421a.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/ab/51/293722c66b2a1b106deb77875cb4de0610f491afe19fe6475bede667421a.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/86/a4/30092347a0ce242b92442f1328f479036c76317b08b37f4ef72c0aa0d372.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/86/a4/30092347a0ce242b92442f1328f479036c76317b08b37f4ef72c0aa0d372.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/59/bd/39e23259a4b16384585e1ec376227e0eb2e049e425092fa2db0d44568a88.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/59/bd/39e23259a4b16384585e1ec376227e0eb2e049e425092fa2db0d44568a88.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/bb/ad/4263f44fcdc8c59047c02e6608e39290f81b91ad7e236a63ccdb455780f1.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/bb/ad/4263f44fcdc8c59047c02e6608e39290f81b91ad7e236a63ccdb455780f1.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/8e/6e/42d2213cc0661697369d7b2c3ca60032c78b31f1cb2eff7673f994713e6a.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/8e/6e/42d2213cc0661697369d7b2c3ca60032c78b31f1cb2eff7673f994713e6a.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/05/81/4455824685972547987de72adfeaa1c7950819ce54ce3abfdb79958ae319.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/05/81/4455824685972547987de72adfeaa1c7950819ce54ce3abfdb79958ae319.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/0f/e9/46120b97f6e6b172c9aafc7d083b4b50c8ae908f6fb99591c6bb4b6f24df.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/0f/e9/46120b97f6e6b172c9aafc7d083b4b50c8ae908f6fb99591c6bb4b6f24df.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/prod/twig/8e/6e/42d2213cc0661697369d7b2c3ca60032c78b31f1cb2eff7673f994713e6a.php" afterPath="$PROJECT_DIR$/app/cache/prod/twig/8e/6e/42d2213cc0661697369d7b2c3ca60032c78b31f1cb2eff7673f994713e6a.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/assetic/config/4/43a80f0e087752a2d4724591f85aa0e1.php" afterPath="$PROJECT_DIR$/app/cache/dev/assetic/config/4/43a80f0e087752a2d4724591f85aa0e1.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/f0/9b/47d5edad131e22cd554a32dee4a50040739cdfe4ce0651d801de8b7260f0.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/f0/9b/47d5edad131e22cd554a32dee4a50040739cdfe4ce0651d801de8b7260f0.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/5c/e3/4eee253b2d1b08794493e5cd8558af3b50686b8cb5486fab32c3e8ff24c0.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/5c/e3/4eee253b2d1b08794493e5cd8558af3b50686b8cb5486fab32c3e8ff24c0.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/43/9b/502a8bb4d6a366dcb6ba2099422c867c85a8f6f8302f8f55cd13f7085fa0.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/43/9b/502a8bb4d6a366dcb6ba2099422c867c85a8f6f8302f8f55cd13f7085fa0.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/597877fc1359850fa8786ead82dcc8f6f491d628#showAction.cache.php" afterPath="$PROJECT_DIR$/app/cache/prod/annotations/597877fc1359850fa8786ead82dcc8f6f491d628#showAction.cache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/597877fc1359850fa8786ead82dcc8f6f491d628.cache.php" afterPath="$PROJECT_DIR$/app/cache/prod/annotations/597877fc1359850fa8786ead82dcc8f6f491d628.cache.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/10/a4/6277b7d19dd5e5bab6fde5ae3ab7a1c31d74b3d90a8f881eb80396bb0d2c.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/10/a4/6277b7d19dd5e5bab6fde5ae3ab7a1c31d74b3d90a8f881eb80396bb0d2c.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/fb/94/651a753681858f3b8049760bf67aa561b0e58eb0edbc833ebba2bea47fd0.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/fb/94/651a753681858f3b8049760bf67aa561b0e58eb0edbc833ebba2bea47fd0.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/7d/55/69d3823703f1bff35999ec98c1053b82fd77bd237af24f147d87dc51c46b.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/7d/55/69d3823703f1bff35999ec98c1053b82fd77bd237af24f147d87dc51c46b.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/c5/8d/6d437ba82108c110ff5e6b53a019103dbd9b1866f68d71b58100b3924b80.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/c5/8d/6d437ba82108c110ff5e6b53a019103dbd9b1866f68d71b58100b3924b80.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/f7/fa/72ee021ce9bfc873dc3c24b92d614087796c24c389d0cd79d9e99d852f5a.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/f7/fa/72ee021ce9bfc873dc3c24b92d614087796c24c389d0cd79d9e99d852f5a.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/e2/86/7936bb6895b5d44b521daf4433dc22010ac9fb39158baa28d3b1b0d81a8b.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/e2/86/7936bb6895b5d44b521daf4433dc22010ac9fb39158baa28d3b1b0d81a8b.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/0c/db/80d2ec14b75159aba630d10e75bf0b26154fcd791cc46c2d79f66b3a37de.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/0c/db/80d2ec14b75159aba630d10e75bf0b26154fcd791cc46c2d79f66b3a37de.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/8f/b7/817ab43c277bd5d9053ed82cdbb83e0929f3a7ce18b40e633bcb58e5733a.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/8f/b7/817ab43c277bd5d9053ed82cdbb83e0929f3a7ce18b40e633bcb58e5733a.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/80/64/9245b9eac5aebf09336aa4bd74a147807542902c7559575935dc974a9f7e.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/80/64/9245b9eac5aebf09336aa4bd74a147807542902c7559575935dc974a9f7e.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/c9/b0/99795bc58a27face09c6cac89d0873fc0fa5ced45b8dad0a4a096849b4f6.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/c9/b0/99795bc58a27face09c6cac89d0873fc0fa5ced45b8dad0a4a096849b4f6.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/2b/39/99f0cc0d9b2589e24ed61db81ac19fdaf1e5182df105f80963497fe4c286.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/2b/39/99f0cc0d9b2589e24ed61db81ac19fdaf1e5182df105f80963497fe4c286.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/d0/63/9a8f00b46beee34ad5d8ac80d952719cc6de13e81eb6406f41fc140c835c.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/d0/63/9a8f00b46beee34ad5d8ac80d952719cc6de13e81eb6406f41fc140c835c.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/58/b7/9f3ff94228d7682bc34895142c7d54f3c8888247fd48ad3785459b96a82f.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/58/b7/9f3ff94228d7682bc34895142c7d54f3c8888247fd48ad3785459b96a82f.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/DependencyInjection/Configuration.php" afterPath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/DependencyInjection/Configuration.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Controller/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#createForm.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#createForm.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#createFormBuilder.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#createFormBuilder.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#createNotFoundException.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#createNotFoundException.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#forward.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#forward.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#generateUrl.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#generateUrl.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#get.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#get.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#getDoctrine.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#getDoctrine.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#getRequest.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#getRequest.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#getUser.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#getUser.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#has.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#has.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#redirect.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#redirect.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#render.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#render.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#renderView.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#renderView.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#stream.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/657d22547c85f350850e6e809be52d5c2c0d77f6#stream.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/69b748bbdb21c9dbce0109b52d28fc1d6404463b#setContainer.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/69b748bbdb21c9dbce0109b52d28fc1d6404463b#setContainer.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/72114c0f8683bcc2a66ceccb136abe5a78f8577e#helloAction.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/72114c0f8683bcc2a66ceccb136abe5a78f8577e#helloAction.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/72114c0f8683bcc2a66ceccb136abe5a78f8577e#helloadminAction.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/72114c0f8683bcc2a66ceccb136abe5a78f8577e#helloadminAction.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/72114c0f8683bcc2a66ceccb136abe5a78f8577e#loginAction.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/72114c0f8683bcc2a66ceccb136abe5a78f8577e#loginAction.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/72114c0f8683bcc2a66ceccb136abe5a78f8577e#logoutAction.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/72114c0f8683bcc2a66ceccb136abe5a78f8577e#logoutAction.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/72114c0f8683bcc2a66ceccb136abe5a78f8577e#securityCheckAction.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/72114c0f8683bcc2a66ceccb136abe5a78f8577e#securityCheckAction.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/72114c0f8683bcc2a66ceccb136abe5a78f8577e.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/72114c0f8683bcc2a66ceccb136abe5a78f8577e.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9462534474940c9f1544385e8ba867ef4fbef54a#contactAction.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/9462534474940c9f1544385e8ba867ef4fbef54a#contactAction.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9462534474940c9f1544385e8ba867ef4fbef54a#helloAction.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/9462534474940c9f1544385e8ba867ef4fbef54a#helloAction.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9462534474940c9f1544385e8ba867ef4fbef54a#indexAction.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/9462534474940c9f1544385e8ba867ef4fbef54a#indexAction.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9462534474940c9f1544385e8ba867ef4fbef54a.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/9462534474940c9f1544385e8ba867ef4fbef54a.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MetaLeague/SiteBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/MetaLeague/SiteBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Tests/Controller/DefaultControllerTest.php" afterPath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Tests/Controller/DefaultControllerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Entity/Game.php" afterPath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Entity/Game.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Entity/GameRepository.php" afterPath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Entity/GameRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/MetaLeagueFantasyBundle.php" afterPath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/MetaLeagueFantasyBundle.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/DependencyInjection/MetaLeagueFantasyExtension.php" afterPath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/DependencyInjection/MetaLeagueFantasyExtension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/a1fb6f75723cb04c618a1b478d411870c330e38a#indexAction.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/a1fb6f75723cb04c618a1b478d411870c330e38a#indexAction.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/a1fb6f75723cb04c618a1b478d411870c330e38a#indexAction.cache.php" afterPath="$PROJECT_DIR$/app/cache/prod/annotations/a1fb6f75723cb04c618a1b478d411870c330e38a#indexAction.cache.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/e8/e8/a285e79e876446d80397cc210e945b18cd83c948ce93e0c249d66767d809.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/e8/e8/a285e79e876446d80397cc210e945b18cd83c948ce93e0c249d66767d809.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/4c/d0/a377452e5ca602a2a8cff6ebc84055db0136633c805e3408511f5a1b3aac.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/4c/d0/a377452e5ca602a2a8cff6ebc84055db0136633c805e3408511f5a1b3aac.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/74/4d/ad76d8b98b653da75f830ef5d3582aa35fecc970f98b04de49510e5d3c0f.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/74/4d/ad76d8b98b653da75f830ef5d3582aa35fecc970f98b04de49510e5d3c0f.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerCompiler.log" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerCompiler.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/d7/75/b4b3d5384490ef6e7f7774ea9481ef763ae0361eede1cd9d53da1a8ee8c1.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/d7/75/b4b3d5384490ef6e7f7774ea9481ef763ae0361eede1cd9d53da1a8ee8c1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/prod/appProdProjectContainer.php" afterPath="$PROJECT_DIR$/app/cache/prod/appProdProjectContainer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/prod/appProdUrlMatcher.php" afterPath="$PROJECT_DIR$/app/cache/prod/appProdUrlMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/ec/35/b4b6447578221b79f4000a62325050d772700632c49a59c3d04cbb60fa5b.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/ec/35/b4b6447578221b79f4000a62325050d772700632c49a59c3d04cbb60fa5b.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/ee/6f/b4c5c606cad6468074b1a982ffd8dedde019a9cbf287b3dfa6106111cb70.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/ee/6f/b4c5c606cad6468074b1a982ffd8dedde019a9cbf287b3dfa6106111cb70.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/2a/a8/c0ac43af23f4ea0c8fc4f99ab2e90551a9ace5897aeda682bf4bce706b23.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/2a/a8/c0ac43af23f4ea0c8fc4f99ab2e90551a9ace5897aeda682bf4bce706b23.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/7e/0f/c31b31baa7e7c80f959833169de8cc0b3c0f328fefe967a8d55fc9544992.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/7e/0f/c31b31baa7e7c80f959833169de8cc0b3c0f328fefe967a8d55fc9544992.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/16/65/cdfa18eb51751901324c145461c2f85394d1ccc00a49ef440c62b37eb386.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/16/65/cdfa18eb51751901324c145461c2f85394d1ccc00a49ef440c62b37eb386.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/c6/68/d4282c488b7e87b5e829027d06465449d1d7854be4fb0d31524a18d18ba9.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/c6/68/d4282c488b7e87b5e829027d06465449d1d7854be4fb0d31524a18d18ba9.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/c2/1c/d9a48ed128f35ff12a4483b2b24e7eb639374f796854c81081cc77754090.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/c2/1c/d9a48ed128f35ff12a4483b2b24e7eb639374f796854c81081cc77754090.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/prod/twig/d2/09/b89db4724439bca4e75daaca51a74d6aea4353f489a32003b4320675a2c3.php" afterPath="$PROJECT_DIR$/app/cache/prod/twig/d2/09/b89db4724439bca4e75daaca51a74d6aea4353f489a32003b4320675a2c3.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/classes.map" afterPath="$PROJECT_DIR$/app/cache/dev/classes.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/classes.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/classes.php.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/classes.php" afterPath="$PROJECT_DIR$/app/cache/dev/classes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/dev.log" afterPath="$PROJECT_DIR$/app/logs/dev.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/50/b0/e117d73b3711ecbd10f0e9aebbdbeb7c0e1e021353d9cac80417f80dd0ee.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/50/b0/e117d73b3711ecbd10f0e9aebbdbeb7c0e1e021353d9cac80417f80dd0ee.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/a1/89/e5940685f75ad77a7a56101ad8f27a23c7998ef85fdf69641af807043bae.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/a1/89/e5940685f75ad77a7a56101ad8f27a23c7998ef85fdf69641af807043bae.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/99/8d/e6914d7ffe19e34ddae547f3fc9d1b3c10f25b42fea6f1ac39796fd17e14.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/99/8d/e6914d7ffe19e34ddae547f3fc9d1b3c10f25b42fea6f1ac39796fd17e14.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/a1/d5/ea02e4a527bbf7a035652cd71f12ff46806aede5eaae3de881d3cdb48676.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/a1/d5/ea02e4a527bbf7a035652cd71f12ff46806aede5eaae3de881d3cdb48676.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/f9/9a/f87923aa41ee5f41db57c363e11acfac12863ab3cdc6c09a525d90593849.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/f9/9a/f87923aa41ee5f41db57c363e11acfac12863ab3cdc6c09a525d90593849.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/86/d8/fec87309315c5099927bd27e442d710796f26641fd735b97a4925a0843c7.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/86/d8/fec87309315c5099927bd27e442d710796f26641fd735b97a4925a0843c7.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/prod/twig/50/b0/e117d73b3711ecbd10f0e9aebbdbeb7c0e1e021353d9cac80417f80dd0ee.php" afterPath="$PROJECT_DIR$/app/cache/prod/twig/50/b0/e117d73b3711ecbd10f0e9aebbdbeb7c0e1e021353d9cac80417f80dd0ee.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Resources/views/Game/edit.html.twig" afterPath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Resources/views/Game/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/frameworkRootSettings.xml" afterPath="$PROJECT_DIR$/.idea/frameworkRootSettings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Resources/views/Default/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Resources/doc/index.rst" afterPath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Resources/doc/index.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Resources/translations/messages.fr.xlf" afterPath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Resources/translations/messages.fr.xlf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Resources/views/Game/index.html.twig" afterPath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Resources/views/Game/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MetaLeague/SiteBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/MetaLeague/SiteBundle/Resources/views/Default/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Resources/views/Game/new.html.twig" afterPath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Resources/views/Game/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/parameters.yml" afterPath="$PROJECT_DIR$/app/config/parameters.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/prod.log" afterPath="$PROJECT_DIR$/app/logs/prod.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Resources/config/services.yml" afterPath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Resources/config/services.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/templates.php" afterPath="$PROJECT_DIR$/app/cache/dev/templates.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/assetic/routing.yml" afterPath="$PROJECT_DIR$/app/cache/dev/assetic/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Resources/views/Game/show.html.twig" afterPath="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Resources/views/Game/show.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/style/style.css" afterPath="$PROJECT_DIR$/web/style/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="metaleague.iws" />
@@ -205,41 +291,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GameController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Controller/GameController.php">
+      <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Entity/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="12" selection-start="469" selection-end="469" vertical-scroll-proportion="0.44466403" vertical-offset="0" max-vertical-offset="3795">
+            <state line="25" column="0" selection-start="445" selection-end="445" vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="480">
               <folding>
-                <element signature="e#55#100#0" expanded="true" />
+                <element signature="e#51#93#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MetaLeague/SiteBundle/Controller/DefaultController.php">
+      <file leaf-file-name="base.html.twig" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="19" selection-start="346" selection-end="346" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="600">
-              <folding>
-                <element signature="e#52#93#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routing.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Resources/config/routing.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="0" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
+            <state line="82" column="0" selection-start="3623" selection-end="3623" vertical-scroll-proportion="0.8847539" vertical-offset="493" max-vertical-offset="2895">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <file leaf-file-name="navigation.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/navigation.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="27" selection-start="3853" selection-end="3853" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="3090">
+            <state line="30" column="0" selection-start="1524" selection-end="1524" vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="540">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="58" selection-start="1016" selection-end="1016" vertical-scroll-proportion="-10.25" vertical-offset="159" max-vertical-offset="1005">
               <folding />
             </state>
           </provider>
@@ -248,17 +332,33 @@
       <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MetaLeague/SiteBundle/Resources/views/Default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="50" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="4545">
+            <state line="46" column="0" selection-start="1802" selection-end="1802" vertical-scroll-proportion="-28.75" vertical-offset="0" max-vertical-offset="4650">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Game.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Entity/Game.php">
+      <file leaf-file-name="routing_dev.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="33" selection-start="1459" selection-end="1459" vertical-scroll-proportion="0.0" vertical-offset="958" max-vertical-offset="1500">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="security.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="19" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+              <folding>
+                <marker date="1386480016000" expanded="true" signature="211:294" placeholder="providers:" />
+                <marker date="1386480016000" expanded="true" signature="230:294" placeholder="fos_userbundle:" />
+                <marker date="1386480016000" expanded="true" signature="299:553" placeholder="firewalls:" />
+                <marker date="1386480016000" expanded="true" signature="318:553" placeholder="main:" />
+                <marker date="1386480016000" expanded="true" signature="475:524" placeholder="logout:" />
+                <marker date="1386480016000" expanded="true" signature="558:820" placeholder="access_control:" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -266,25 +366,30 @@
       <file leaf-file-name="config.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="11" selection-start="675" selection-end="677" vertical-scroll-proportion="0.0" vertical-offset="158" max-vertical-offset="1125">
-              <folding />
+            <state line="73" column="52" selection-start="2069" selection-end="2069" vertical-scroll-proportion="-32.5" vertical-offset="250" max-vertical-offset="1185">
+              <folding>
+                <marker date="1386479003000" expanded="true" signature="1785:1963" placeholder="swiftmailer:" />
+                <marker date="1386479003000" expanded="true" signature="1964:2069" placeholder="fos_user:" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/style/style.css">
+      <file leaf-file-name="routing.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="364" column="17" selection-start="5357" selection-end="5357" vertical-scroll-proportion="0.0" vertical-offset="5183" max-vertical-offset="32865">
-              <folding />
+            <state line="18" column="17" selection-start="428" selection-end="445" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+              <folding>
+                <marker date="1386479165000" expanded="true" signature="111:216" placeholder="meta_league_site:" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="slider.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/style/slider.css">
+      <file leaf-file-name="registration.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/config/routing/registration.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10500">
+            <state line="6" column="45" selection-start="275" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
               <folding />
             </state>
           </provider>
@@ -308,23 +413,31 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/web/style/style.css" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-        <option value="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Entity/Game.php" />
-        <option value="$PROJECT_DIR$/src/MetaLeague/SiteBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/src/MetaLeague/SiteBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Controller/GameController.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Entity/MetaUser.php" />
+        <option value="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Entity/League.php" />
+        <option value="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Entity/ProGame.php" />
+        <option value="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Entity/ProGameAction.php" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/MetaLeague/SiteBundle/Resources/views/Default/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/navigation.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="10" />
-    <option name="y" value="22" />
-    <option name="width" value="1260" />
-    <option name="height" value="712" />
+    <option name="x" value="-15" />
+    <option name="y" value="48" />
+    <option name="width" value="1435" />
+    <option name="height" value="1016" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -352,7 +465,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -368,56 +480,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="metaleague" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="metaleague" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="metaleague" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="metaleague" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="metaleague" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="style" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="metaleague" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="metaleague" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bundles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -560,92 +622,6 @@
               <option name="myItemId" value="MetaLeague" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FantasyBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="metaleague" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="metaleague" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MetaLeague" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FantasyBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="metaleague" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="metaleague" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MetaLeague" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FantasyBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="metaleague" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="metaleague" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MetaLeague" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FantasyBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -697,22 +673,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FOSUserBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="metaleague" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="metaleague" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../loyalty" />
+    <property name="FullScreen" value="false" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig" serverName="metaleague" serverId="8e5cab6c-828c-404d-9fd4-c28b153bebaa">
     <servers>
@@ -788,18 +792,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="22" width="1260" height="712" extended-state="0" />
+    <frame x="-15" y="48" width="1435" height="1016" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17380953" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.67016804" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2968254" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2857143" sideWeight="0.67016804" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32983193" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -823,117 +828,129 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="27" selection-start="3853" selection-end="3853" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="3090">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MetaLeague/SiteBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="50" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="4545">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Entity/Game.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="33" selection-start="1459" selection-end="1459" vertical-scroll-proportion="0.0" vertical-offset="958" max-vertical-offset="1500">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="11" selection-start="675" selection-end="677" vertical-scroll-proportion="0.0" vertical-offset="158" max-vertical-offset="1125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/style/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="364" column="17" selection-start="5357" selection-end="5357" vertical-scroll-proportion="0.0" vertical-offset="5183" max-vertical-offset="32865">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/style/slider.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10500">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/style/slider.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10500">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/style/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="364" column="17" selection-start="5357" selection-end="5357" vertical-scroll-proportion="0.0" vertical-offset="5183" max-vertical-offset="32865">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="27" selection-start="178" selection-end="178" vertical-scroll-proportion="0.16666667" vertical-offset="0" max-vertical-offset="540" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_test.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/config/routing/resetting.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="12" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="445" selection-end="445" vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="480">
+          <folding>
+            <element signature="e#51#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/config/routing/security.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="32" selection-start="275" selection-end="298" vertical-scroll-proportion="0.105017506" vertical-offset="0" max-vertical-offset="857">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="11" selection-start="675" selection-end="677" vertical-scroll-proportion="0.0" vertical-offset="158" max-vertical-offset="1125">
+        <state line="73" column="52" selection-start="2069" selection-end="2069" vertical-scroll-proportion="-32.5" vertical-offset="250" max-vertical-offset="1185">
+          <folding>
+            <marker date="1386479003000" expanded="true" signature="1785:1963" placeholder="swiftmailer:" />
+            <marker date="1386479003000" expanded="true" signature="1964:2069" placeholder="fos_user:" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_prod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="27" selection-start="3853" selection-end="3853" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="3090">
-          <folding />
+        <state line="18" column="17" selection-start="428" selection-end="445" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <folding>
+            <marker date="1386479165000" expanded="true" signature="111:216" placeholder="meta_league_site:" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Entity/Game.php">
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/config/routing/registration.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="33" selection-start="1459" selection-end="1459" vertical-scroll-proportion="0.0" vertical-offset="958" max-vertical-offset="1500">
+        <state line="6" column="45" selection-start="275" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MetaLeague/SiteBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="50" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="4545">
+        <state line="46" column="0" selection-start="1802" selection-end="1802" vertical-scroll-proportion="-28.75" vertical-offset="0" max-vertical-offset="4650">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Resources/config/routing.yml">
+    <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="0" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MetaLeague/SiteBundle/Controller/DefaultController.php">
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="19" selection-start="346" selection-end="346" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="600">
+        <state line="18" column="19" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
           <folding>
-            <element signature="e#52#93#0" expanded="true" />
+            <marker date="1386480016000" expanded="true" signature="211:294" placeholder="providers:" />
+            <marker date="1386480016000" expanded="true" signature="230:294" placeholder="fos_userbundle:" />
+            <marker date="1386480016000" expanded="true" signature="299:553" placeholder="firewalls:" />
+            <marker date="1386480016000" expanded="true" signature="318:553" placeholder="main:" />
+            <marker date="1386480016000" expanded="true" signature="475:524" placeholder="logout:" />
+            <marker date="1386480016000" expanded="true" signature="558:820" placeholder="access_control:" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MetaLeague/FantasyBundle/Controller/GameController.php">
+    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="12" selection-start="469" selection-end="469" vertical-scroll-proportion="0.44466403" vertical-offset="0" max-vertical-offset="3795">
-          <folding>
-            <element signature="e#55#100#0" expanded="true" />
-          </folding>
+        <state line="27" column="58" selection-start="1016" selection-end="1016" vertical-scroll-proportion="-10.25" vertical-offset="159" max-vertical-offset="1005">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/navigation.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="1524" selection-end="1524" vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="0" selection-start="3623" selection-end="3623" vertical-scroll-proportion="0.8847539" vertical-offset="493" max-vertical-offset="2895">
+          <folding />
         </state>
       </provider>
     </entry>

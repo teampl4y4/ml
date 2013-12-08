@@ -711,6 +711,15 @@ line-height:40px;
 
 .recent-posts .rp-item img{
 	width: 100%;
+    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+
+
+.recent-posts .rp-item img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
 }
 
 .recent-posts .carousel_nav{
