@@ -41,47 +41,17 @@
         <div class="row">
 
             <div class="col-md-4 col-sm-3">
-                <!-- Logo. Use class "color" to add color to the text. -->
-                <div class="logo">
-                    <h1><a href="#">Meta<span class="color bold">League</span></a></h1>
-                    <p class="meta">Fantasy eSports</p>
-                </div>
+                <!-- Logo -->
+                {{ include('MetaLeagueSiteBundle:Default:logo.html.twig') }}
             </div>
 
             <div class="col-md-8 col-sm-9">
-
                 <!-- Navigation -->
-                <div class="navbar bs-docs-nav" role="banner">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
+                {{ include('MetaLeagueSiteBundle:Default:navigation.html.twig') }}
 
-                        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-                            <ul class="nav navbar-nav">
-                                <li><a href="/">Home</a></li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Leagues <b class="caret"></b></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="404-1.html">League of Legends 5v5</a></li>
-                                        <li><a href="about1.html">League of Legends Survivor Pool</a></li>
-                                        <li><a href="faq.html">Counter-Strike 5v5</a></li>
-                                        <li><a href="faq.html">Counter-Strike Survivor Pool</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="{{ path('fos_user_security_login') }}" class="color"><span class="color">Login</span></a></li>
-                                <li><a href="{{ path('fos_user_registration_register') }}" class="color"><span class="color">Register</span></a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-
-
+                {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                <p>{{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }}</p>
+                {% endif %}
             </div>
 
         </div>

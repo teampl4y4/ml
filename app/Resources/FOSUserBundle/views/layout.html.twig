@@ -33,18 +33,28 @@
 
 </head>
 
-<body>
-<h1>Test</h1>
-<div>
-    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-        {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
-        <a href="{{ path('fos_user_security_logout') }}">
-            {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
-        </a>
-    {% else %}
-        <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
-    {% endif %}
-</div>
+<!-- Header starts -->
+<header>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 col-sm-3">
+                <!-- Logo -->
+                {{ include('MetaLeagueSiteBundle:Default:logo.html.twig') }}
+            </div>
+
+            <div class="col-md-8 col-sm-9">
+                <!-- Navigation -->
+                {{ include('MetaLeagueSiteBundle:Default:navigation.html.twig') }}
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<!-- Seperator -->
+
+<div class="sep"></div>
 
 {% for type, messages in app.session.flashbag.all() %}
     {% for key, message in messages %}

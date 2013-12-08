@@ -78,54 +78,51 @@ class __TwigTemplate_a84dfa044ef00adacdcd291bac45d8009c47094c1fd3e82b18237bc71ad
 
 </head>
 
-<body>
-<h1>Test</h1>
-<div>
-    ";
-        // line 39
-        if ($this->env->getExtension('security')->isGranted("IS_AUTHENTICATED_REMEMBERED")) {
-            // line 40
-            echo "        ";
-            echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("layout.logged_in_as", array("%username%" => $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user"), "username")), "FOSUserBundle"), "html", null, true);
-            echo " |
-        <a href=\"";
-            // line 41
-            echo $this->env->getExtension('routing')->getPath("fos_user_security_logout");
-            echo "\">
-            ";
-            // line 42
-            echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("layout.logout", array(), "FOSUserBundle"), "html", null, true);
-            echo "
-        </a>
-    ";
-        } else {
-            // line 45
-            echo "        <a href=\"";
-            echo $this->env->getExtension('routing')->getPath("fos_user_security_login");
-            echo "\">";
-            echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("layout.login", array(), "FOSUserBundle"), "html", null, true);
-            echo "</a>
-    ";
-        }
-        // line 47
-        echo "</div>
+<!-- Header starts -->
+<header>
+    <div class=\"container\">
+        <div class=\"row\">
+
+            <div class=\"col-md-4 col-sm-3\">
+                <!-- Logo -->
+                ";
+        // line 43
+        echo twig_include($this->env, $context, "MetaLeagueSiteBundle:Default:logo.html.twig");
+        echo "
+            </div>
+
+            <div class=\"col-md-8 col-sm-9\">
+                <!-- Navigation -->
+                ";
+        // line 48
+        echo twig_include($this->env, $context, "MetaLeagueSiteBundle:Default:navigation.html.twig");
+        echo "
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<!-- Seperator -->
+
+<div class=\"sep\"></div>
 
 ";
-        // line 49
+        // line 59
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session"), "flashbag"), "all", array(), "method"));
         foreach ($context['_seq'] as $context["type"] => $context["messages"]) {
-            // line 50
+            // line 60
             echo "    ";
             $context['_parent'] = (array) $context;
             $context['_seq'] = twig_ensure_traversable((isset($context["messages"]) ? $context["messages"] : $this->getContext($context, "messages")));
             foreach ($context['_seq'] as $context["key"] => $context["message"]) {
-                // line 51
+                // line 61
                 echo "        <div class=\"flash-";
                 echo twig_escape_filter($this->env, (isset($context["type"]) ? $context["type"] : $this->getContext($context, "type")), "html", null, true);
                 echo "\">
             ";
-                // line 52
+                // line 62
                 echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans((isset($context["message"]) ? $context["message"] : $this->getContext($context, "message")), array(), "FOSUserBundle"), "html", null, true);
                 echo "
         </div>
@@ -138,13 +135,13 @@ class __TwigTemplate_a84dfa044ef00adacdcd291bac45d8009c47094c1fd3e82b18237bc71ad
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['type'], $context['messages'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 56
+        // line 66
         echo "
 <div>
     ";
-        // line 58
+        // line 68
         $this->displayBlock('fos_user_content', $context, $blocks);
-        // line 60
+        // line 70
         echo "</div>
 </body>
 </html>";
@@ -161,10 +158,10 @@ class __TwigTemplate_a84dfa044ef00adacdcd291bac45d8009c47094c1fd3e82b18237bc71ad
     {
     }
 
-    // line 58
+    // line 68
     public function block_fos_user_content($context, array $blocks = array())
     {
-        // line 59
+        // line 69
         echo "    ";
     }
 
@@ -180,6 +177,6 @@ class __TwigTemplate_a84dfa044ef00adacdcd291bac45d8009c47094c1fd3e82b18237bc71ad
 
     public function getDebugInfo()
     {
-        return array (  168 => 59,  165 => 58,  160 => 24,  154 => 7,  148 => 60,  146 => 58,  142 => 56,  129 => 52,  124 => 51,  119 => 50,  115 => 49,  111 => 47,  103 => 45,  97 => 42,  93 => 41,  88 => 40,  86 => 39,  76 => 32,  69 => 28,  64 => 25,  62 => 24,  57 => 22,  53 => 21,  47 => 18,  43 => 17,  30 => 7,  22 => 1,);
+        return array (  165 => 69,  162 => 68,  157 => 24,  151 => 7,  145 => 70,  143 => 68,  139 => 66,  126 => 62,  121 => 61,  116 => 60,  112 => 59,  98 => 48,  90 => 43,  76 => 32,  69 => 28,  64 => 25,  62 => 24,  57 => 22,  53 => 21,  47 => 18,  43 => 17,  30 => 7,  22 => 1,);
     }
 }

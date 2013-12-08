@@ -87,22 +87,31 @@ class __TwigTemplate_50b0e117d73b3711ecbd10f0e9aebbdbeb7c0e1e021353d9cac80417f80
         <div class=\"row\">
 
             <div class=\"col-md-4 col-sm-3\">
-                <!-- Logo. Use class \"color\" to add color to the text. -->
-                <div class=\"logo\">
-                    <h1><a href=\"#\">Meta<span class=\"color bold\">League</span></a></h1>
-                    <p class=\"meta\">Fantasy eSports</p>
-                </div>
+                <!-- Logo -->
+                ";
+        // line 45
+        echo twig_include($this->env, $context, "MetaLeagueSiteBundle:Default:logo.html.twig");
+        echo "
             </div>
 
             <div class=\"col-md-8 col-sm-9\">
-
                 <!-- Navigation -->
                 ";
-        // line 54
-        echo twig_include($this->env, $context, "::navigation.html.twig");
+        // line 50
+        echo twig_include($this->env, $context, "MetaLeagueSiteBundle:Default:navigation.html.twig");
         echo "
 
-            </div>
+                ";
+        // line 52
+        if ($this->env->getExtension('security')->isGranted("IS_AUTHENTICATED_REMEMBERED")) {
+            // line 53
+            echo "                <p>";
+            echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("layout.logged_in_as", array("%username%" => $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user"), "username")), "FOSUserBundle"), "html", null, true);
+            echo "</p>
+                ";
+        }
+        // line 55
+        echo "            </div>
 
         </div>
     </div>
@@ -113,9 +122,9 @@ class __TwigTemplate_50b0e117d73b3711ecbd10f0e9aebbdbeb7c0e1e021353d9cac80417f80
 <div class=\"sep\"></div>
 
 ";
-        // line 66
+        // line 65
         $this->displayBlock('body', $context, $blocks);
-        // line 67
+        // line 66
         echo "
 <!-- Footer starts -->
 <footer>
@@ -202,22 +211,22 @@ class __TwigTemplate_50b0e117d73b3711ecbd10f0e9aebbdbeb7c0e1e021353d9cac80417f80
 
 <!-- JS -->
 <script src=\"";
-        // line 152
+        // line 151
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/jquery.js"), "html", null, true);
         echo "\"></script> <!-- jQuery -->
 <script src=\"";
-        // line 153
+        // line 152
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/bootstrap.js"), "html", null, true);
         echo "\"></script> <!-- Bootstrap -->
 <script src=\"";
-        // line 154
+        // line 153
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/custom.js"), "html", null, true);
         echo "\"></script> <!-- Custom codes -->
 
 ";
-        // line 156
+        // line 155
         $this->displayBlock('scripts', $context, $blocks);
-        // line 157
+        // line 156
         echo "
 </body>
 </html>";
@@ -234,12 +243,12 @@ class __TwigTemplate_50b0e117d73b3711ecbd10f0e9aebbdbeb7c0e1e021353d9cac80417f80
     {
     }
 
-    // line 66
+    // line 65
     public function block_body($context, array $blocks = array())
     {
     }
 
-    // line 156
+    // line 155
     public function block_scripts($context, array $blocks = array())
     {
     }
@@ -256,6 +265,6 @@ class __TwigTemplate_50b0e117d73b3711ecbd10f0e9aebbdbeb7c0e1e021353d9cac80417f80
 
     public function getDebugInfo()
     {
-        return array (  243 => 156,  238 => 66,  233 => 24,  227 => 7,  221 => 157,  219 => 156,  214 => 154,  210 => 153,  206 => 152,  119 => 67,  117 => 66,  102 => 54,  77 => 32,  70 => 28,  65 => 25,  63 => 24,  58 => 22,  54 => 21,  48 => 18,  44 => 17,  31 => 7,  23 => 1,);
+        return array (  252 => 155,  247 => 65,  242 => 24,  236 => 7,  230 => 156,  228 => 155,  223 => 153,  219 => 152,  215 => 151,  128 => 66,  126 => 65,  114 => 55,  108 => 53,  106 => 52,  101 => 50,  93 => 45,  77 => 32,  70 => 28,  65 => 25,  63 => 24,  58 => 22,  54 => 21,  48 => 18,  44 => 17,  31 => 7,  23 => 1,);
     }
 }
