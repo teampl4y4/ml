@@ -142,6 +142,15 @@ class __TwigTemplate_1514cb2ffafb72d0ed11a00c0b94b0f3063d42bcb9a83f1bccffde5c35a
         echo $this->env->getExtension('routing')->getPath("fos_user_registration_register");
         echo "\">Register</a></b>
 
+                            <br>
+                            <hr>
+
+                            <h5>Forgot Password?</h5>
+                            Reset your <a href=\"";
+        // line 91
+        echo $this->env->getExtension('routing')->getPath("fos_user_resetting_request");
+        echo "\">password</a>
+
                         </div>
                     </div>
                 </div>
@@ -164,6 +173,6 @@ class __TwigTemplate_1514cb2ffafb72d0ed11a00c0b94b0f3063d42bcb9a83f1bccffde5c35a
 
     public function getDebugInfo()
     {
-        return array (  142 => 85,  129 => 77,  118 => 69,  105 => 59,  97 => 54,  92 => 52,  86 => 49,  82 => 48,  47 => 15,  41 => 13,  39 => 12,  31 => 6,  28 => 5,);
+        return array (  151 => 91,  142 => 85,  129 => 77,  118 => 69,  105 => 59,  97 => 54,  92 => 52,  86 => 49,  82 => 48,  47 => 15,  41 => 13,  39 => 12,  31 => 6,  28 => 5,);
     }
 }
