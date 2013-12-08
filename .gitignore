@@ -5,3 +5,5 @@
 /app/config/parameters.yml
 /.idea
 /.idea/*
+.idea*
+.idea/workspace.xml
