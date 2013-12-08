@@ -44,20 +44,10 @@ class __TwigTemplate_0bdb5145f864e7d37892528ec400f743c4844ad93d8a9ca4d7582b7c470
         <div class=\"container\">
             <div class=\"row\">
                 <div class=\"col-md-6\">
-
-                    <h3 class=\"title\">Register Today <span class=\"color\">!!!</span></h3>
-                    <h4 >Morbi tincidunt posuere turpis eu laoreet</h4>
-                    <p>Nullam in est urna. In vitae adipiscing enim. Curabitur rhoncus condimentum lorem, non convallis dolor faucibus eget. In vitae adipiscing enim. Curabitur rhoncus condimentum lorem, non convallis dolor faucibus eget. In ut nulla est. </p>
-                    <h5>Maecenas hendrerit neque id</h5>
-                    <ul>
-                        <li>Etiam adipiscing posuere justo, nec iaculis justo dictum non</li>
-                        <li>Cras tincidunt mi non arcu hendrerit eleifend</li>
-                        <li>Aenean ullamcorper justo tincidunt justo aliquet et lobortis diam faucibus</li>
-                        <li>Maecenas hendrerit neque id ante dictum mattis</li>
-                        <li>Vivamus non neque lacus, et cursus tortor</li>
-                    </ul>
-
-                    <p>Nullam in est urna. In vitae adipiscing enim. In ut nulla est. Nullam in est urna. In vitae adipiscing enim. Curabitur rhoncus condimentum lorem, non convallis dolor faucibus eget. In ut nulla est. </p>
+                    ";
+        // line 20
+        echo twig_include($this->env, $context, "MetaLeagueSiteBundle:Registration:left_teaser.html.twig");
+        echo "
                 </div>
 
 
@@ -67,9 +57,9 @@ class __TwigTemplate_0bdb5145f864e7d37892528ec400f743c4844ad93d8a9ca4d7582b7c470
                         <h4 class=\"title\">Register Your Account</h4>
 
                         ";
-        // line 42
+        // line 29
         $this->env->loadTemplate("FOSUserBundle:Registration:register_content.html.twig")->display($context);
-        // line 43
+        // line 30
         echo "
                     </div>
                 </div>
@@ -94,6 +84,6 @@ class __TwigTemplate_0bdb5145f864e7d37892528ec400f743c4844ad93d8a9ca4d7582b7c470
 
     public function getDebugInfo()
     {
-        return array (  73 => 43,  71 => 42,  31 => 4,  28 => 3,);
+        return array (  63 => 30,  61 => 29,  49 => 20,  31 => 4,  28 => 3,);
     }
 }
