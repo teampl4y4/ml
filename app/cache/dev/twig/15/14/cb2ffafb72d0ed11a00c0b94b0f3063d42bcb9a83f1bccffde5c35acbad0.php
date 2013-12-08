@@ -38,7 +38,7 @@ class __TwigTemplate_1514cb2ffafb72d0ed11a00c0b94b0f3063d42bcb9a83f1bccffde5c35a
         // line 12
         if ((isset($context["error"]) ? $context["error"] : $this->getContext($context, "error"))) {
             // line 13
-            echo "                        <h4>Error: <span class=\"color\">";
+            echo "                            <h4>Error: <span class=\"color\">";
             echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans((isset($context["error"]) ? $context["error"] : $this->getContext($context, "error")), array(), "FOSUserBundle"), "html", null, true);
             echo "</span></h4>
                         ";

@@ -35,25 +35,20 @@ class __TwigTemplate_e8e8a285e79e876446d80397cc210e945b18cd83c948ce93e0c249d6676
     <div id=\"traces-text\" class=\"trace\" style=\"display: none;\">
 <pre>";
         // line 13
-        if (isset($context["exception"])) { $_exception_ = $context["exception"]; } else { $_exception_ = null; }
         $context['_parent'] = (array) $context;
-        $context['_seq'] = twig_ensure_traversable($this->getAttribute($_exception_, "toarray"));
+        $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["exception"]) ? $context["exception"] : null), "toarray"));
         foreach ($context['_seq'] as $context["i"] => $context["e"]) {
             // line 14
             echo "[";
-            if (isset($context["i"])) { $_i_ = $context["i"]; } else { $_i_ = null; }
-            echo twig_escape_filter($this->env, ($_i_ + 1), "html", null, true);
+            echo twig_escape_filter($this->env, ((isset($context["i"]) ? $context["i"] : null) + 1), "html", null, true);
             echo "] ";
-            if (isset($context["e"])) { $_e_ = $context["e"]; } else { $_e_ = null; }
-            echo twig_escape_filter($this->env, $this->getAttribute($_e_, "class"), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["e"]) ? $context["e"] : null), "class"), "html", null, true);
             echo ": ";
-            if (isset($context["e"])) { $_e_ = $context["e"]; } else { $_e_ = null; }
-            echo twig_escape_filter($this->env, $this->getAttribute($_e_, "message"), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["e"]) ? $context["e"] : null), "message"), "html", null, true);
             echo "
 ";
             // line 15
-            if (isset($context["e"])) { $_e_ = $context["e"]; } else { $_e_ = null; }
-            $this->env->loadTemplate("TwigBundle:Exception:traces.txt.twig")->display(array("exception" => $_e_));
+            $this->env->loadTemplate("TwigBundle:Exception:traces.txt.twig")->display(array("exception" => (isset($context["e"]) ? $context["e"] : null)));
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['i'], $context['e'], $context['_parent'], $context['loop']);
@@ -77,6 +72,6 @@ class __TwigTemplate_e8e8a285e79e876446d80397cc210e945b18cd83c948ce93e0c249d6676
 
     public function getDebugInfo()
     {
-        return array (  55 => 15,  114 => 22,  109 => 21,  106 => 20,  101 => 19,  85 => 16,  77 => 12,  67 => 9,  28 => 4,  39 => 7,  110 => 20,  89 => 16,  65 => 14,  63 => 13,  58 => 12,  34 => 5,  26 => 5,  98 => 40,  88 => 17,  80 => 15,  46 => 9,  44 => 9,  36 => 6,  43 => 14,  57 => 11,  50 => 7,  47 => 7,  38 => 13,  27 => 3,  227 => 92,  224 => 91,  221 => 90,  207 => 82,  197 => 74,  195 => 73,  192 => 72,  189 => 71,  186 => 70,  181 => 67,  178 => 66,  173 => 63,  162 => 59,  158 => 57,  155 => 56,  152 => 55,  142 => 47,  136 => 44,  133 => 43,  130 => 42,  120 => 40,  105 => 31,  100 => 19,  78 => 40,  75 => 24,  60 => 12,  53 => 19,  40 => 7,  32 => 4,  24 => 4,  25 => 3,  22 => 2,  19 => 1,  232 => 82,  226 => 78,  222 => 76,  215 => 73,  211 => 84,  208 => 70,  202 => 68,  196 => 64,  193 => 63,  187 => 62,  183 => 60,  180 => 59,  171 => 54,  166 => 51,  163 => 50,  160 => 49,  157 => 48,  149 => 42,  146 => 41,  140 => 46,  137 => 37,  129 => 36,  124 => 35,  121 => 24,  118 => 33,  115 => 39,  111 => 30,  107 => 28,  104 => 27,  97 => 24,  93 => 18,  90 => 21,  81 => 14,  70 => 23,  66 => 13,  62 => 16,  59 => 8,  56 => 20,  52 => 11,  49 => 10,  45 => 6,  41 => 8,  37 => 5,  33 => 10,  30 => 4,);
+        return array (  38 => 13,  94 => 22,  89 => 20,  85 => 19,  79 => 18,  75 => 17,  68 => 14,  56 => 9,  50 => 8,  29 => 4,  87 => 20,  72 => 16,  55 => 13,  21 => 2,  26 => 5,  98 => 40,  93 => 9,  88 => 6,  78 => 40,  46 => 11,  27 => 4,  40 => 8,  44 => 10,  35 => 7,  31 => 5,  43 => 8,  41 => 7,  28 => 3,  201 => 92,  196 => 90,  183 => 82,  171 => 73,  166 => 71,  163 => 70,  158 => 67,  156 => 66,  151 => 63,  142 => 59,  138 => 57,  136 => 56,  123 => 47,  121 => 46,  117 => 44,  115 => 43,  105 => 40,  101 => 24,  91 => 31,  69 => 25,  66 => 15,  62 => 23,  49 => 19,  24 => 4,  32 => 6,  25 => 3,  22 => 2,  19 => 1,  209 => 82,  203 => 78,  199 => 91,  193 => 73,  189 => 71,  187 => 84,  182 => 68,  176 => 64,  173 => 74,  168 => 72,  164 => 60,  162 => 59,  154 => 54,  149 => 51,  147 => 50,  144 => 49,  141 => 48,  133 => 55,  130 => 41,  125 => 38,  122 => 37,  116 => 36,  112 => 42,  109 => 34,  106 => 33,  103 => 32,  99 => 30,  95 => 28,  92 => 21,  86 => 28,  82 => 22,  80 => 19,  73 => 19,  64 => 12,  60 => 13,  57 => 16,  54 => 11,  51 => 15,  48 => 9,  45 => 8,  42 => 14,  39 => 8,  36 => 7,  33 => 10,  30 => 3,);
     }
 }

@@ -39,12 +39,24 @@ class __TwigTemplate_50b0e117d73b3711ecbd10f0e9aebbdbeb7c0e1e021353d9cac80417f80
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 
     <!-- Stylesheets -->
-    <link href=\"style/bootstrap.css\" rel=\"stylesheet\">
-    <link rel=\"stylesheet\" href=\"style/font-awesome.css\">
+    <link href=\"";
+        // line 17
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("style/bootstrap.css"), "html", null, true);
+        echo "\" rel=\"stylesheet\">
+    <link rel=\"stylesheet\" href=\"";
+        // line 18
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("style/font-awesome.css"), "html", null, true);
+        echo "\">
 
     <!-- Main stylesheet -->
-    <link href=\"style/style.css\" rel=\"stylesheet\">
-    <link href=\"style/blue.css\" rel=\"stylesheet\">
+    <link href=\"";
+        // line 21
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("style/style.css"), "html", null, true);
+        echo "\" rel=\"stylesheet\">
+    <link href=\"";
+        // line 22
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("style/blue.css"), "html", null, true);
+        echo "\" rel=\"stylesheet\">
 
     ";
         // line 24
@@ -53,11 +65,17 @@ class __TwigTemplate_50b0e117d73b3711ecbd10f0e9aebbdbeb7c0e1e021353d9cac80417f80
         echo "
     <!-- HTML5 Support for IE -->
     <!--[if lt IE 9]>
-    <script src=\"js/html5shim.js\"></script>
+    <script src=\"";
+        // line 28
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/html5shim.js"), "html", null, true);
+        echo "\"></script>
     <![endif]-->
 
     <!-- Favicon -->
-    <link rel=\"shortcut icon\" href=\"img/favicon/favicon.png\">
+    <link rel=\"shortcut icon\" href=\"";
+        // line 32
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("img/favicon/favicon.png"), "html", null, true);
+        echo "\">
 
 </head>
 
@@ -69,47 +87,31 @@ class __TwigTemplate_50b0e117d73b3711ecbd10f0e9aebbdbeb7c0e1e021353d9cac80417f80
         <div class=\"row\">
 
             <div class=\"col-md-4 col-sm-3\">
-                <!-- Logo. Use class \"color\" to add color to the text. -->
-                <div class=\"logo\">
-                    <h1><a href=\"#\">Meta<span class=\"color bold\">League</span></a></h1>
-                    <p class=\"meta\">Fantasy eSports</p>
-                </div>
+                <!-- Logo -->
+                ";
+        // line 45
+        echo twig_include($this->env, $context, "MetaLeagueSiteBundle:Default:logo.html.twig");
+        echo "
             </div>
 
             <div class=\"col-md-8 col-sm-9\">
-
                 <!-- Navigation -->
-                <div class=\"navbar bs-docs-nav\" role=\"banner\">
-                    <div class=\"container\">
-                        <div class=\"navbar-header\">
-                            <button class=\"navbar-toggle\" type=\"button\" data-toggle=\"collapse\" data-target=\".bs-navbar-collapse\">
-                                <span class=\"sr-only\">Toggle navigation</span>
-                                <span class=\"icon-bar\"></span>
-                                <span class=\"icon-bar\"></span>
-                                <span class=\"icon-bar\"></span>
-                            </button>
-                        </div>
+                ";
+        // line 50
+        echo twig_include($this->env, $context, "MetaLeagueSiteBundle:Default:navigation.html.twig");
+        echo "
 
-                        <nav class=\"collapse navbar-collapse bs-navbar-collapse\" role=\"navigation\">
-                            <ul class=\"nav navbar-nav\">
-                                <li><a href=\"/\">Home</a></li>
-                                <li class=\"dropdown\">
-                                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Leagues <b class=\"caret\"></b></a>
-                                    <ul class=\"dropdown-menu\">
-                                        <li><a href=\"404-1.html\">League of Legends 5v5</a></li>
-                                        <li><a href=\"about1.html\">League of Legends Survivor Pool</a></li>
-                                        <li><a href=\"faq.html\">Counter-Strike 5v5</a></li>
-                                        <li><a href=\"faq.html\">Counter-Strike Survivor Pool</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href=\"contactus1.html\" class=\"color\"><span class=\"color\">Login</span></a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-
-
-            </div>
+                ";
+        // line 52
+        if ($this->env->getExtension('security')->isGranted("IS_AUTHENTICATED_REMEMBERED")) {
+            // line 53
+            echo "                <p>";
+            echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("layout.logged_in_as", array("%username%" => $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : null), "user"), "username")), "FOSUserBundle"), "html", null, true);
+            echo "</p>
+                ";
+        }
+        // line 55
+        echo "            </div>
 
         </div>
     </div>
@@ -120,9 +122,9 @@ class __TwigTemplate_50b0e117d73b3711ecbd10f0e9aebbdbeb7c0e1e021353d9cac80417f80
 <div class=\"sep\"></div>
 
 ";
-        // line 94
+        // line 65
         $this->displayBlock('body', $context, $blocks);
-        // line 95
+        // line 66
         echo "
 <!-- Footer starts -->
 <footer>
@@ -208,14 +210,23 @@ class __TwigTemplate_50b0e117d73b3711ecbd10f0e9aebbdbeb7c0e1e021353d9cac80417f80
 <span class=\"totop\"><a href=\"#\"><i class=\"icon-chevron-up\"></i></a></span>
 
 <!-- JS -->
-<script src=\"js/jquery.js\"></script> <!-- jQuery -->
-<script src=\"js/bootstrap.js\"></script> <!-- Bootstrap -->
-<script src=\"js/custom.js\"></script> <!-- Custom codes -->
+<script src=\"";
+        // line 151
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/jquery.js"), "html", null, true);
+        echo "\"></script> <!-- jQuery -->
+<script src=\"";
+        // line 152
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/bootstrap.js"), "html", null, true);
+        echo "\"></script> <!-- Bootstrap -->
+<script src=\"";
+        // line 153
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/custom.js"), "html", null, true);
+        echo "\"></script> <!-- Custom codes -->
 
 ";
-        // line 184
+        // line 155
         $this->displayBlock('scripts', $context, $blocks);
-        // line 185
+        // line 156
         echo "
 </body>
 </html>";
@@ -232,12 +243,12 @@ class __TwigTemplate_50b0e117d73b3711ecbd10f0e9aebbdbeb7c0e1e021353d9cac80417f80
     {
     }
 
-    // line 94
+    // line 65
     public function block_body($context, array $blocks = array())
     {
     }
 
-    // line 184
+    // line 155
     public function block_scripts($context, array $blocks = array())
     {
     }
@@ -247,8 +258,13 @@ class __TwigTemplate_50b0e117d73b3711ecbd10f0e9aebbdbeb7c0e1e021353d9cac80417f80
         return "::base.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  241 => 184,  236 => 94,  231 => 24,  225 => 7,  219 => 185,  217 => 184,  126 => 95,  124 => 94,  53 => 25,  51 => 24,  31 => 7,  23 => 1,  102 => 47,  93 => 40,  82 => 35,  73 => 31,  67 => 27,  63 => 26,  49 => 14,  47 => 13,  42 => 10,  39 => 9,  32 => 4,  29 => 3,);
+        return array (  242 => 24,  236 => 7,  228 => 155,  223 => 153,  215 => 151,  126 => 65,  114 => 55,  77 => 32,  70 => 28,  65 => 25,  58 => 22,  23 => 1,  104 => 49,  480 => 162,  474 => 161,  469 => 158,  461 => 155,  457 => 153,  453 => 151,  444 => 149,  440 => 148,  437 => 147,  435 => 146,  430 => 144,  427 => 143,  423 => 142,  413 => 134,  409 => 132,  407 => 131,  402 => 130,  398 => 129,  393 => 126,  387 => 122,  384 => 121,  381 => 120,  379 => 119,  374 => 116,  368 => 112,  365 => 111,  362 => 110,  360 => 109,  355 => 106,  341 => 105,  337 => 103,  322 => 101,  314 => 99,  312 => 98,  309 => 97,  305 => 95,  298 => 91,  294 => 90,  285 => 89,  283 => 88,  278 => 86,  268 => 85,  264 => 84,  258 => 81,  252 => 155,  247 => 65,  241 => 77,  229 => 73,  220 => 70,  214 => 69,  177 => 65,  169 => 60,  140 => 55,  132 => 51,  128 => 66,  111 => 37,  107 => 36,  61 => 13,  273 => 96,  269 => 94,  254 => 92,  246 => 90,  243 => 88,  240 => 86,  238 => 85,  235 => 74,  230 => 156,  227 => 81,  224 => 71,  221 => 77,  219 => 152,  217 => 75,  208 => 68,  204 => 72,  179 => 69,  159 => 61,  143 => 56,  135 => 53,  131 => 52,  119 => 42,  108 => 53,  102 => 32,  71 => 19,  67 => 27,  63 => 24,  59 => 14,  47 => 13,  38 => 6,  94 => 28,  89 => 20,  85 => 25,  79 => 18,  75 => 17,  68 => 14,  56 => 9,  50 => 10,  29 => 3,  87 => 25,  72 => 16,  55 => 15,  21 => 2,  26 => 6,  98 => 31,  93 => 45,  88 => 6,  78 => 21,  46 => 7,  27 => 4,  40 => 8,  44 => 17,  35 => 5,  31 => 7,  43 => 8,  41 => 7,  28 => 3,  201 => 92,  196 => 90,  183 => 82,  171 => 61,  166 => 71,  163 => 62,  158 => 67,  156 => 66,  151 => 63,  142 => 59,  138 => 54,  136 => 56,  123 => 47,  121 => 46,  117 => 44,  115 => 43,  105 => 40,  101 => 50,  91 => 27,  69 => 25,  66 => 15,  62 => 23,  49 => 14,  24 => 4,  32 => 4,  25 => 3,  22 => 2,  19 => 1,  209 => 82,  203 => 78,  199 => 67,  193 => 73,  189 => 71,  187 => 84,  182 => 66,  176 => 64,  173 => 65,  168 => 72,  164 => 59,  162 => 59,  154 => 58,  149 => 51,  147 => 58,  144 => 49,  141 => 48,  133 => 55,  130 => 41,  125 => 44,  122 => 43,  116 => 41,  112 => 42,  109 => 34,  106 => 52,  103 => 32,  99 => 31,  95 => 28,  92 => 21,  86 => 28,  82 => 35,  80 => 19,  73 => 31,  64 => 17,  60 => 13,  57 => 11,  54 => 21,  51 => 14,  48 => 18,  45 => 8,  42 => 10,  39 => 9,  36 => 5,  33 => 4,  30 => 7,);
     }
 }
