@@ -17,7 +17,10 @@ class __TwigTemplate_b3223bc7860b2dac6d605c1b92194cfa6f0e83a3aabca62406eed902263
     {
         // line 1
         echo "<div class=\"logo\">
-    <h1><a href=\"#\">Meta<span class=\"color bold\">League</span></a></h1>
+    <h1><a href=\"";
+        // line 2
+        echo $this->env->getExtension('routing')->getPath("meta_league_homepage");
+        echo "\">Meta<span class=\"color bold\">League</span></a></h1>
     <p class=\"meta\">Fantasy eSports</p>
 </div>";
     }
@@ -27,8 +30,13 @@ class __TwigTemplate_b3223bc7860b2dac6d605c1b92194cfa6f0e83a3aabca62406eed902263
         return "MetaLeagueSiteBundle:Default:logo.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  19 => 1,  195 => 80,  192 => 79,  187 => 24,  181 => 7,  175 => 81,  173 => 79,  169 => 77,  156 => 73,  151 => 72,  146 => 71,  142 => 70,  138 => 68,  130 => 66,  124 => 63,  120 => 62,  115 => 61,  113 => 60,  98 => 48,  90 => 43,  76 => 32,  69 => 28,  64 => 25,  62 => 24,  57 => 22,  53 => 21,  47 => 18,  43 => 17,  30 => 7,  22 => 1,);
+        return array (  22 => 2,  19 => 1,);
     }
 }

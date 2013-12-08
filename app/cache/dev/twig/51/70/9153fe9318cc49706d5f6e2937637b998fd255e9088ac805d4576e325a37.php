@@ -29,7 +29,10 @@ class __TwigTemplate_51709153fe9318cc49706d5f6e2937637b998fd255e9088ac805d4576e3
 
         <nav class=\"collapse navbar-collapse bs-navbar-collapse\" role=\"navigation\">
             <ul class=\"nav navbar-nav\">
-                <li><a href=\"/\">Home</a></li>
+                <li><a href=\"";
+        // line 14
+        echo $this->env->getExtension('routing')->getPath("meta_league_homepage");
+        echo "\">Home</a></li>
                 <li class=\"dropdown\">
                     <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Leagues <b class=\"caret\"></b></a>
                     <ul class=\"dropdown-menu\">
@@ -82,6 +85,6 @@ class __TwigTemplate_51709153fe9318cc49706d5f6e2937637b998fd255e9088ac805d4576e3
 
     public function getDebugInfo()
     {
-        return array (  67 => 31,  62 => 29,  55 => 28,  47 => 26,  45 => 25,  19 => 1,  242 => 152,  237 => 62,  232 => 24,  226 => 7,  220 => 153,  218 => 152,  213 => 150,  209 => 149,  205 => 148,  118 => 63,  116 => 62,  101 => 50,  93 => 45,  77 => 32,  70 => 28,  65 => 25,  63 => 24,  58 => 22,  54 => 21,  48 => 18,  44 => 17,  31 => 7,  23 => 1,);
+        return array (  70 => 31,  65 => 29,  58 => 28,  50 => 26,  48 => 25,  34 => 14,  22 => 2,  19 => 1,);
     }
 }

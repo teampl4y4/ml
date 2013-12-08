@@ -14,7 +14,7 @@ class DefaultController extends Controller
     /**
      * @return \Symfony\Component\HttpFoundation\Response
      * @Template ()
-     * @Route ("/")
+     * @Route ("/", name="meta_league_homepage")
      */
     public function indexAction()
     {

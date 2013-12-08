@@ -219,13 +219,13 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        // metaleague_site_default_index
+        // meta_league_homepage
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'metaleague_site_default_index');
+                return $this->redirect($pathinfo.'/', 'meta_league_homepage');
             }
 
-            return array (  '_controller' => 'MetaLeague\\SiteBundle\\Controller\\DefaultController::indexAction',  '_route' => 'metaleague_site_default_index',);
+            return array (  '_controller' => 'MetaLeague\\SiteBundle\\Controller\\DefaultController::indexAction',  '_route' => 'meta_league_homepage',);
         }
 
         if (0 === strpos($pathinfo, '/log')) {
