@@ -16,7 +16,12 @@ If you are running MAMP, then there will be issues with this, and you should rea
     1) http://www.lullabot.com/blog/article/installing-php-pear-and-pecl-extensions-mamp-mac-os-x-107-lion
 
 
-2) Setting Up Data
+2) Setting Up Database
+    If you are using standard MAMP install you should be good already, otherwise edit app/config/parameters.yml with the appropriate MySQL connection info and then run the following:
+    1) $ php app/console doctrine:database:create
+    2) $ php app/console doctrine:schema:update --force
+
+3) Setting Up Data
 ----------------------------------
     1) You can navigate to /app_dev.php and click register to start creating users if you need
     2) You can navigate to /app_dev.php/game/new and start using built in CRUD for "Game" Entity
