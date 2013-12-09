@@ -7,3 +7,8 @@
 /.idea/*
 .idea*
 .idea/workspace.xml
+/nbproject/private/
+/vendor
+/vendor/*
+/nbproject
+/nbproject/*
