@@ -33,12 +33,13 @@ Note: If you are running MAMP, and have issues getting composer or setting up IC
 Please be sure that you copied the app/config/parameters.yml.dist file to app/config/parameters.yml and updated the values for your local database environment.  When this is done, you will need to run the following commands to create both the database and the schema:
 
 ```
-1) $ php app/console doctrine:database:create
-2) $ php app/console doctrine:schema:update --force
+$ php app/console doctrine:database:create
+$ php app/console doctrine:schema:update --force
 ```
 
 3) Setting Up Data
 ----------------------------------
-1) You can navigate with your browser to /app_dev.php and click register to start creating users if you need
-2) You can navigate with your browser to /app_dev.php/game/new and start using built in CRUD for "Game" Entity
+- [ ] You can navigate with your browser to /app_dev.php and click register to start creating users if you need
+- [ ] You can navigate with your browser to /app_dev.php/game/new and start using built in CRUD for "Game" Entity
+
 (note: we have 3 images that we can use in the teaser img attribute ('img/cs-teaser.png', 'img/lol-teaser.png', and 'img/dota-teaser.png')
