@@ -24,7 +24,8 @@ $ chmod -R 777 app/logs
 Finally you will need to update the app/config/parameters.yml file.  We ignore this on GIT because each environment will have it's own,
 so copy the distribution that is in GIT at app/config/parameters.yml.dist and change the values inside of it for your development environment.
 
-Note: If you are running MAMP, and have issues getting composer or setting up ICU please read this article: [http://www.lullabot.com/blog/article/installing-php-pear-and-pecl-extensions-mamp-mac-os-x-107-lion]
+Note: If you are running MAMP, and have issues getting composer or setting up ICU please read this article:
+[Read This Article/Blog](http://www.lullabot.com/blog/article/installing-php-pear-and-pecl-extensions-mamp-mac-os-x-107-lion)
 
 
 2) Setting Up Database
