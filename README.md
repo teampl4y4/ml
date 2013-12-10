@@ -30,6 +30,12 @@ Now we need to set up a symlink to our asset folders, you can do this by running
 $ php app/console assets:install --symlink
 ```
 
+We also use Assetic so this will require us to run the following command (and anytime you change the stylesheets or javascripts inside assetics)
+
+```
+$ php app/console assetic:dump
+```
+
 Finally you will need to update the app/config/parameters.yml file.  We ignore this on GIT because each environment will have it's own,
 so copy the distribution that is in GIT at app/config/parameters.yml.dist and change the values inside of it for your development environment.
 
