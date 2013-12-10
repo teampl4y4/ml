@@ -14,11 +14,14 @@ $ composer update
 
 That will grab the current code repository and the second command will update all the dependencies (such as Syfmony, Doctrine, etc.)
 
-Next you will want to change permissions to the cache and log folder:
+Next you will want to change permissions to the cache and log folder, instead of simply giving a 777 we want to change the owners/users so that it always have the right access so lets run the following commands:
 
 ```
-$ chmod -R 777 app/cache
-$ chmod -R 777 app/logs
+$ sudo rm -rf app/cache/*
+$ sudo rm -rf app/logs/*
+$ APACHEUSER=`ps aux | grep -E '[a]pache|[h]ttpd' | grep -v root | head -1 | cut -d\  -f1`
+$ sudo chmod +a "$APACHEUSER allow delete,write,append,file_inherit,directory_inherit" app/cache app/logs
+$ sudo chmod +a "`whoami` allow delete,write,append,file_inherit,directory_inherit" app/cache app/logs
 ```
 
 Finally you will need to update the app/config/parameters.yml file.  We ignore this on GIT because each environment will have it's own,
