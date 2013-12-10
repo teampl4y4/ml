@@ -48,10 +48,6 @@
             <div class="col-md-8 col-sm-9">
                 <!-- Navigation -->
                 {{ include('MetaLeagueSiteBundle:Default:navigation.html.twig') }}
-
-                {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-                <p>{{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }}</p>
-                {% endif %}
             </div>
 
         </div>

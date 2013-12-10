@@ -24,6 +24,12 @@ $ sudo chmod +a "$APACHEUSER allow delete,write,append,file_inherit,directory_in
 $ sudo chmod +a "`whoami` allow delete,write,append,file_inherit,directory_inherit" app/cache app/logs
 ```
 
+Now we need to set up a symlink to our asset folders, you can do this by running the following command:
+
+```
+$ php app/console assets:install --symlink
+```
+
 Finally you will need to update the app/config/parameters.yml file.  We ignore this on GIT because each environment will have it's own,
 so copy the distribution that is in GIT at app/config/parameters.yml.dist and change the values inside of it for your development environment.
 
