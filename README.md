@@ -39,7 +39,11 @@ $ php app/console doctrine:schema:update --force
 
 3) Setting Up Data
 ----------------------------------
+Fixtures are enabled and on the Fantasy bundle so run the following command to load the development / dummy data
+
+```
+$ php app/console doctrine:fixtures:load
+```
+
 - You can navigate with your browser to /app_dev.php and click register to start creating users if you need
 - You can navigate with your browser to /app_dev.php/game/new and start using built in CRUD for "Game" Entity
-
-(note: we have 3 images that we can use in the teaser img attribute ('img/cs-teaser.png', 'img/lol-teaser.png', and 'img/dota-teaser.png')
