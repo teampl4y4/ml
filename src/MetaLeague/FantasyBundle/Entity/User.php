@@ -69,4 +69,20 @@ class User extends BaseUser
         return $this->name;
     }
 
+    /**
+     * @param ArrayCollection $leagues
+     */
+    public function setLeagues(ArrayCollection $leagues) {
+        $this->leagues = $leagues;
+    }
+
+    /**
+     * @return ArrayCollection
+     */
+    public function getLeagues() {
+        return $this->leagues;
+    }
+
+
+
 }
