@@ -2,12 +2,15 @@
 
 namespace MetaLeague\FantasyBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\ORM\Mapping\ManyToMany;
+use Doctrine\ORM\Mapping\JoinTable;
 
 /**
  * @ORM\Entity
- * @ORM\Table(name="MetaUser")
+ * @ORM\Table(name="MetaLeagueUser")
  */
 class User extends BaseUser
 {
@@ -25,10 +28,21 @@ class User extends BaseUser
      */
     private $name;
 
+    /**
+     * @ManyToMany(targetEntity="League", inversedBy="users")
+     * @JoinTable(name="MetaLeagueUsersLeagues")
+     **/
+    protected $leagues;
+
     public function __construct()
     {
         parent::__construct();
-        // your own logic
+        $this->leagues = new ArrayCollection();
+    }
+
+    public function addLeague(League $league)
+    {
+        $this->leagues[] = $league;
     }
 
     public function setEmail($email){

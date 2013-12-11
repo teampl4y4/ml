@@ -3,6 +3,8 @@
 namespace MetaLeague\FantasyBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\ORM\Mapping\ManyToMany;
+use Doctrine\ORM\Mapping\JoinColumn;
 
 /**
  * League
@@ -42,6 +44,29 @@ class League
      * @ORM\JoinColumn(name="game_id", referencedColumnName="id")
      */
     private $game;
+
+    /**
+     * @var User
+     * @ORM\OneToOne(targetEntity="User")
+     * @JoinColumn(name="commissioner", referencedColumnName="id")
+     */
+    private $commissioner;
+
+    /**
+     * @ManyToMany(targetEntity="User", mappedBy="groups")
+     **/
+    protected $users;
+
+    public function __construct()
+    {
+        $this->users = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    public function addUser(User $user)
+    {
+        $this->users[] = $user;
+        $user->addLeague($this);
+    }
 
 
     /**
@@ -115,6 +140,35 @@ class League
     public function getGame() {
         return $this->game;
     }
+
+    /**
+     * @param \MetaLeague\FantasyBundle\Entity\User $commissioner
+     */
+    public function setCommissioner(User $commissioner) {
+        $this->commissioner = $commissioner;
+    }
+
+    /**
+     * @return \MetaLeague\FantasyBundle\Entity\User
+     */
+    public function getCommissioner() {
+        return $this->commissioner;
+    }
+
+    /**
+     * @param \Doctrine\Common\Collections\ArrayCollection $users
+     */
+    public function setUsers(\Doctrine\Common\Collections\ArrayCollection $users) {
+        $this->users = $users;
+    }
+
+    /**
+     * @return \Doctrine\Common\Collections\ArrayCollection
+     */
+    public function getUsers() {
+        return $this->users;
+    }
+
 
 
 }
