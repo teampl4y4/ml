@@ -8,8 +8,11 @@ namespace MetaLeague\FantasyBundle\DataFixtures\ORM;
 use Doctrine\Common\DataFixtures\Doctrine;
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
+use MetaLeague\FantasyBundle\Entity\FantasyTeam;
 use MetaLeague\FantasyBundle\Entity\Game;
 use MetaLeague\FantasyBundle\Entity\League;
+use MetaLeague\FantasyBundle\Entity\LeagueRoster;
+use MetaLeague\FantasyBundle\Entity\ProPlayer;
 use MetaLeague\FantasyBundle\Entity\User;
 
 class LoadUserData implements FixtureInterface {
@@ -52,7 +55,21 @@ class LoadUserData implements FixtureInterface {
 
     private function loadLeagueMatches(ObjectManager $manager, User $user, League $league, array $competitors)
     {
+        $proPlayer = new ProPlayer();
+        $proPlayer->setFirstName('Josh');
+        $proPlayer->setLastName('Team');
+        $manager->persist($proPlayer);
+
         $competitor = array_pop($competitors);
+
+        $team = new FantasyTeam();
+        $team->setName('Fixture Team');
+        $team->setUser($user);
+        $team->setLogo('n/a');
+        $team->addPlayer($proPlayer);
+
+        $manager->persist($team);
+        $manager->flush();
 
     }
 

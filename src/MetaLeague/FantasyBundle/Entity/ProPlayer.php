@@ -38,7 +38,7 @@ class ProPlayer
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="dateOfBirth", type="datetime")
+     * @ORM\Column(name="dateOfBirth", type="datetime", nullable=true)
      */
     private $dateOfBirth;
 
