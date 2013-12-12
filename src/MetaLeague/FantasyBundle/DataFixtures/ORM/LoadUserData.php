@@ -25,6 +25,7 @@ class LoadUserData implements FixtureInterface {
         $league         = $this->loadLeagues($manager, $game);
         $user           = $this->loadUsers($manager, $league);
         $competitors    = $this->loadCompetitorsForUser($manager, $user, $league);
+        $matches        = $this->loadLeagueMatches($manager, $user, $league, $competitors);
     }
 
     /**
@@ -47,6 +48,12 @@ class LoadUserData implements FixtureInterface {
         $manager->flush();
 
         return $user;
+    }
+
+    private function loadLeagueMatches(ObjectManager $manager, User $user, League $league, array $competitors)
+    {
+        $competitor = array_pop($competitors);
+
     }
 
     /**
