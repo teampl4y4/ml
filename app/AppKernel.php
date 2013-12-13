@@ -20,7 +20,8 @@ class AppKernel extends Kernel
             new MetaLeague\FantasyBundle\MetaLeagueFantasyBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle()
-
+,
+            new MetaLeague\APIBundle\MetaLeagueAPIBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

@@ -1,3 +1,7 @@
+meta_league_api:
+    resource: "@MetaLeagueAPIBundle/Resources/config/routing.yml"
+    prefix:   /
+
 meta_league_fantasy:
     resource: "@MetaLeagueFantasyBundle/Controller"
     prefix:   /
