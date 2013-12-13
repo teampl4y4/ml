@@ -12,7 +12,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class GamePosition
 {
-    /**
+     /**
      * @var integer
      *
      * @ORM\Column(name="id", type="integer")
@@ -21,6 +21,13 @@ class GamePosition
      */
     private $id;
 
+    /**
+     * @var Game
+     *
+     * @ORM\ManyToOne(targetEntity="Game", inversedBy="gamepositions")
+     * @ORM\JoinColumn(name="game_id", referencedColumnName="id")
+     */
+    private $game;
     /**
      * @var integer
      *
@@ -51,6 +58,26 @@ class GamePosition
     public function getId()
     {
         return $this->id;
+    }
+    
+    /**
+     * Get Game
+     * 
+     * @return Game
+     */
+    public function getGame() {
+        return $this->game;
+    }
+    
+    /**
+     *
+     * @param Game $game
+     * @return GamePosition
+     */
+    public function setGame($game) {
+        $this->game = $game;
+        
+        return $this;
     }
 
     /**

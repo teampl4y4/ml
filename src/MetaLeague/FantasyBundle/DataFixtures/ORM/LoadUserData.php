@@ -10,6 +10,7 @@ use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use MetaLeague\FantasyBundle\Entity\FantasyTeam;
 use MetaLeague\FantasyBundle\Entity\Game;
+use MetaLeague\FantasyBundle\Entity\GamePosition;
 use MetaLeague\FantasyBundle\Entity\League;
 use MetaLeague\FantasyBundle\Entity\LeagueRoster;
 use MetaLeague\FantasyBundle\Entity\ProPlayer;
@@ -29,6 +30,7 @@ class LoadUserData implements FixtureInterface {
         $user           = $this->loadUsers($manager, $league);
         $competitors    = $this->loadCompetitorsForUser($manager, $user, $league);
         $matches        = $this->loadLeagueMatches($manager, $user, $league, $competitors);
+        $positions      = $this->loadGamePositions($manager, $game);
     }
 
     /**
@@ -149,6 +151,33 @@ class LoadUserData implements FixtureInterface {
         $manager->flush();
 
         return $gameLol;
+    }
+    
+    /**
+     * @param ObjectManager $manager
+     * @param Game $game
+     * @return array of positions made
+     */
+    private function loadGamePositions(ObjectManager $manager, Game $game)
+    {
+        $positions = array(
+            'SoloLaner',
+            'Jungler',
+            'Support',
+            'ADC'
+        );
+        
+        forEach($positions as $id => $description) {
+            $position = new GamePosition();
+            $position->setGame($game);
+            $position->setListingPriority($id);
+            $position->setDescription($description);
+
+            $manager->persist($position);
+        }
+
+        $manager->flush();
+        return $positions;
     }
 
 } 
