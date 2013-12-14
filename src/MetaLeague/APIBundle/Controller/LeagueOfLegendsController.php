@@ -49,7 +49,8 @@ class LeagueOfLegendsController extends FOSRestController
     
     /**
      * Get recent games by summoner ID.
-     *
+     * GET Route annotation.
+     * @Get("/lol/summoner/games/{summonerID}")
      * @ApiDoc(
      *   resource = true,
      *   statusCodes = {
@@ -74,7 +75,8 @@ class LeagueOfLegendsController extends FOSRestController
     
     /**
      * Get a summoner's ID by name.
-     *
+     * GET Route annotation.
+     * @Get("/lol/summoner/name/{summonerID}")
      * @ApiDoc(
      *   resource = true,
      *   statusCodes = {
@@ -98,8 +100,9 @@ class LeagueOfLegendsController extends FOSRestController
     
     
     /**
-     * Get recent games by summoner ID.
-     *
+     * Get summoner by ID.
+     * GET Route annotation.
+     * @Get("/lol/summoner/{summonerID}")
      * @ApiDoc(
      *   resource = true,
      *   statusCodes = {
@@ -123,7 +126,8 @@ class LeagueOfLegendsController extends FOSRestController
     
     /**
      * Get multiple summoner's IDs by csv of names.  Max 40.
-     *
+     * GET Route annotation.
+     * @Get("/lol/summoner/names/{summonerIDs}")
      * @ApiDoc(
      *   resource = true,
      *   statusCodes = {
@@ -148,7 +152,8 @@ class LeagueOfLegendsController extends FOSRestController
     
     /**
      * Get a summoner's masteries by summoner ID.
-     *
+     * GET Route annotation.
+     * @Get("/lol/summoner/masteries/{summonerID}")
      * @ApiDoc(
      *   resource = true,
      *   statusCodes = {
@@ -173,7 +178,8 @@ class LeagueOfLegendsController extends FOSRestController
     
     /**
      * Get a summoner's runes by summoner ID.
-     *
+     * GET Route annotation.
+     * @Get("/lol/summoner/runes/{summonerID}")
      * @ApiDoc(
      *   resource = true,
      *   statusCodes = {
@@ -198,6 +204,8 @@ class LeagueOfLegendsController extends FOSRestController
     
     /**
      * Get a summoners league.
+     * GET Route annotation.
+     * @Get("/lol/summoner/league/{summonerID}")
      *
      * @ApiDoc(
      *   resource = true,
@@ -222,7 +230,8 @@ class LeagueOfLegendsController extends FOSRestController
     
     /**
      * Get a summoner's team.
-     *
+     * GET Route annotation.
+     * @Get("/lol/summoner/team/{summonerID}")
      * @ApiDoc(
      *   resource = true,
      *   statusCodes = {
@@ -247,6 +256,8 @@ class LeagueOfLegendsController extends FOSRestController
     
     /**
      * Get a summoners ranked stats by by summoner ID.
+     * GET Route annotation.
+     * @Get("/lol/summoner/stats/ranked/{summonerID}")
      *
      * @ApiDoc(
      *   resource = true,
@@ -273,7 +284,7 @@ class LeagueOfLegendsController extends FOSRestController
     /**
      * Get a summoners summary stats by by summoner ID.
      * GET Route annotation.
-     * @Get("/lol/stats/summary/{summonerID}")
+     * @Get("/lol/summoner/stats/summary/{summonerID}")
      *
      * @ApiDoc(
      *   resource = true,
