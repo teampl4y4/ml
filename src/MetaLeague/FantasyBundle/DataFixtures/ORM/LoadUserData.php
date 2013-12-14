@@ -15,6 +15,7 @@ use MetaLeague\FantasyBundle\Entity\League;
 use MetaLeague\FantasyBundle\Entity\LeagueRoster;
 use MetaLeague\FantasyBundle\Entity\ProPlayer;
 use MetaLeague\FantasyBundle\Entity\User;
+use MetaLeague\FantasyBundle\Entity\LeagueMatch;
 
 class LoadUserData implements FixtureInterface {
 
@@ -72,16 +73,36 @@ class LoadUserData implements FixtureInterface {
             $manager->persist($proPlayer);
         }
 
-        //TODO: want to create competitors for a match, etc. and populate the league
-        //$competitor = array_pop($competitors);
+        /** @var @var User $competitor */
+        $competitor = array_pop($competitors);
 
-        $team = new FantasyTeam();
-        $team->setName('Fixture Team');
-        $team->setUser($user);
-        $team->setLogo('n/a');
-        $team->addPlayer($proPlayer);
+        $homeTeam = new FantasyTeam();
+        $homeTeam->setName('Main FT');
+        $homeTeam->setUser($user);
+        $homeTeam->setLogo('n/a');
+        $homeTeam->addPlayer($proPlayer);
 
-        $manager->persist($team);
+        $manager->persist($homeTeam);
+
+        $awayTeam = new FantasyTeam();
+        $awayTeam->setName('Main FT Opponent');
+        $awayTeam->setUser($competitor);
+        $awayTeam->setLogo('n/a');
+        $awayTeam->addPlayer($proPlayer);
+
+        $manager->persist($awayTeam);
+
+        $leagueMatch = new LeagueMatch();
+        $leagueMatch->setStartsOn(new \DateTime('1 day ago'));
+        $leagueMatch->setHomeTeam($homeTeam);
+        $leagueMatch->setHomeTeamScore(rand(0,100));
+        $leagueMatch->setAwayTeam($awayTeam);
+        $leagueMatch->setAwayTeamScore(rand(0,100));
+
+        $manager->persist($leagueMatch);
+
+        //TODO make random matches between the competitors/users left in $competitors array
+
         $manager->flush();
 
     }

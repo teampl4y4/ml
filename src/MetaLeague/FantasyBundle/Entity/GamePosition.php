@@ -28,6 +28,7 @@ class GamePosition
      * @ORM\JoinColumn(name="game_id", referencedColumnName="id")
      */
     private $game;
+
     /**
      * @var integer
      *

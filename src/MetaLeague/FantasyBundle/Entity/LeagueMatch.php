@@ -3,6 +3,7 @@
 namespace MetaLeague\FantasyBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\ORM\Mapping\JoinColumn as JoinColumn;
 
 /**
  * LeagueMatch
@@ -29,11 +30,47 @@ class LeagueMatch
     private $startsOn;
 
     /**
+     * @var FantasyTeam
+     *
+     * @ORM\OneToOne(targetEntity="FantasyTeam")
+     * @ORM\JoinColumn(name="homeTeam", referencedColumnName="id")
+     */
+    private $homeTeam;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="homeTeamScore", type="smallint")
+     */
+    private $homeTeamScore;
+
+    /**
+     * @var FantasyTeam
+     *
+     * @ORM\OneToOne(targetEntity="FantasyTeam")
+     * @ORM\JoinColumn(name="awayTeam", referencedColumnName="id")
+     */
+    private $awayTeam;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="awayTeamScore", type="smallint")
+     */
+    private $awayTeamScore;
+
+
+    /**
      * @var \DateTime
      *
      * @ORM\Column(name="createdAt", type="datetime")
      */
     private $createdAt;
+
+    public function __construct()
+    {
+        $this->createdAt = new \DateTime();
+    }
 
 
     /**
@@ -80,6 +117,62 @@ class LeagueMatch
         $this->createdAt = $createdAt;
 
         return $this;
+    }
+
+    /**
+     * @param \MetaLeague\FantasyBundle\Entity\FantasyTeam $awayTeam
+     */
+    public function setAwayTeam(FantasyTeam $awayTeam) {
+        $this->awayTeam = $awayTeam;
+    }
+
+    /**
+     * @return \MetaLeague\FantasyBundle\Entity\FantasyTeam
+     */
+    public function getAwayTeam() {
+        return $this->awayTeam;
+    }
+
+    /**
+     * @param int $awayTeamScore
+     */
+    public function setAwayTeamScore($awayTeamScore) {
+        $this->awayTeamScore = $awayTeamScore;
+    }
+
+    /**
+     * @return int
+     */
+    public function getAwayTeamScore() {
+        return $this->awayTeamScore;
+    }
+
+    /**
+     * @param \MetaLeague\FantasyBundle\Entity\FantasyTeam $homeTeam
+     */
+    public function setHomeTeam(FantasyTeam $homeTeam) {
+        $this->homeTeam = $homeTeam;
+    }
+
+    /**
+     * @return \MetaLeague\FantasyBundle\Entity\FantasyTeam
+     */
+    public function getHomeTeam() {
+        return $this->homeTeam;
+    }
+
+    /**
+     * @param int $homeTeamScore
+     */
+    public function setHomeTeamScore($homeTeamScore) {
+        $this->homeTeamScore = $homeTeamScore;
+    }
+
+    /**
+     * @return int
+     */
+    public function getHomeTeamScore() {
+        return $this->homeTeamScore;
     }
 
     /**
