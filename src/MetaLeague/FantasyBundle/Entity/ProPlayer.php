@@ -3,6 +3,7 @@
 namespace MetaLeague\FantasyBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\ORM\Mapping\JoinColumn as JoinColumn;
 
 /**
  * ProPlayer
@@ -42,6 +43,13 @@ class ProPlayer
      */
     private $dateOfBirth;
 
+    /**
+     * @var GamePosition
+     *
+     * @ORM\OneToOne(targetEntity="GamePosition")
+     * @ORM\JoinColumn(name="gamePosition_id", referencedColumnName="id")
+     */
+    private $gamePosition;
 
     /**
      * Get id
@@ -121,4 +129,20 @@ class ProPlayer
     {
         return $this->dateOfBirth;
     }
+
+    /**
+     * @param \MetaLeague\FantasyBundle\Entity\GamePosition $gamePosition
+     */
+    public function setGamePosition(GamePosition $gamePosition) {
+        $this->gamePosition = $gamePosition;
+    }
+
+    /**
+     * @return \MetaLeague\FantasyBundle\Entity\GamePosition
+     */
+    public function getGamePosition() {
+        return $this->gamePosition;
+    }
+
+
 }

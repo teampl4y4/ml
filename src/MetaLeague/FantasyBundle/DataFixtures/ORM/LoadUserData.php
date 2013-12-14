@@ -29,8 +29,8 @@ class LoadUserData implements FixtureInterface {
         $league         = $this->loadLeagues($manager, $game);
         $user           = $this->loadUsers($manager, $league);
         $competitors    = $this->loadCompetitorsForUser($manager, $user, $league);
-        $matches        = $this->loadLeagueMatches($manager, $user, $league, $competitors);
         $positions      = $this->loadGamePositions($manager, $game);
+        $matches        = $this->loadLeagueMatches($manager, $user, $league, $competitors, $positions);
     }
 
     /**
@@ -55,14 +55,25 @@ class LoadUserData implements FixtureInterface {
         return $user;
     }
 
-    private function loadLeagueMatches(ObjectManager $manager, User $user, League $league, array $competitors)
+    private function loadLeagueMatches(ObjectManager $manager, User $user, League $league, array $competitors, array $positions)
     {
-        $proPlayer = new ProPlayer();
-        $proPlayer->setFirstName('Josh');
-        $proPlayer->setLastName('Team');
-        $manager->persist($proPlayer);
 
-        $competitor = array_pop($competitors);
+        //create 1 pro player per position
+        $pros = array();
+        foreach($positions as $position)
+        {
+            /** @var GamePosition $position */
+            $proPlayer = new ProPlayer();
+            $proPlayer->setFirstName('Josh ' . $position->getDescription());
+            $proPlayer->setLastName('Team ' . $position->getDescription());
+            $proPlayer->setGamePosition($position);
+            $pros[] = $proPlayer;
+
+            $manager->persist($proPlayer);
+        }
+
+        //TODO: want to create competitors for a match, etc. and populate the league
+        //$competitor = array_pop($competitors);
 
         $team = new FantasyTeam();
         $team->setName('Fixture Team');
@@ -166,7 +177,8 @@ class LoadUserData implements FixtureInterface {
             'Support',
             'ADC'
         );
-        
+
+        $p = array();
         forEach($positions as $id => $description) {
             $position = new GamePosition();
             $position->setGame($game);
@@ -174,10 +186,11 @@ class LoadUserData implements FixtureInterface {
             $position->setDescription($description);
 
             $manager->persist($position);
+            $p[] = $position;
         }
 
         $manager->flush();
-        return $positions;
+        return $p;
     }
 
 } 
