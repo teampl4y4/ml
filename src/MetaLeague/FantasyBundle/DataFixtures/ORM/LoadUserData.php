@@ -65,8 +65,8 @@ class LoadUserData implements FixtureInterface {
         {
             /** @var GamePosition $position */
             $proPlayer = new ProPlayer();
-            $proPlayer->setFirstName('Josh ' . $position->getDescription());
-            $proPlayer->setLastName('Team ' . $position->getDescription());
+            $proPlayer->setFirstName('Dummy');
+            $proPlayer->setLastName($position->getDescription());
             $proPlayer->setGamePosition($position);
             $proPlayer->setGame($league->getGame());
             $proPlayer->setAlias('alias ' . rand(0,99));
