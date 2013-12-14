@@ -18,6 +18,8 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Form\FormTypeInterface;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
+use Lsw\ApiCallerBundle\Call\HttpGetJson;
+
 /**
  * Rest controller for League of Legends
  *
@@ -29,7 +31,7 @@ class LeagueOfLegendsController extends FOSRestController
     /**
      * List all champions.
      *
-     * GET Route annotation.
+     * 
      * @Get("/lol/champions")
      * 
      * @ApiDoc(
@@ -49,7 +51,7 @@ class LeagueOfLegendsController extends FOSRestController
     
     /**
      * Get recent games by summoner ID.
-     * GET Route annotation.
+     * 
      * @Get("/lol/summoner/games/{summonerID}")
      * @ApiDoc(
      *   resource = true,
@@ -75,8 +77,8 @@ class LeagueOfLegendsController extends FOSRestController
     
     /**
      * Get a summoner's ID by name.
-     * GET Route annotation.
-     * @Get("/lol/summoner/name/{summonerID}")
+     * 
+     * @Get("/lol/summoner/name/{summonerName}")
      * @ApiDoc(
      *   resource = true,
      *   statusCodes = {
@@ -88,20 +90,21 @@ class LeagueOfLegendsController extends FOSRestController
      * @Annotations\QueryParam(name="name", requirements="*+", nullable=false, description="The Summoner's name.")
      *
      * @Annotations\View()
-     *
-     * @param SummonerID               $summonerID      The Summoner ID.
+     * 
+     * @param SummonerID               $summonerName      The Summoner name.
      *
      * @return array
      */
-    public function getSummonerByName($summonerID)
+    public function getSummonerByName($summonerName)
     {
-        
+        $output = $this->get('api_caller')->call(new HttpGetJson("https://prod.api.pvp.net/api/lol/na/v1.1/summoner/by-name/".$summonerName,array('api_key'=>"ef24b3c7-5180-4318-9946-319330ea84f4")));
+        return new \Symfony\Component\HttpFoundation\JsonResponse($output);
     }
     
     
     /**
      * Get summoner by ID.
-     * GET Route annotation.
+     * 
      * @Get("/lol/summoner/{summonerID}")
      * @ApiDoc(
      *   resource = true,
@@ -126,7 +129,7 @@ class LeagueOfLegendsController extends FOSRestController
     
     /**
      * Get multiple summoner's IDs by csv of names.  Max 40.
-     * GET Route annotation.
+     * 
      * @Get("/lol/summoner/names/{summonerIDs}")
      * @ApiDoc(
      *   resource = true,
@@ -152,7 +155,7 @@ class LeagueOfLegendsController extends FOSRestController
     
     /**
      * Get a summoner's masteries by summoner ID.
-     * GET Route annotation.
+     * 
      * @Get("/lol/summoner/masteries/{summonerID}")
      * @ApiDoc(
      *   resource = true,
@@ -178,7 +181,7 @@ class LeagueOfLegendsController extends FOSRestController
     
     /**
      * Get a summoner's runes by summoner ID.
-     * GET Route annotation.
+     * 
      * @Get("/lol/summoner/runes/{summonerID}")
      * @ApiDoc(
      *   resource = true,
@@ -204,7 +207,7 @@ class LeagueOfLegendsController extends FOSRestController
     
     /**
      * Get a summoners league.
-     * GET Route annotation.
+     * 
      * @Get("/lol/summoner/league/{summonerID}")
      *
      * @ApiDoc(
@@ -230,7 +233,6 @@ class LeagueOfLegendsController extends FOSRestController
     
     /**
      * Get a summoner's team.
-     * GET Route annotation.
      * @Get("/lol/summoner/team/{summonerID}")
      * @ApiDoc(
      *   resource = true,
@@ -256,7 +258,6 @@ class LeagueOfLegendsController extends FOSRestController
     
     /**
      * Get a summoners ranked stats by by summoner ID.
-     * GET Route annotation.
      * @Get("/lol/summoner/stats/ranked/{summonerID}")
      *
      * @ApiDoc(
@@ -283,7 +284,7 @@ class LeagueOfLegendsController extends FOSRestController
     
     /**
      * Get a summoners summary stats by by summoner ID.
-     * GET Route annotation.
+     * 
      * @Get("/lol/summoner/stats/summary/{summonerID}")
      *
      * @ApiDoc(
