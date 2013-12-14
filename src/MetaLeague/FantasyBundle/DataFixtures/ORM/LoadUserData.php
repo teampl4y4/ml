@@ -118,6 +118,7 @@ class LoadUserData implements FixtureInterface {
 
         $manager->persist($leagueMatch);
 
+        //create some other matches in the league
         $itts = floor(count($competitors) / 2);
         for($i=1;$i<=$itts;$i++) {
             $homeTeam = new FantasyTeam();
