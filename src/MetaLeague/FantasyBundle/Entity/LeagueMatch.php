@@ -59,6 +59,14 @@ class LeagueMatch
      */
     private $awayTeamScore;
 
+    /**
+     * @var League
+     *
+     * @ORM\ManyToOne(targetEntity="League", inversedBy="matches")
+     * @ORM\JoinColumn(name="league_id", referencedColumnName="id")
+     */
+    private $league;
+
 
     /**
      * @var \DateTime
@@ -173,6 +181,20 @@ class LeagueMatch
      */
     public function getHomeTeamScore() {
         return $this->homeTeamScore;
+    }
+
+    /**
+     * @param \MetaLeague\FantasyBundle\Entity\League $league
+     */
+    public function setLeague(League $league) {
+        $this->league = $league;
+    }
+
+    /**
+     * @return \MetaLeague\FantasyBundle\Entity\League
+     */
+    public function getLeague() {
+        return $this->league;
     }
 
     /**

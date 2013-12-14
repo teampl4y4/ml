@@ -2,6 +2,7 @@
 
 namespace MetaLeague\FantasyBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\ORM\Mapping\ManyToMany;
 use Doctrine\ORM\Mapping\JoinColumn;
@@ -46,6 +47,13 @@ class League
     private $game;
 
     /**
+     * @var ArrayCollection
+     *
+     * @ORM\OneToMany(targetEntity="LeagueMatch", mappedBy="league_id")
+     */
+    private $matches;
+
+    /**
      * @var User
      * @ORM\OneToOne(targetEntity="User")
      * @JoinColumn(name="commissioner", referencedColumnName="id")
@@ -59,7 +67,8 @@ class League
 
     public function __construct()
     {
-        $this->users = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->users    = new ArrayCollection();
+        $this->matches  = new ArrayCollection();
     }
 
     public function addUser(User $user)
@@ -68,6 +77,10 @@ class League
         $user->addLeague($this);
     }
 
+    public function addMatch(LeagueMatch $match)
+    {
+        $this->matches[] = $match;
+    }
 
     /**
      * Get id
