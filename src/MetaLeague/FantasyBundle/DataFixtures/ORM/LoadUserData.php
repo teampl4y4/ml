@@ -101,6 +101,7 @@ class LoadUserData implements FixtureInterface {
         $leagueMatch->setHomeTeamScore(rand(0,100));
         $leagueMatch->setAwayTeam($awayTeam);
         $leagueMatch->setAwayTeamScore(rand(0,100));
+        $leagueMatch->setLeague($league);
 
         $manager->persist($leagueMatch);
 
