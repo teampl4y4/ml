@@ -30,7 +30,7 @@ class LeagueOfLegendsController extends FOSRestController
      * List all champions.
      *
      * GET Route annotation.
-     * @Get("/champions")
+     * @Get("/lol/champions")
      * 
      * @ApiDoc(
      *   resource = true,
@@ -40,14 +40,9 @@ class LeagueOfLegendsController extends FOSRestController
      * )
      *
      *
-     * @Annotations\View()
-     *
-     * @param Request               $request      the request object
-     * @param ParamFetcherInterface $paramFetcher param fetcher service
-     *
      * @return array
      */
-    public function getAllChampions(Request $request, ParamFetcherInterface $paramFetcher)
+    public function getAllChampions()
     {
         
     }
@@ -58,7 +53,8 @@ class LeagueOfLegendsController extends FOSRestController
      * @ApiDoc(
      *   resource = true,
      *   statusCodes = {
-     *     200 = "Returned when successful"
+     *     200 = "Returned when successful",
+     *     404 = "Returned when summoner not found"
      *   }
      * )
      *
@@ -66,12 +62,11 @@ class LeagueOfLegendsController extends FOSRestController
      *
      * @Annotations\View()
      *
-     * @param Request               $request      the request object
-     * @param ParamFetcherInterface $paramFetcher param fetcher service
+     * @param SummonerID               $summonerID      The Summoner ID.
      *
      * @return array
      */
-    public function getRecentGamesBySummonerID(Request $request, ParamFetcherInterface $paramFetcher)
+    public function getRecentGamesBySummonerID($summonerID)
     {
         
     }
@@ -83,7 +78,8 @@ class LeagueOfLegendsController extends FOSRestController
      * @ApiDoc(
      *   resource = true,
      *   statusCodes = {
-     *     200 = "Returned when successful"
+     *     200 = "Returned when successful",
+     *     404 = "Returned when summoner not found"
      *   }
      * )
      *
@@ -91,12 +87,11 @@ class LeagueOfLegendsController extends FOSRestController
      *
      * @Annotations\View()
      *
-     * @param Request               $request      the request object
-     * @param ParamFetcherInterface $paramFetcher param fetcher service
+     * @param SummonerID               $summonerID      The Summoner ID.
      *
      * @return array
      */
-    public function getSummonerByName(Request $request, ParamFetcherInterface $paramFetcher)
+    public function getSummonerByName($summonerID)
     {
         
     }
@@ -108,7 +103,8 @@ class LeagueOfLegendsController extends FOSRestController
      * @ApiDoc(
      *   resource = true,
      *   statusCodes = {
-     *     200 = "Returned when successful"
+     *     200 = "Returned when successful",
+     *     404 = "Returned when summoner not found"
      *   }
      * )
      *
@@ -116,12 +112,11 @@ class LeagueOfLegendsController extends FOSRestController
      *
      * @Annotations\View()
      *
-     * @param Request               $request      the request object
-     * @param ParamFetcherInterface $paramFetcher param fetcher service
+     * @param SummonerID               $summonerID      The Summoner ID.
      *
      * @return array
      */
-    public function getSummonerByID(Request $request, ParamFetcherInterface $paramFetcher)
+    public function getSummonerByID($summonerID)
     {
         
     }
@@ -132,7 +127,8 @@ class LeagueOfLegendsController extends FOSRestController
      * @ApiDoc(
      *   resource = true,
      *   statusCodes = {
-     *     200 = "Returned when successful"
+     *     200 = "Returned when successful",
+     *     404 = "Returned when summoner not found"
      *   }
      * )
      *
@@ -140,12 +136,11 @@ class LeagueOfLegendsController extends FOSRestController
      *
      * @Annotations\View()
      *
-     * @param Request               $request      the request object
-     * @param ParamFetcherInterface $paramFetcher param fetcher service
+     * @param SummonerIDs               $summonerIDs      CSV of Summoner IDs.
      *
      * @return array
      */
-    public function getSummonerNamesByIDs(Request $request, ParamFetcherInterface $paramFetcher)
+    public function getSummonerNamesByIDs($summonerIDs)
     {
         
     }
@@ -157,7 +152,8 @@ class LeagueOfLegendsController extends FOSRestController
      * @ApiDoc(
      *   resource = true,
      *   statusCodes = {
-     *     200 = "Returned when successful"
+     *     200 = "Returned when successful",
+     *     404 = "Returned when summoner not found"
      *   }
      * )
      *
@@ -165,12 +161,11 @@ class LeagueOfLegendsController extends FOSRestController
      *
      * @Annotations\View()
      *
-     * @param Request               $request      the request object
-     * @param ParamFetcherInterface $paramFetcher param fetcher service
+     * @param SummonerID               $summonerID      The Summoner ID.
      *
      * @return array
      */
-    public function getMasteriesBySummonerID(Request $request, ParamFetcherInterface $paramFetcher)
+    public function getMasteriesBySummonerID($summonerID)
     {
         
     }
@@ -182,7 +177,8 @@ class LeagueOfLegendsController extends FOSRestController
      * @ApiDoc(
      *   resource = true,
      *   statusCodes = {
-     *     200 = "Returned when successful"
+     *     200 = "Returned when successful",
+     *     404 = "Returned when summoner not found"
      *   }
      * )
      *
@@ -190,12 +186,11 @@ class LeagueOfLegendsController extends FOSRestController
      *
      * @Annotations\View()
      *
-     * @param Request               $request      the request object
-     * @param ParamFetcherInterface $paramFetcher param fetcher service
+     * @param SummonerID               $summonerID      The Summoner ID.
      *
      * @return array
      */
-    public function getRunesBySummonerID(Request $request, ParamFetcherInterface $paramFetcher)
+    public function getRunesBySummonerID($summonerID)
     {
         
     }
@@ -215,12 +210,11 @@ class LeagueOfLegendsController extends FOSRestController
      *
      * @Annotations\View()
      *
-     * @param Request               $request      the request object
-     * @param ParamFetcherInterface $paramFetcher param fetcher service
+     * @param SummonerID               $summonerID      The Summoner ID.
      *
      * @return array
      */
-    public function getLeagueBySummonerID(Request $request, ParamFetcherInterface $paramFetcher)
+    public function getLeagueBySummonerID($summonerID)
     {
         
     }
@@ -232,7 +226,8 @@ class LeagueOfLegendsController extends FOSRestController
      * @ApiDoc(
      *   resource = true,
      *   statusCodes = {
-     *     200 = "Returned when successful"
+     *     200 = "Returned when successful",
+     *     404 = "Returned when summoner not found"
      *   }
      * )
      *
@@ -240,12 +235,11 @@ class LeagueOfLegendsController extends FOSRestController
      *
      * @Annotations\View()
      *
-     * @param Request               $request      the request object
-     * @param ParamFetcherInterface $paramFetcher param fetcher service
+     * @param SummonerID               $summonerID      The Summoner ID.
      *
      * @return array
      */
-    public function getTeamBySummonerID(Request $request, ParamFetcherInterface $paramFetcher)
+    public function getTeamBySummonerID($summonerID)
     {
         
     }
@@ -257,7 +251,8 @@ class LeagueOfLegendsController extends FOSRestController
      * @ApiDoc(
      *   resource = true,
      *   statusCodes = {
-     *     200 = "Returned when successful"
+     *     200 = "Returned when successful",
+     *     404 = "Returned when summoner not found"
      *   }
      * )
      *
@@ -265,12 +260,11 @@ class LeagueOfLegendsController extends FOSRestController
      *
      * @Annotations\View()
      *
-     * @param Request               $request      the request object
-     * @param ParamFetcherInterface $paramFetcher param fetcher service
+     * @param SummonerID               $summonerID      The Summoner ID.
      *
      * @return array
      */
-    public function getRankedStatsBySummonerID(Request $request, ParamFetcherInterface $paramFetcher)
+    public function getRankedStatsBySummonerID($summonerID)
     {
         
     }
@@ -278,11 +272,14 @@ class LeagueOfLegendsController extends FOSRestController
     
     /**
      * Get a summoners summary stats by by summoner ID.
+     * GET Route annotation.
+     * @Get("/lol/stats/summary/{summonerID}")
      *
      * @ApiDoc(
      *   resource = true,
      *   statusCodes = {
-     *     200 = "Returned when successful"
+     *     200 = "Returned when successful",
+     *     404 = "Returned when summoner not found"
      *   }
      * )
      *
@@ -290,12 +287,11 @@ class LeagueOfLegendsController extends FOSRestController
      *
      * @Annotations\View()
      *
-     * @param Request               $request      the request object
-     * @param ParamFetcherInterface $paramFetcher param fetcher service
+     * @param SummonerID               $summonerID      The Summoner ID.
      *
      * @return array
      */
-    public function getSummaryStatsBySummonerID(Request $request, ParamFetcherInterface $paramFetcher)
+    public function getSummaryStatsBySummonerID($summonerID)
     {
         
     }
