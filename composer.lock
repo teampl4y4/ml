@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "883c3b42d73330241543114970d32b00",
+    "hash": "8a1d871eb3b2cee53ec41177b925239f",
     "packages": [
         {
             "name": "dflydev/markdown",
@@ -1336,6 +1336,65 @@
                 "minification"
             ],
             "time": "2013-07-19 00:03:27"
+        },
+        {
+            "name": "leaseweb/api-caller-bundle",
+            "version": "v1.1.3",
+            "target-dir": "Lsw/ApiCallerBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LeaseWeb/LswApiCallerBundle.git",
+                "reference": "9a5e020d262e460d065e1f71646e3b2eaa105c23"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LeaseWeb/LswApiCallerBundle/zipball/9a5e020d262e460d065e1f71646e3b2eaa105c23",
+                "reference": "9a5e020d262e460d065e1f71646e3b2eaa105c23",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3.2",
+                "symfony/framework-bundle": ">=2.1",
+                "symfony/security-bundle": ">=2.1"
+            },
+            "require-dev": {
+                "doctrine/doctrine-bundle": "*",
+                "swiftmailer/swiftmailer": "*",
+                "symfony/validator": "2.1.*",
+                "symfony/yaml": "2.1.*",
+                "twig/twig": "*",
+                "willdurand/propel-typehintable-behavior": "dev-master"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Lsw\\ApiCallerBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maurits van der Schee",
+                    "email": "m.vanderschee@leaseweb.com"
+                }
+            ],
+            "description": "cURL API call functionality with full Web Debug Toolbar integration",
+            "homepage": "http://www.leaseweblabs.com",
+            "keywords": [
+                "Symfony2",
+                "api",
+                "curl"
+            ],
+            "time": "2013-10-21 10:41:09"
         },
         {
             "name": "monolog/monolog",
