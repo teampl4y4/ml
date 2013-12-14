@@ -37,6 +37,13 @@ class ProPlayer
     private $lastName;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="alias", type="string", length=255)
+     */
+    private $alias;
+
+    /**
      * @var \DateTime
      *
      * @ORM\Column(name="dateOfBirth", type="datetime", nullable=true)
@@ -50,6 +57,14 @@ class ProPlayer
      * @ORM\JoinColumn(name="gamePosition_id", referencedColumnName="id")
      */
     private $gamePosition;
+
+    /**
+     * @var Game
+     *
+     * @ORM\ManyToOne(targetEntity="Game")
+     * @ORM\JoinColumn(name="game_id", referencedColumnName="id")
+     */
+    private $game;
 
     /**
      * Get id
@@ -144,5 +159,32 @@ class ProPlayer
         return $this->gamePosition;
     }
 
+    /**
+     * @param string $alias
+     */
+    public function setAlias($alias) {
+        $this->alias = $alias;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAlias() {
+        return $this->alias;
+    }
+
+    /**
+     * @param \MetaLeague\FantasyBundle\Entity\Game $game
+     */
+    public function setGame(Game $game) {
+        $this->game = $game;
+    }
+
+    /**
+     * @return \MetaLeague\FantasyBundle\Entity\Game
+     */
+    public function getGame() {
+        return $this->game;
+    }
 
 }
