@@ -105,7 +105,31 @@ class LoadUserData implements FixtureInterface {
 
         $manager->persist($leagueMatch);
 
-        //TODO make random matches between the competitors/users left in $competitors array
+        $itts = floor(count($competitors) / 2);
+        for($i=1;$i<=$itts;$i++) {
+            $homeTeam = new FantasyTeam();
+            $homeTeam->setUser(array_pop($competitors));
+            $homeTeam->setName('Fixture hTeam ' . $i);
+            $homeTeam->setLogo('n/a');
+            $homeTeam->addPlayer($proPlayer);
+            $manager->persist($homeTeam);
+
+            $awayTeam = new FantasyTeam();
+            $awayTeam->setUser(array_pop($competitors));
+            $awayTeam->setName('Fixture aTeam ' . $i);
+            $awayTeam->setLogo('n/a');
+            $awayTeam->addPlayer($proPlayer);
+            $manager->persist($awayTeam);
+
+            $match = new LeagueMatch();
+            $match->setHomeTeam($homeTeam);
+            $match->setAwayTeam($awayTeam);
+            $match->setHomeTeamScore(rand(0,100));
+            $match->setAwayTeamScore(rand(0,100));
+            $match->setStartsOn(new \DateTime('-1 day'));
+            $match->setLeague($league);
+            $manager->persist($match);
+        }
 
         $manager->flush();
 
