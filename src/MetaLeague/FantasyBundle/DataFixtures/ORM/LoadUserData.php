@@ -9,6 +9,7 @@ use Doctrine\Common\DataFixtures\Doctrine;
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use MetaLeague\FantasyBundle\Entity\FantasyTeam;
+use MetaLeague\FantasyBundle\Entity\FantasyTeamRosterSpot;
 use MetaLeague\FantasyBundle\Entity\Game;
 use MetaLeague\FantasyBundle\Entity\GamePosition;
 use MetaLeague\FantasyBundle\Entity\League;
@@ -83,16 +84,28 @@ class LoadUserData implements FixtureInterface {
         $homeTeam->setName('Main FT');
         $homeTeam->setUser($user);
         $homeTeam->setLogo('n/a');
-        $homeTeam->addPlayer($proPlayer);
 
+        //add player to the roster
+        $rosterSpot1 = new FantasyTeamRosterSpot();
+        $rosterSpot1->setFantasyTeam($homeTeam);
+        $rosterSpot1->setProPlayer($proPlayer);
+        $rosterSpot1->setIsStarter(true);
+
+        $manager->persist($rosterSpot1);
         $manager->persist($homeTeam);
 
         $awayTeam = new FantasyTeam();
         $awayTeam->setName('Main FT Opponent');
         $awayTeam->setUser($competitor);
         $awayTeam->setLogo('n/a');
-        $awayTeam->addPlayer($proPlayer);
 
+        //add player to the roster
+        $rosterSpot2 = new FantasyTeamRosterSpot();
+        $rosterSpot2->setFantasyTeam($awayTeam);
+        $rosterSpot2->setProPlayer($proPlayer);
+        $rosterSpot2->setIsStarter(false);
+
+        $manager->persist($rosterSpot2);
         $manager->persist($awayTeam);
 
         $leagueMatch = new LeagueMatch();
@@ -111,14 +124,12 @@ class LoadUserData implements FixtureInterface {
             $homeTeam->setUser(array_pop($competitors));
             $homeTeam->setName('Fixture hTeam ' . $i);
             $homeTeam->setLogo('n/a');
-            $homeTeam->addPlayer($proPlayer);
             $manager->persist($homeTeam);
 
             $awayTeam = new FantasyTeam();
             $awayTeam->setUser(array_pop($competitors));
             $awayTeam->setName('Fixture aTeam ' . $i);
             $awayTeam->setLogo('n/a');
-            $awayTeam->addPlayer($proPlayer);
             $manager->persist($awayTeam);
 
             $match = new LeagueMatch();

@@ -48,13 +48,14 @@ class FantasyTeam
     /**
      * @var ArrayCollection
      *
-     * @ORM\OneToMany(targetEntity="ProPlayer", mappedBy="fantasyTeam", cascade="remove", orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity="FantasyTeamRosterSpot", mappedBy="fantasyTeam")
+     *
      */
-    private $players;
+    private $rosterSpots;
 
     public function __construct()
     {
-        $this->players = new ArrayCollection();
+        $this->rosterSpots = new ArrayCollection();
     }
 
     /**
@@ -125,10 +126,5 @@ class FantasyTeam
      */
     public function getUser() {
         return $this->user;
-    }
-
-    public function addPlayer(ProPlayer $player)
-    {
-        $this->players[] = $player;
     }
 }
