@@ -1,9 +1,0 @@
-parameters:
-    meta_league_api.league_of_legends.class: MetaLeague\APIBundle\Request\LeagueOfLegendsRequest
-
-services:
-    meta_league_api.league_of_legends.request:
-        class: MetaLeague\APIBundle\Request\LeagueOfLegendsRequest
-        arguments: ['%meta_league_api.game.league_of_legends%']
-        tags:
-            - { name: meta_league_api.request, alias: lol_api_request }

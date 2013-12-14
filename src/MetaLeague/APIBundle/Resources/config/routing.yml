@@ -1,3 +1,4 @@
-meta_league_api_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: MetaLeagueAPIBundle:Default:index }
+lol:
+    type: rest
+    prefix: /lol
+    resource: "@MetaLeagueAPIBundle/Resources/config/lol_routes.yml"

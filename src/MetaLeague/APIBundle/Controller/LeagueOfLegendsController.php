@@ -9,6 +9,7 @@ use FOS\RestBundle\Controller\Annotations;
 use FOS\RestBundle\Controller\FOSRestController;
 use FOS\RestBundle\Request\ParamFetcherInterface;
 use FOS\RestBundle\View\RouteRedirectView;
+use FOS\RestBundle\Controller\Annotations\Get;
 
 use FOS\RestBundle\View\View;
 use Nelmio\ApiDocBundle\Annotation\ApiDoc;
@@ -26,8 +27,11 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 class LeagueOfLegendsController extends FOSRestController
 {
     /**
-     * List all notes.
+     * List all champions.
      *
+     * GET Route annotation.
+     * @Get("/champions")
+     * 
      * @ApiDoc(
      *   resource = true,
      *   statusCodes = {

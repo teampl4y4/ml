@@ -77,8 +77,15 @@ fos_user:
         form:
             type: meta_league_registration
 
+fos_rest:
+    format_listener: true
+    routing_loader:
+        default_format: json
+    serializer:
+        serialize_null: true
 
 meta_league_api:
   game:
-    league_of_legends:
-      key: ef24b3c7-5180-4318-9946-319330ea84f4
+    league_of_legends: 
+      parameters:
+        key: { value : ef24b3c7-5180-4318-9946-319330ea84f4 }

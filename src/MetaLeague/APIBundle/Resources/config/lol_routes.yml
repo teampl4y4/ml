@@ -1,0 +1,4 @@
+league_of_legends:
+    type:         rest
+    resource:     "@MetaLeagueAPIBundle\Controller\LeagueOfLegendsController"
+    name_prefix:  api_lol_

@@ -19,9 +19,11 @@ class AppKernel extends Kernel
             new MetaLeague\SiteBundle\MetaLeagueSiteBundle(),
             new MetaLeague\FantasyBundle\MetaLeagueFantasyBundle(),
             new FOS\UserBundle\FOSUserBundle(),
-            new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle()
-,
+            new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
+            new FOS\RestBundle\FOSRestBundle(),
             new MetaLeague\APIBundle\MetaLeagueAPIBundle(),
+            new JMS\SerializerBundle\JMSSerializerBundle(),
+            new Nelmio\ApiDocBundle\NelmioApiDocBundle()
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
