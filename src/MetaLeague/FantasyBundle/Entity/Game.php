@@ -91,4 +91,12 @@ class Game
     {
         return $this->teaserImage;
     }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+        return $this->name;
+    }
 }

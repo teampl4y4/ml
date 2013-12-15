@@ -42,14 +42,14 @@ class FantasyTeamRosterSpot
     /**
      * @var boolean
      *
-     * @ORM\Column(name="isStarter", nullable=false)
+     * @ORM\Column(name="isStarter", type="boolean", nullable=false)
      */
     private $isStarter;
 
     /**
      * @var boolean
      *
-     * @ORM\Column(name="isLocked", nullable=false)
+     * @ORM\Column(name="isLocked", type="boolean", nullable=false)
      */
     private $isLocked;
 
@@ -124,5 +124,5 @@ class FantasyTeamRosterSpot
     public function getIsLocked() {
         return $this->isLocked;
     }
-    
+
 }

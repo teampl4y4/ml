@@ -17,8 +17,24 @@ use MetaLeague\FantasyBundle\Entity\LeagueRoster;
 use MetaLeague\FantasyBundle\Entity\ProPlayer;
 use MetaLeague\FantasyBundle\Entity\User;
 use MetaLeague\FantasyBundle\Entity\LeagueMatch;
+use Symfony\Component\DependencyInjection\ContainerInterface;
+use Symfony\Component\DependencyInjection\ContainerAwareInterface;
+use Symfony\Component\Security\Acl\Permission\MaskBuilder;
 
-class LoadUserData implements FixtureInterface {
+class LoadUserData implements FixtureInterface, ContainerAwareInterface
+{
+    /**
+     * @var ContainerInterface
+     */
+    private $container;
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setContainer(ContainerInterface $container = null)
+    {
+        $this->container = $container;
+    }
 
     /**
      * Load data fixtures with the passed EntityManager
@@ -52,6 +68,9 @@ class LoadUserData implements FixtureInterface {
         $manager->persist($user);
         $manager->persist($league);
 
+        $aclManager = $this->container->get('problematic.acl_manager');
+        $aclManager->setObjectPermission($league, MaskBuilder::MASK_OPERATOR, $user);
+
         $manager->flush();
 
         return $user;
@@ -59,6 +78,7 @@ class LoadUserData implements FixtureInterface {
 
     private function loadLeagueMatches(ObjectManager $manager, User $user, League $league, array $competitors, array $positions)
     {
+        $aclManager = $this->container->get('problematic.acl_manager');
 
         //create 1 pro player per position
         $pros = array();
@@ -93,6 +113,10 @@ class LoadUserData implements FixtureInterface {
 
         $manager->persist($rosterSpot1);
         $manager->persist($homeTeam);
+        $manager->flush();
+
+        $aclManager->setObjectPermission($homeTeam, MaskBuilder::MASK_OPERATOR, $user);
+        $aclManager->setObjectPermission($rosterSpot1, MaskBuilder::MASK_OPERATOR, $user);
 
         $awayTeam = new FantasyTeam();
         $awayTeam->setName('Main FT Opponent');
@@ -107,6 +131,14 @@ class LoadUserData implements FixtureInterface {
 
         $manager->persist($rosterSpot2);
         $manager->persist($awayTeam);
+        $manager->flush();
+
+        $aclManager->setObjectPermission($awayTeam, MaskBuilder::MASK_OPERATOR, $competitor);
+        $aclManager->setObjectPermission($rosterSpot2, MaskBuilder::MASK_OPERATOR, $competitor);
+        $aclManager->setObjectPermission($awayTeam, MaskBuilder::MASK_OPERATOR, $league->getCommissioner());
+        $aclManager->setObjectPermission($rosterSpot2, MaskBuilder::MASK_OPERATOR, $league->getCommissioner());
+
+        $matches = array();
 
         $leagueMatch = new LeagueMatch();
         $leagueMatch->setStartsOn(new \DateTime('1 day ago'));
@@ -115,8 +147,12 @@ class LoadUserData implements FixtureInterface {
         $leagueMatch->setAwayTeam($awayTeam);
         $leagueMatch->setAwayTeamScore(rand(0,100));
         $leagueMatch->setLeague($league);
+        $matches[] = $leagueMatch;
 
         $manager->persist($leagueMatch);
+        $manager->flush();
+
+        $aclManager->setObjectPermission($leagueMatch, MaskBuilder::MASK_OPERATOR, $league->getCommissioner());
 
         //create some other matches in the league
         $itts = floor(count($competitors) / 2);
@@ -126,12 +162,16 @@ class LoadUserData implements FixtureInterface {
             $homeTeam->setName('Fixture hTeam ' . $i);
             $homeTeam->setLogo('n/a');
             $manager->persist($homeTeam);
+            $manager->flush();
+            $aclManager->setObjectPermission($homeTeam, MaskBuilder::MASK_OPERATOR, $homeTeam->getUser());
 
             $awayTeam = new FantasyTeam();
             $awayTeam->setUser(array_pop($competitors));
             $awayTeam->setName('Fixture aTeam ' . $i);
             $awayTeam->setLogo('n/a');
             $manager->persist($awayTeam);
+            $manager->flush();
+            $aclManager->setObjectPermission($awayTeam, MaskBuilder::MASK_OPERATOR, $awayTeam->getUser());
 
             $match = new LeagueMatch();
             $match->setHomeTeam($homeTeam);
@@ -141,10 +181,14 @@ class LoadUserData implements FixtureInterface {
             $match->setStartsOn(new \DateTime('-1 day'));
             $match->setLeague($league);
             $manager->persist($match);
+            $manager->flush();
+            $aclManager->setObjectPermission($match, MaskBuilder::MASK_OPERATOR, $league->getCommissioner());
+
+            $matches[] = $match;
         }
 
         $manager->flush();
-
+        return $matches;
     }
 
     /**

@@ -55,7 +55,7 @@ class League
 
     /**
      * @var User
-     * @ORM\OneToOne(targetEntity="User")
+     * @ORM\ManyToOne(targetEntity="User")
      * @JoinColumn(name="commissioner", referencedColumnName="id")
      */
     private $commissioner;
@@ -64,6 +64,13 @@ class League
      * @ManyToMany(targetEntity="User", mappedBy="groups")
      **/
     protected $users;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="isPrivate", type="boolean", nullable=true)
+     */
+    private $isPrivate;
 
     public function __construct()
     {
@@ -181,6 +188,35 @@ class League
     public function getUsers() {
         return $this->users;
     }
+
+    /**
+     * @param boolean $isPrivate
+     */
+    public function setIsPrivate($isPrivate) {
+        $this->isPrivate = $isPrivate;
+    }
+
+    /**
+     * @return boolean
+     */
+    public function getIsPrivate() {
+        return $this->isPrivate;
+    }
+
+    /**
+     * @param \Doctrine\Common\Collections\ArrayCollection $matches
+     */
+    public function setMatches(ArrayCollection $matches) {
+        $this->matches = $matches;
+    }
+
+    /**
+     * @return \Doctrine\Common\Collections\ArrayCollection
+     */
+    public function getMatches() {
+        return $this->matches;
+    }
+
 
     public function __toString()
     {
