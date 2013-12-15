@@ -162,16 +162,12 @@ class LoadUserData implements FixtureInterface, ContainerAwareInterface
             $homeTeam->setName('Fixture hTeam ' . $i);
             $homeTeam->setLogo('n/a');
             $manager->persist($homeTeam);
-            $manager->flush();
-            $aclManager->setObjectPermission($homeTeam, MaskBuilder::MASK_OPERATOR, $homeTeam->getUser());
 
             $awayTeam = new FantasyTeam();
             $awayTeam->setUser(array_pop($competitors));
             $awayTeam->setName('Fixture aTeam ' . $i);
             $awayTeam->setLogo('n/a');
             $manager->persist($awayTeam);
-            $manager->flush();
-            $aclManager->setObjectPermission($awayTeam, MaskBuilder::MASK_OPERATOR, $awayTeam->getUser());
 
             $match = new LeagueMatch();
             $match->setHomeTeam($homeTeam);
@@ -181,7 +177,11 @@ class LoadUserData implements FixtureInterface, ContainerAwareInterface
             $match->setStartsOn(new \DateTime('-1 day'));
             $match->setLeague($league);
             $manager->persist($match);
+
             $manager->flush();
+
+            $aclManager->setObjectPermission($homeTeam, MaskBuilder::MASK_OPERATOR, $homeTeam->getUser());
+            $aclManager->setObjectPermission($awayTeam, MaskBuilder::MASK_OPERATOR, $awayTeam->getUser());
             $aclManager->setObjectPermission($match, MaskBuilder::MASK_OPERATOR, $league->getCommissioner());
 
             $matches[] = $match;
@@ -202,6 +202,8 @@ class LoadUserData implements FixtureInterface, ContainerAwareInterface
      */
     private function loadCompetitorsForUser(ObjectManager $manager, User $user, League $league, $num = 11)
     {
+        $aclManager = $this->container->get('problematic.acl_manager');
+
         $users = array();
         for($i=0; $i<$num; $i++) {
             $username = 'user' . ($i + 1) . '@user.com';
@@ -213,9 +215,11 @@ class LoadUserData implements FixtureInterface, ContainerAwareInterface
 
             $users[] = $u;
             $manager->persist($u);
+            $manager->flush();
+
+            $aclManager->setObjectPermission($league, MaskBuilder::MASK_VIEW, $u);
         }
 
-        $manager->flush();
         return $users;
     }
 
@@ -230,6 +234,7 @@ class LoadUserData implements FixtureInterface, ContainerAwareInterface
         $league->setGame($game);
         $league->setDescription('Default league of legends league in fixtures');
         $league->setName('Default LOL League');
+        $league->setIsPrivate(true);
 
         $manager->persist($league);
         $manager->flush();

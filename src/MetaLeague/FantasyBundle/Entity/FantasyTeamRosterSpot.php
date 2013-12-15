@@ -53,10 +53,18 @@ class FantasyTeamRosterSpot
      */
     private $isLocked;
 
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="createdAt", type="datetime", nullable=false)
+     */
+    private $createdAt;
+
     public function __construct()
     {
         $this->isStarter = true;
         $this->isLocked  = false;
+        $this->createdAt = new \DateTime();
     }
 
     /**
@@ -125,4 +133,19 @@ class FantasyTeamRosterSpot
         return $this->isLocked;
     }
 
+    /**
+     * @param \DateTime $createdAt
+     */
+    public function setCreatedAt($createdAt) {
+        $this->createdAt = $createdAt;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getCreatedAt() {
+        return $this->createdAt;
+    }
+
+    
 }

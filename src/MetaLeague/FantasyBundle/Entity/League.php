@@ -72,10 +72,18 @@ class League
      */
     private $isPrivate;
 
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="createdAt", type="datetime", nullable=false)
+     */
+    private $createdAt;
+
     public function __construct()
     {
         $this->users    = new ArrayCollection();
         $this->matches  = new ArrayCollection();
+        $this->createdAt = new \DateTime();
     }
 
     public function addUser(User $user)
@@ -215,6 +223,20 @@ class League
      */
     public function getMatches() {
         return $this->matches;
+    }
+
+    /**
+     * @param \DateTime $createdAt
+     */
+    public function setCreatedAt($createdAt) {
+        $this->createdAt = $createdAt;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getCreatedAt() {
+        return $this->createdAt;
     }
 
 

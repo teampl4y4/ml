@@ -53,9 +53,17 @@ class FantasyTeam
      */
     private $rosterSpots;
 
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="createdAt", type="datetime", nullable=false)
+     */
+    private $createdAt;
+
     public function __construct()
     {
         $this->rosterSpots = new ArrayCollection();
+        $this->createdAt   = new \DateTime();
     }
 
     /**
@@ -127,4 +135,33 @@ class FantasyTeam
     public function getUser() {
         return $this->user;
     }
+
+    /**
+     * @param \DateTime $createdAt
+     */
+    public function setCreatedAt($createdAt) {
+        $this->createdAt = $createdAt;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getCreatedAt() {
+        return $this->createdAt;
+    }
+
+    /**
+     * @param \Doctrine\Common\Collections\ArrayCollection $rosterSpots
+     */
+    public function setRosterSpots(ArrayCollection $rosterSpots) {
+        $this->rosterSpots = $rosterSpots;
+    }
+
+    /**
+     * @return \Doctrine\Common\Collections\ArrayCollection
+     */
+    public function getRosterSpots() {
+        return $this->rosterSpots;
+    }
+
 }

@@ -23,14 +23,14 @@ class LeagueController extends Controller
 {
 
     /**
+     * Just viewing a league, the league dashboard
      * @param $id
      *
-     * @Route("/view/{id}", name="_meta_league_view")
+     * @Route("/{id}/view", name="_meta_league_view")
      * @Template()
      */
     public function viewAction($id)
     {
-
         /** @var EntityManager $em */
         $em     = $this->get('doctrine.orm.entity_manager');
         $league = $em->getRepository('MetaLeagueFantasyBundle:League')->findOneBy(array('id' => $id));
@@ -47,6 +47,31 @@ class LeagueController extends Controller
     }
 
     /**
+     * Invite people to the league
+     *
+     * @Route("/{id}/invite", name="_meta_league_invite")
+     * @Template()
+     */
+    public function inviteAction($id)
+    {
+        /** @var EntityManager $em */
+        $em     = $this->get('doctrine.orm.entity_manager');
+        $league = $em->getRepository('MetaLeagueFantasyBundle:League')->findOneBy(array('id' => $id));
+
+        if(!$league instanceof League) {
+            throw new NotFoundHttpException('League not found');
+        }
+
+        if (false === $this->get('security.context')->isGranted('EDIT', $league)) {
+            throw new AccessDeniedException('Access Denied: User can not invite players to league.');
+        }
+
+        return array('id' => $id);
+    }
+
+    /**
+     * Obviously, create a league
+     *
      * @Route("/create", name="_meta_league_create")
      * @Template()
      */
