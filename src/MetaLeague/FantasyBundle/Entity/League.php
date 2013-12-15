@@ -60,6 +60,14 @@ class League
      */
     private $commissioner;
 
+
+    /**
+     * @var ArrayCollection
+     *
+     * @ORM\OneToMany(targetEntity="LeagueInvite", mappedBy="league_id")
+     */
+    private $invites;
+
     /**
      * @ManyToMany(targetEntity="User", mappedBy="groups")
      **/
@@ -83,6 +91,7 @@ class League
     {
         $this->users    = new ArrayCollection();
         $this->matches  = new ArrayCollection();
+        $this->invites  = new ArrayCollection();
         $this->createdAt = new \DateTime();
     }
 
@@ -237,6 +246,20 @@ class League
      */
     public function getCreatedAt() {
         return $this->createdAt;
+    }
+
+    /**
+     * @param \Doctrine\Common\Collections\ArrayCollection $invites
+     */
+    public function setInvites(ArrayCollection $invites) {
+        $this->invites = $invites;
+    }
+
+    /**
+     * @return \Doctrine\Common\Collections\ArrayCollection
+     */
+    public function getInvites() {
+        return $this->invites;
     }
 
 

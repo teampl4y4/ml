@@ -13,6 +13,7 @@ use MetaLeague\FantasyBundle\Entity\FantasyTeamRosterSpot;
 use MetaLeague\FantasyBundle\Entity\Game;
 use MetaLeague\FantasyBundle\Entity\GamePosition;
 use MetaLeague\FantasyBundle\Entity\League;
+use MetaLeague\FantasyBundle\Entity\LeagueInvite;
 use MetaLeague\FantasyBundle\Entity\LeagueRoster;
 use MetaLeague\FantasyBundle\Entity\ProPlayer;
 use MetaLeague\FantasyBundle\Entity\User;
@@ -46,6 +47,7 @@ class LoadUserData implements FixtureInterface, ContainerAwareInterface
         $game           = $this->loadGames($manager);
         $league         = $this->loadLeagues($manager, $game);
         $user           = $this->loadUsers($manager, $league);
+        $invite         = $this->loadLeagueInvite($manager, $league, $user);
         $competitors    = $this->loadCompetitorsForUser($manager, $user, $league);
         $positions      = $this->loadGamePositions($manager, $game);
         $matches        = $this->loadLeagueMatches($manager, $user, $league, $competitors, $positions);
@@ -303,4 +305,19 @@ class LoadUserData implements FixtureInterface, ContainerAwareInterface
         return $p;
     }
 
+    /**
+     * @param ObjectManager $manager
+     * @param League $game
+     * @param User $user
+     * @return LeagueInvite
+     */
+    private function loadLeagueInvite($manager, $league, $user)
+    {
+        $invite = new LeagueInvite();
+        $invite->setCreatedBy($user);
+        $invite->setLeague($league);
+        $invite->setToEmail('joshteam@gmail.com');
+        $manager->persist($invite);
+        $manager->flush();
+    }
 } 
