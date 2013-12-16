@@ -68,3 +68,11 @@ $ php app/console doctrine:fixtures:load
 
 - You can navigate with your browser to /app_dev.php and click register to start creating users if you need
 - You can navigate with your browser to /app_dev.php/game/new and start using built in CRUD for "Game" Entity
+
+7) Enabling ACLs
+----------------------------------
+We use ACLs for our domain object security, to enable this you will need to run the following command
+
+```
+$ php app/console init:acl
+```

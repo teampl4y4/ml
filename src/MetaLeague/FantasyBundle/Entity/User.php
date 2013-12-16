@@ -34,10 +34,18 @@ class User extends BaseUser
      **/
     protected $leagues;
 
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="createdAt", type="datetime", nullable=false)
+     */
+    private $createdAt;
+
     public function __construct()
     {
         parent::__construct();
         $this->leagues = new ArrayCollection();
+        $this->createdAt = new \DateTime();
     }
 
     public function addLeague(League $league)
@@ -83,6 +91,18 @@ class User extends BaseUser
         return $this->leagues;
     }
 
+    /**
+     * @param mixed $createdAt
+     */
+    public function setCreatedAt($createdAt) {
+        $this->createdAt = $createdAt;
+    }
 
+    /**
+     * @return mixed
+     */
+    public function getCreatedAt() {
+        return $this->createdAt;
+    }
 
 }

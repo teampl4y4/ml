@@ -2,6 +2,7 @@
 
 namespace MetaLeague\FantasyBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\ORM\Mapping\JoinColumn as JoinColumn;
 
@@ -51,6 +52,13 @@ class ProPlayer
     private $dateOfBirth;
 
     /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="createdOn", type="datetime", nullable=false)
+     */
+    private $createdOn;
+
+    /**
      * @var GamePosition
      *
      * @ORM\OneToOne(targetEntity="GamePosition")
@@ -65,6 +73,20 @@ class ProPlayer
      * @ORM\JoinColumn(name="game_id", referencedColumnName="id")
      */
     private $game;
+
+    /**
+     * @var ArrayCollection
+     *
+     * @ORM\OneToMany(targetEntity="FantasyTeamRosterSpot", mappedBy="fantasyTeam")
+     *
+     */
+    private $rosterSpots;
+
+    public function __construct()
+    {
+        $this->rosterSpots = new ArrayCollection();
+        $this->createdOn    = new \DateTime();
+    }
 
     /**
      * Get id

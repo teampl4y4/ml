@@ -55,20 +55,44 @@ class League
 
     /**
      * @var User
-     * @ORM\OneToOne(targetEntity="User")
+     * @ORM\ManyToOne(targetEntity="User")
      * @JoinColumn(name="commissioner", referencedColumnName="id")
      */
     private $commissioner;
+
+
+    /**
+     * @var ArrayCollection
+     *
+     * @ORM\OneToMany(targetEntity="LeagueInvite", mappedBy="league_id")
+     */
+    private $invites;
 
     /**
      * @ManyToMany(targetEntity="User", mappedBy="groups")
      **/
     protected $users;
 
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="isPrivate", type="boolean", nullable=true)
+     */
+    private $isPrivate;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="createdAt", type="datetime", nullable=false)
+     */
+    private $createdAt;
+
     public function __construct()
     {
         $this->users    = new ArrayCollection();
         $this->matches  = new ArrayCollection();
+        $this->invites  = new ArrayCollection();
+        $this->createdAt = new \DateTime();
     }
 
     public function addUser(User $user)
@@ -181,6 +205,63 @@ class League
     public function getUsers() {
         return $this->users;
     }
+
+    /**
+     * @param boolean $isPrivate
+     */
+    public function setIsPrivate($isPrivate) {
+        $this->isPrivate = $isPrivate;
+    }
+
+    /**
+     * @return boolean
+     */
+    public function getIsPrivate() {
+        return $this->isPrivate;
+    }
+
+    /**
+     * @param \Doctrine\Common\Collections\ArrayCollection $matches
+     */
+    public function setMatches(ArrayCollection $matches) {
+        $this->matches = $matches;
+    }
+
+    /**
+     * @return \Doctrine\Common\Collections\ArrayCollection
+     */
+    public function getMatches() {
+        return $this->matches;
+    }
+
+    /**
+     * @param \DateTime $createdAt
+     */
+    public function setCreatedAt($createdAt) {
+        $this->createdAt = $createdAt;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getCreatedAt() {
+        return $this->createdAt;
+    }
+
+    /**
+     * @param \Doctrine\Common\Collections\ArrayCollection $invites
+     */
+    public function setInvites(ArrayCollection $invites) {
+        $this->invites = $invites;
+    }
+
+    /**
+     * @return \Doctrine\Common\Collections\ArrayCollection
+     */
+    public function getInvites() {
+        return $this->invites;
+    }
+
 
     public function __toString()
     {
