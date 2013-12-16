@@ -84,11 +84,8 @@ fos_rest:
     serializer:
         serialize_null: true
 
-meta_league_api:
-  game:
-    league_of_legends: 
-      parameters:
-        key: { value : ef24b3c7-5180-4318-9946-319330ea84f4 }
+parameters:
+    meta_league_api.game.league_of_legends.api.key : ef24b3c7-5180-4318-9946-319330ea84f4
         
 
 nelmio_api_doc: ~
