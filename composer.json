@@ -25,6 +25,7 @@
         "jms/serializer-bundle": "0.12",
         "nelmio/api-doc-bundle": "@stable",
         "leaseweb/api-caller-bundle": "*",
+        "leafo/lessphp": "dev-master",
         "problematic/acl-manager-bundle": "dev-master"
     },
     "scripts": {
