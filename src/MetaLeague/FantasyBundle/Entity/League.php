@@ -42,14 +42,13 @@ class League
      * @var Game
      *
      * @ORM\ManyToOne(targetEntity="Game", inversedBy="leagues")
-     * @ORM\JoinColumn(name="game_id", referencedColumnName="id")
      */
     private $game;
 
     /**
      * @var ArrayCollection
      *
-     * @ORM\OneToMany(targetEntity="LeagueMatch", mappedBy="league_id")
+     * @ORM\OneToMany(targetEntity="LeagueMatch", mappedBy="league")
      */
     private $matches;
 
@@ -64,12 +63,12 @@ class League
     /**
      * @var ArrayCollection
      *
-     * @ORM\OneToMany(targetEntity="LeagueInvite", mappedBy="league_id")
+     * @ORM\OneToMany(targetEntity="LeagueInvite", mappedBy="league")
      */
     private $invites;
 
     /**
-     * @ManyToMany(targetEntity="User", mappedBy="groups")
+     * @ManyToMany(targetEntity="User", mappedBy="leagues")
      **/
     protected $users;
 

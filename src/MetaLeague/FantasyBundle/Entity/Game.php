@@ -2,6 +2,7 @@
 
 namespace MetaLeague\FantasyBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -34,6 +35,18 @@ class Game
      * @ORM\Column(name="teaserImage", type="string", length=255)
      */
     private $teaserImage;
+
+    /**
+     * @var ArrayCollection
+     *
+     * @ORM\OneToMany(targetEntity="League", mappedBy="game")
+     */
+    private $leagues;
+
+    public function __construct()
+    {
+        $this->leagues = new ArrayCollection();
+    }
 
 
     /**
@@ -98,5 +111,19 @@ class Game
     public function __toString()
     {
         return $this->name;
+    }
+
+    /**
+     * @param \Doctrine\Common\Collections\ArrayCollection $leagues
+     */
+    public function setLeagues(ArrayCollection $leagues) {
+        $this->leagues = $leagues;
+    }
+
+    /**
+     * @return \Doctrine\Common\Collections\ArrayCollection
+     */
+    public function getLeagues() {
+        return $this->leagues;
     }
 }

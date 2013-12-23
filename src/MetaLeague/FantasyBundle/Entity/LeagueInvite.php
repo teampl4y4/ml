@@ -47,7 +47,6 @@ class LeagueInvite
      * @var League
      *
      * @ORM\ManyToOne(targetEntity="League", inversedBy="invites")
-     * @ORM\JoinColumn(name="league_id", referencedColumnName="id")
      */
     private $league;
 
