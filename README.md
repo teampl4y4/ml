@@ -76,3 +76,5 @@ We use ACLs for our domain object security, to enable this you will need to run 
 ```
 $ php app/console init:acl
 ```
+
+Note: if you get a "Aborting: The table with name 'meta_league.acl_classes' already exists." then that's fine, no worries.  You are good to go!

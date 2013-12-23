@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Game
  *
  * @ORM\Table()
- * @ORM\Entity(repositoryClass="MetaLeague\FantasyBundle\Entity\GameRepository")
+ * @ORM\Entity()
  */
 class Game
 {

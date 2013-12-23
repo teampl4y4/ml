@@ -48,7 +48,7 @@ class LoadUserData implements FixtureInterface, ContainerAwareInterface
         $league         = $this->loadLeagues($manager, $game);
         $user           = $this->loadUsers($manager, $league);
         $invite         = $this->loadLeagueInvite($manager, $league, $user);
-        $competitors    = $this->loadCompetitorsForUser($manager, $user, $league);
+        $competitors    = $this->loadCompetitorsForUser($manager, $league);
         $positions      = $this->loadGamePositions($manager, $game);
         $matches        = $this->loadLeagueMatches($manager, $user, $league, $competitors, $positions);
     }
@@ -202,7 +202,7 @@ class LoadUserData implements FixtureInterface, ContainerAwareInterface
      * @param int $num
      * @return array of competitors made
      */
-    private function loadCompetitorsForUser(ObjectManager $manager, User $user, League $league, $num = 11)
+    private function loadCompetitorsForUser(ObjectManager $manager, League $league, $num = 11)
     {
         $aclManager = $this->container->get('problematic.acl_manager');
 
