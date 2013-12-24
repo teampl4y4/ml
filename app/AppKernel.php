@@ -25,6 +25,7 @@ class AppKernel extends Kernel
             new JMS\SerializerBundle\JMSSerializerBundle(),
             new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
             new Lsw\ApiCallerBundle\LswApiCallerBundle(),
+            new Lsw\MemcacheBundle\LswMemcacheBundle(),
             new Problematic\AclManagerBundle\ProblematicAclManagerBundle()
         );
 

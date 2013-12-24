@@ -84,6 +84,58 @@ fos_user:
         form:
             type: meta_league_registration
 
+lsw_memcache:
+    session:
+        client: sessions
+        prefix: "session_"
+        ttl: 7200
+        locking: true
+        spin_lock_wait: 150000
+
+    doctrine:
+        metadata_cache:
+            client: default
+            entity_manager: default          # the name of your entity_manager connection
+            document_manager: default        # the name of your document_manager connection
+        result_cache:
+            client: default
+            entity_manager: [default, read]  # you may specify multiple entity_managers
+            prefix: "result_"                # you may specify a prefix for the entries
+        query_cache:
+            client: default
+            entity_manager: default
+
+    clients:
+        default:
+            persistent_id: default
+            hosts:
+                - { dsn: 127.0.0.1, port: 11211, weight: 15 }
+                - { dsn: 127.0.0.1, port: 11211, weight: 30 }
+            options:
+                compression: true
+                serializer: json
+                prefix_key: ""
+                hash: default
+                distribution: consistent
+                libketama_compatible: true
+                buffer_writes: true
+                binary_protocol: true
+                no_block: true
+                tcp_nodelay: false
+                socket_send_size: 4096
+                socket_recv_size: 4096
+                connect_timeout: 1000
+                retry_timeout: 0
+                send_timeout: 0
+                recv_timeout: 0
+                poll_timeout: 1000
+                cache_lookups: false
+                server_failure_limit: 0
+        sessions:
+            hosts:
+                - { dsn: localhost, port: 11211 }
+
+
 fos_rest:
     format_listener: true
     routing_loader:
@@ -93,6 +145,5 @@ fos_rest:
 
 parameters:
     meta_league_api.game.league_of_legends.api.key : ef24b3c7-5180-4318-9946-319330ea84f4
-        
 
 nelmio_api_doc: ~

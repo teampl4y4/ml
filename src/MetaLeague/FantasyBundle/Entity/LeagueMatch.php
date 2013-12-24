@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping\JoinColumn as JoinColumn;
  * LeagueMatch
  *
  * @ORM\Table()
- * @ORM\Entity(repositoryClass="MetaLeague\FantasyBundle\Entity\LeagueMatchRepository")
+ * @ORM\Entity()
  */
 class LeagueMatch
 {

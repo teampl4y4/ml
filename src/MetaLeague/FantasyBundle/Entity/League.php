@@ -11,7 +11,7 @@ use Doctrine\ORM\Mapping\JoinColumn;
  * League
  *
  * @ORM\Table()
- * @ORM\Entity(repositoryClass="MetaLeague\FantasyBundle\Entity\LeagueRepository")
+ * @ORM\Entity()
  */
 class League
 {

@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "553dae6e78f04ba0e33da89e97568183",
+    "hash": "04b6a305add74ba12acdfe7212a77cf1",
     "packages": [
         {
             "name": "dflydev/markdown",
@@ -1436,6 +1436,57 @@
                 "curl"
             ],
             "time": "2013-10-21 10:41:09"
+        },
+        {
+            "name": "leaseweb/memcache-bundle",
+            "version": "v1.2.4",
+            "target-dir": "Lsw/MemcacheBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LeaseWeb/LswMemcacheBundle.git",
+                "reference": "d931ccf61bcf6b870e2c8716df30d3a2b8b9edc4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LeaseWeb/LswMemcacheBundle/zipball/d931ccf61bcf6b870e2c8716df30d3a2b8b9edc4",
+                "reference": "d931ccf61bcf6b870e2c8716df30d3a2b8b9edc4",
+                "shasum": ""
+            },
+            "require": {
+                "ext-memcached": ">=1.0",
+                "php": ">=5.3.2",
+                "symfony/framework-bundle": ">=2.1"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Lsw\\MemcacheBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maurits van der Schee",
+                    "email": "m.vanderschee@leaseweb.com"
+                }
+            ],
+            "description": "Memcache Doctrine caching and session storage in the Web Debug Toolbar",
+            "homepage": "http://www.leaseweblabs.com",
+            "keywords": [
+                "cache",
+                "memcache",
+                "memcached",
+                "session"
+            ],
+            "time": "2013-11-19 08:38:44"
         },
         {
             "name": "monolog/monolog",

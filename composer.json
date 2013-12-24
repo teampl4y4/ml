@@ -26,6 +26,7 @@
         "nelmio/api-doc-bundle": "@stable",
         "leaseweb/api-caller-bundle": "*",
         "leafo/lessphp": "dev-master",
+        "leaseweb/memcache-bundle": "*",
         "problematic/acl-manager-bundle": "dev-master"
     },
     "scripts": {

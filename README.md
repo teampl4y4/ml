@@ -3,6 +3,13 @@ ML
 
 We can use this document to easily communicate needs for setting up dev environments and 'gotchas'
 
+You will need the following components already installed on your machine:
+- php 5.4+
+- mysql
+- git (with github username configuration)
+- phpmemcache
+
+
 1) Installing
 ----------------------------------
 Create a new folder, empty that you will house the project in.  Then run the following commands:
