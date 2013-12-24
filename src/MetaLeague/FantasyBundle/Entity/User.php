@@ -35,6 +35,13 @@ class User extends BaseUser
     protected $leagues;
 
     /**
+     * @var \Doctrine\Common\Collections\ArrayCollection
+     *
+     * @ORM\OneToMany(targetEntity="FantasyTeam", mappedBy="user")
+     */
+    private $teams;
+
+    /**
      * @var \DateTime
      *
      * @ORM\Column(name="createdAt", type="datetime", nullable=false)
@@ -44,7 +51,8 @@ class User extends BaseUser
     public function __construct()
     {
         parent::__construct();
-        $this->leagues = new ArrayCollection();
+        $this->leagues   = new ArrayCollection();
+        $this->teams     = new ArrayCollection();
         $this->createdAt = new \DateTime();
     }
 

@@ -35,7 +35,6 @@ class FantasyTeamRosterSpot
      * @var ProPlayer
      *
      * @ORM\ManyToOne(targetEntity="ProPlayer", inversedBy="rosterSpots")
-     * @ORM\JoinColumn(name="proPlayer_id", referencedColumnName="id")
      */
     private $proPlayer;
 

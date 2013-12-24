@@ -7,7 +7,8 @@ You will need the following components already installed on your machine:
 - php 5.4+
 - mysql
 - git (with github username configuration)
-- phpmemcache
+- php-memcached (client) (note, must be memcached and not memcache)
+- memcached (server)
 
 
 1) Installing

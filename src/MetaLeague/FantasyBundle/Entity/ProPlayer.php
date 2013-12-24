@@ -77,7 +77,7 @@ class ProPlayer
     /**
      * @var ArrayCollection
      *
-     * @ORM\OneToMany(targetEntity="FantasyTeamRosterSpot", mappedBy="fantasyTeam")
+     * @ORM\OneToMany(targetEntity="FantasyTeamRosterSpot", mappedBy="proPlayer")
      *
      */
     private $rosterSpots;

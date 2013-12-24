@@ -41,7 +41,6 @@ class FantasyTeam
      * @var User
      *
      * @ORM\ManyToOne(targetEntity="User", inversedBy="teams")
-     * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
      */
     private $user;
 
