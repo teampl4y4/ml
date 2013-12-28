@@ -5,12 +5,12 @@ namespace MetaLeague\FantasyBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * ProGameAction
+ * ProMatchAction
  *
  * @ORM\Table()
- * @ORM\Entity(repositoryClass="MetaLeague\FantasyBundle\Entity\ProGameActionRepository")
+ * @ORM\Entity(repositoryClass="MetaLeague\FantasyBundle\Entity\ProMatchActionRepository")
  */
-class ProGameAction
+class ProMatchAction
 {
     /**
      * @var integer
@@ -24,7 +24,7 @@ class ProGameAction
     /**
      * @var Game
      *
-     * @ORM\ManyToOne(targetEntity="Game", inversedBy="leagues")
+     * @ORM\ManyToOne(targetEntity="Game", inversedBy="games")
      * @ORM\JoinColumn(name="game_id", referencedColumnName="id")
      */
     private $game;
@@ -33,29 +33,24 @@ class ProGameAction
      * @var \MetaLeague\FantasyBundle\Entity\ProPlayer
      *
      * @ORM\OneToOne(targetEntity="ProPlayer")
+     * @ORM\JoinColumn(name="pro_player_id", referencedColumnName="id")
      */
     private $proPlayer;
 
     /**
-     * @var \MetaLeague\FantasyBundle\Entity\ProGame
+     * @var \MetaLeague\FantasyBundle\Entity\ProMatch
      *
-     * @ORM\OneToOne(targetEntity="ProGame")
+     * @ORM\ManyToOne(targetEntity="ProMatch", inversedBy="pro_matches")
+     * @ORM\JoinColumn(name="pro_match_id", referencedColumnName="id")
      */
-    private $proGame;
+    private $proMatch;
 
     /**
-     * @var \DateTime
+     * @var \stdClass
      *
-     * @ORM\Column(name="occuredInGameAt", type="time")
+     * @ORM\Column(name="gameStats", type="object")
      */
-    private $occuredInGameAt;
-
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="pointsAwarded", type="integer")
-     */
-    private $pointsAwarded;
+    private $gameStats;
 
     /**
      * @var \DateTime
@@ -63,6 +58,11 @@ class ProGameAction
      * @ORM\Column(name="createdAt", type="datetime")
      */
     private $createdAt;
+
+    public function __construct()
+    {
+        $this->createdAt   = new \DateTime();
+    }
 
 
     /**
@@ -76,33 +76,10 @@ class ProGameAction
     }
 
     /**
-     * Set occuredInGameAt
-     *
-     * @param \DateTime $occuredInGameAt
-     * @return ProGameAction
-     */
-    public function setOccuredInGameAt($occuredInGameAt)
-    {
-        $this->occuredInGameAt = $occuredInGameAt;
-
-        return $this;
-    }
-
-    /**
-     * Get occuredInGameAt
-     *
-     * @return \DateTime 
-     */
-    public function getOccuredInGameAt()
-    {
-        return $this->occuredInGameAt;
-    }
-
-    /**
      * Set createdAt
      *
      * @param \DateTime $createdAt
-     * @return ProGameAction
+     * @return ProMatchAction
      */
     public function setCreatedAt($createdAt)
     {
@@ -122,17 +99,26 @@ class ProGameAction
     }
 
     /**
-     * @param int $pointsAwarded
+     * Set gameStats
+     *
+     * @param \stdClass $data
+     * @return ProMatchAction
      */
-    public function setPointsAwarded($pointsAwarded) {
-        $this->pointsAwarded = $pointsAwarded;
+    public function setGameStats($data)
+    {
+        $this->gameStats = $data;
+
+        return $this;
     }
 
     /**
-     * @return int
+     * Get gameStats
+     *
+     * @return \stdClass 
      */
-    public function getPointsAwarded() {
-        return $this->pointsAwarded;
+    public function getGameStats()
+    {
+        return $this->gameStats;
     }
 
     /**
@@ -150,17 +136,17 @@ class ProGameAction
     }
 
     /**
-     * @param \MetaLeague\FantasyBundle\Entity\ProGame $proGame
+     * @param \MetaLeague\FantasyBundle\Entity\ProMatch $proMatch
      */
-    public function setProGame($proGame) {
-        $this->proGame = $proGame;
+    public function setProMatch($proMatch) {
+        $this->proMatch = $proMatch;
     }
 
     /**
-     * @return \MetaLeague\FantasyBundle\Entity\ProGame
+     * @return \MetaLeague\FantasyBundle\Entity\ProMatch
      */
-    public function getProGame() {
-        return $this->proGame;
+    public function getProMatch() {
+        return $this->proMatch;
     }
 
     /**

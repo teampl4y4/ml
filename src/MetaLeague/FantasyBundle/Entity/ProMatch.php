@@ -5,12 +5,12 @@ namespace MetaLeague\FantasyBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * ProGame
+ * ProMatch
  *
  * @ORM\Table()
- * @ORM\Entity(repositoryClass="MetaLeague\FantasyBundle\Entity\ProGameRepository")
+ * @ORM\Entity(repositoryClass="MetaLeague\FantasyBundle\Entity\ProMatchRepository")
  */
-class ProGame
+class ProMatch
 {
     /**
      * @var integer
@@ -38,21 +38,14 @@ class ProGame
     /**
      * @var \stdClass
      *
-     * @ORM\Column(name="teamOneScore", type="object")
+     * @ORM\Column(name="gameData", type="object")
      */
-    private $teamOneScore;
-
-    /**
-     * @var \stdClass
-     *
-     * @ORM\Column(name="teamTwoScore", type="object")
-     */
-    private $teamTwoScore;
+    private $gameData;
 
     /**
      * @var Game
      *
-     * @ORM\ManyToOne(targetEntity="Game", inversedBy="leagues")
+     * @ORM\ManyToOne(targetEntity="Game", inversedBy="games")
      * @ORM\JoinColumn(name="game_id", referencedColumnName="id")
      */
     private $game;
@@ -72,7 +65,7 @@ class ProGame
      * Set startTime
      *
      * @param \DateTime $startTime
-     * @return ProGame
+     * @return ProMatch
      */
     public function setStartTime($startTime)
     {
@@ -95,7 +88,7 @@ class ProGame
      * Set endTime
      *
      * @param \DateTime $endTime
-     * @return ProGame
+     * @return ProMatch
      */
     public function setEndTime($endTime)
     {
@@ -115,49 +108,26 @@ class ProGame
     }
 
     /**
-     * Set teamOneScore
+     * Set gameData
      *
-     * @param \stdClass $teamOneScore
-     * @return ProGame
+     * @param \stdClass $data
+     * @return ProMatch
      */
-    public function setTeamOneScore($teamOneScore)
+    public function setGameData($data)
     {
-        $this->teamOneScore = $teamOneScore;
+        $this->gameData = $data;
 
         return $this;
     }
 
     /**
-     * Get teamOneScore
+     * Get gameData
      *
      * @return \stdClass 
      */
-    public function getTeamOneScore()
+    public function getGameData()
     {
-        return $this->teamOneScore;
-    }
-
-    /**
-     * Set teamTwoScore
-     *
-     * @param \stdClass $teamTwoScore
-     * @return ProGame
-     */
-    public function setTeamTwoScore($teamTwoScore)
-    {
-        $this->teamTwoScore = $teamTwoScore;
-
-        return $this;
-    }
-
-    /**
-     * Get teamTwoScore
-     *
-     * @return \stdClass 
-     */
-    public function getTeamTwoScore()
-    {
-        return $this->teamTwoScore;
+        return $this->gameData;
     }
 
     /**

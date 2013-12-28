@@ -55,11 +55,13 @@ class LeagueOfLegendsController extends FOSRestController
      * @ApiDoc(
      *   resource = true,
      *   statusCodes = {
-     *     200 = "Returned when successful"
+     *     200 = "Returned when successful",
+     *     400 = "Bad request",
+     *     500 = "Internal server error"
      *   }
      * )
      *
-     * @Annotations\QueryParam(name="region", requirements="*+", nullable=false, description="The Summoner's region.")
+     * @Annotations\QueryParam(name="region", requirements="{na|euw|eunw}", nullable=false, description="The Summoner's region.")
      *
      * @return array
      */
@@ -77,12 +79,14 @@ class LeagueOfLegendsController extends FOSRestController
      *   resource = true,
      *   statusCodes = {
      *     200 = "Returned when successful",
-     *     404 = "Returned when summoner not found"
+     *     404 = "Returned when summoner not found",
+     *     400 = "Bad request",
+     *     500 = "Internal server error"
      *   }
      * )
      *
      * @Annotations\QueryParam(name="summonerID", requirements="\d+", nullable=false, description="The Summoner ID.")
-     * @Annotations\QueryParam(name="region", requirements="*+", nullable=false, description="The Summoner's region.")
+     * @Annotations\QueryParam(name="region", requirements="{na|euw|eunw}", nullable=false, description="The Summoner's region.")
      *
      * @Annotations\View()
      *
@@ -105,12 +109,14 @@ class LeagueOfLegendsController extends FOSRestController
      *   resource = true,
      *   statusCodes = {
      *     200 = "Returned when successful",
-     *     404 = "Returned when summoner not found"
+     *     404 = "Returned when summoner not found",
+     *     400 = "Bad request",
+     *     500 = "Internal server error"
      *   }
      * )
      *
      * @Annotations\QueryParam(name="summonerName", requirements="*+", nullable=false, description="The Summoner's name.")
-     * @Annotations\QueryParam(name="region", requirements="*+", nullable=false, description="The Summoner's region.")
+     * @Annotations\QueryParam(name="region", requirements="{na|euw|eunw}", nullable=false, description="The Summoner's region.")
      *
      * @Annotations\View()
      * 
@@ -133,12 +139,14 @@ class LeagueOfLegendsController extends FOSRestController
      *   resource = true,
      *   statusCodes = {
      *     200 = "Returned when successful",
-     *     404 = "Returned when summoner not found"
+     *     404 = "Returned when summoner not found",
+     *     400 = "Bad request",
+     *     500 = "Internal server error"
      *   }
      * )
      *
      * @Annotations\QueryParam(name="summonerID", requirements="\d+", nullable=false, description="The Summoner ID.")
-     * @Annotations\QueryParam(name="region", requirements="*+", nullable=false, description="The Summoner's region.")
+     * @Annotations\QueryParam(name="region", requirements="{na|euw|eunw}", nullable=false, description="The Summoner's region.")
      *
      * @Annotations\View()
      *
@@ -160,12 +168,14 @@ class LeagueOfLegendsController extends FOSRestController
      *   resource = true,
      *   statusCodes = {
      *     200 = "Returned when successful",
-     *     404 = "Returned when summoner not found"
+     *     404 = "Returned when summoner not found",
+     *     400 = "Bad request",
+     *     500 = "Internal server error"
      *   }
      * )
      *
      * @Annotations\QueryParam(name="name", requirements="*+", nullable=false, description="CSV of  up to 40 summoner names.")
-     * @Annotations\QueryParam(name="region", requirements="*+", nullable=false, description="The Summoner's region.")
+     * @Annotations\QueryParam(name="region", requirements="{na|euw|eunw}", nullable=false, description="The Summoner's region.")
      *
      * @Annotations\View()
      *
@@ -188,12 +198,14 @@ class LeagueOfLegendsController extends FOSRestController
      *   resource = true,
      *   statusCodes = {
      *     200 = "Returned when successful",
-     *     404 = "Returned when summoner not found"
+     *     404 = "Returned when summoner not found",
+     *     400 = "Bad request",
+     *     500 = "Internal server error"
      *   }
      * )
      *
      * @Annotations\QueryParam(name="summonerID", requirements="\d+", nullable=false, description="The Summoner ID.")
-     * @Annotations\QueryParam(name="region", requirements="*+", nullable=false, description="The Summoner's region.")
+     * @Annotations\QueryParam(name="region", requirements="{na|euw|eunw}", nullable=false, description="The Summoner's region.")
      *
      * @Annotations\View()
      *
@@ -216,12 +228,14 @@ class LeagueOfLegendsController extends FOSRestController
      *   resource = true,
      *   statusCodes = {
      *     200 = "Returned when successful",
-     *     404 = "Returned when summoner not found"
+     *     404 = "Returned when summoner not found",
+     *     400 = "Bad request",
+     *     500 = "Internal server error"
      *   }
      * )
      *
      * @Annotations\QueryParam(name="summonerID", requirements="\d+", nullable=false, description="The Summoner ID.")
-     * @Annotations\QueryParam(name="region", requirements="*+", nullable=false, description="The Summoner's region.")
+     * @Annotations\QueryParam(name="region", requirements="{na|euw|eunw}", nullable=false, description="The Summoner's region.")
      *
      * @Annotations\View()
      *
@@ -244,12 +258,14 @@ class LeagueOfLegendsController extends FOSRestController
      * @ApiDoc(
      *   resource = true,
      *   statusCodes = {
-     *     200 = "Returned when successful"
+     *     200 = "Returned when successful",
+     *     400 = "Bad request",
+     *     500 = "Internal server error"
      *   }
      * )
      *
      * @Annotations\QueryParam(name="summonerID", requirements="\d+", nullable=false, description="The Summoner ID.")
-     * @Annotations\QueryParam(name="region", requirements="*+", nullable=false, description="The Summoner's region.")
+     * @Annotations\QueryParam(name="region", requirements="{na|euw|eunw|br|tr}", nullable=false, description="The Summoner's region.")
      *
      * @Annotations\View()
      *
@@ -271,12 +287,13 @@ class LeagueOfLegendsController extends FOSRestController
      *   resource = true,
      *   statusCodes = {
      *     200 = "Returned when successful",
-     *     404 = "Returned when summoner not found"
+     *     400 = "Bad request",
+     *     500 = "Internal server error"
      *   }
      * )
      *
      * @Annotations\QueryParam(name="summonerID", requirements="\d+", nullable=false, description="The Summoner ID.")
-     * @Annotations\QueryParam(name="region", requirements="*+", nullable=false, description="The Summoner's region.")
+     * @Annotations\QueryParam(name="region", requirements="{na|euw|eunw|br|tr}", nullable=false, description="The Summoner's region.")
      *
      * @Annotations\View()
      *
@@ -299,12 +316,14 @@ class LeagueOfLegendsController extends FOSRestController
      *   resource = true,
      *   statusCodes = {
      *     200 = "Returned when successful",
-     *     404 = "Returned when summoner not found"
+     *     404 = "Returned when summoner not found",
+     *     400 = "Bad request",
+     *     500 = "Internal server error"
      *   }
      * )
      *
      * @Annotations\QueryParam(name="summonerID", requirements="\d+", nullable=false, description="The Summoner ID.")
-     * @Annotations\QueryParam(name="region", requirements="*+", nullable=false, description="The Summoner's region.")
+     * @Annotations\QueryParam(name="region", requirements="{na|euw|eunw}", nullable=false, description="The Summoner's region.")
      *
      * @Annotations\View()
      *
@@ -328,12 +347,14 @@ class LeagueOfLegendsController extends FOSRestController
      *   resource = true,
      *   statusCodes = {
      *     200 = "Returned when successful",
-     *     404 = "Returned when summoner not found"
+     *     404 = "Returned when summoner not found",
+     *     400 = "Bad request",
+     *     500 = "Internal server error"
      *   }
      * )
      *
      * @Annotations\QueryParam(name="summonerID", requirements="\d+", nullable=false, description="The Summoner ID.")
-     * @Annotations\QueryParam(name="region", requirements="*+", nullable=false, description="The Summoner's region.")
+     * @Annotations\QueryParam(name="region", requirements="{na|euw|eunw}", nullable=false, description="The Summoner's region.")
      *
      * @Annotations\View()
      *
